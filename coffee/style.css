@@ -55,7 +55,7 @@ table {
 
 .Links  {background-color:#262410 ;}
 
-.Links ul {width: 1440px; margin: auto;}
+.Links ul {width: 1440px; margin: auto; text-align: center;}
 
 .Links ul li a {text-decoration: none; color:#C19471 ;}
 
