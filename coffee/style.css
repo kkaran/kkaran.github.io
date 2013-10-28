@@ -58,7 +58,7 @@ table {
 
 .Small-titles {color:#262410; font-size:30px; text-align: center;}
 
-.Paragraph {color:#262410; text-align: center;}
+.Paragraph {color:#262410; text-align: center; margin: auto; float:left;}
 
 #Footer{background-color:#262410; color:#C19471; text-align: center;padding: 20px;}
 
