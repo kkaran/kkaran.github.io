@@ -52,35 +52,56 @@ table {
 -------------------------------
 */
 
+ul{
+	background-color:#262410;
+	padding: 5px 0px 5px 0px;
+	text-align: center;
+}
 
-#Top {width:100%;}
+li{
+	display: inline;
+	padding: 4px 0px 4px 0px;
+}
 
-
-.Links  {background-color:#262410 ;}
-
-.Links ul {width: 1440px; margin: auto; text-align: center; padding: 20px;}
-
-.Links ul li a {text-decoration: none; color:#C19471 ;}
-
-.Links ul li  { 
-				font-size:18px; 
-				display:inline; 
-				padding: 20px; 
-				text-align: center
-				bottom:20px; 
-
-
-			}
-nav {position: relative;
+a{
+	text-decoration: none;
+	color:#C19471;
+	margin: 7px 7px 7px 7px;
+}
 	 
-	 }
+body { width:900px;
+	   max-width:90%;
+	   margin: auto;
+	  
+	}
 
 
-.Small-titles {color:#262410; font-size:20px; text-align: center; font-family: helvetica;}
+.Small-titles {
+	color:#262410; 
+	font-size:20px; 
+	text-align: center; 
+	font-family: helvetica;}
 
-.Container {width: 900px; margin: auto;}
-.Paragraph {color:#262410; text-align: center; margin: auto; float:left; width:45%; padding: 20px;line-height: 25px;}
 
-#Footer{background-color:#262410; color:#C19471; text-align: center; padding: 20px;clear:both;}
+.Container {
+	width: 100%; 
+	margin: auto;
+	padding-top: 30px;
+}
+
+
+.Paragraph {
+	color:#262410; 
+	text-align: center; 
+	margin: 0 4% 4% 4%; 
+	float:left; 
+	width:42%; 
+	line-height: 25px;}
+
+footer{background-color:#262410; 
+	width:100%;
+	color:#C19471;
+	 text-align: center; 
+	 clear:both;}
 
 
