@@ -51,8 +51,6 @@ table {
 body{
 
 }
-nav{ background-color: #26160C; }
-
 h2{font-family: impact, fantasy;}
 
-h5 {font-style: sans-serif;}
+h5 {font: sans-serif;font-size: 10px; }
