@@ -53,14 +53,13 @@ table {
 
 
 
+.Links  {background-color:#262410 ;}
 
-.Links ul li  {background-color:#262410 ;
-				color:#C19471; 
+.Links ul li  {color:#C19471; 
 				font-size:18px; 
 				display:inline; 
 				padding: 20px; 
 				text-align: center; 
-				display: inline;
 				text-decoration: none;
 
 
