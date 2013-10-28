@@ -55,14 +55,15 @@ table {
 
 .Links  {background-color:#262410 ;}
 
-.Links ul {width: 300px; margin: auto;}
+.Links ul {width: 33%; margin: auto;}
 
-.Links ul li  {color:#C19471; 
+.Link ul li a {text-decoration: none; color:#C19471 ;}
+
+.Links ul li  { 
 				font-size:18px; 
 				display:inline; 
 				padding: 20px; 
 				text-align: center; 
-				text-decoration: none;
 
 
 			}
