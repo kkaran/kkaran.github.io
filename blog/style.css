@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-#Head { font-size:50px;}
+.Head { font-size:50px; font-family: impact;}
 
 body{ }
 h2{font-family: impact, fantasy;}
