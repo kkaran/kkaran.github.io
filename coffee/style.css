@@ -51,7 +51,7 @@ table {
 -------------------------------
 */
 
-#Image {background-image: url ("coffeeicone.jpg");}
+#Image {Image:url ("coffeeicone.jpg");}
 
 .Links  {background-color:#262410 ;}
 
