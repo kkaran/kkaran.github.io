@@ -70,7 +70,7 @@ table {
 
 .Small-titles {color:#262410; font-size:20px; text-align: center; font-family: helvetica;}
 
-.Container {width: 95%; margin: auto;}
+.Container {width: 900px; margin: auto;}
 .Paragraph {color:#262410; text-align: center; margin: auto; float:left; width:45%; padding: 20px;}
 
 #Footer{background-color:#262410; color:#C19471; text-align: center;padding: 20px;clear:both;}
