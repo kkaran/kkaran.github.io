@@ -53,4 +53,8 @@ body{
 }
 h2{font-family: impact, fantasy;}
 
-h5 {font: sans-serif;font-size: 5px; }
+h5 {font: sans-serif;font-size: 6px; }
+
+.Title {font-size: 15px;}
+
+#Poem { text-align: left; line-height: 5px; font-weight: bold;}
