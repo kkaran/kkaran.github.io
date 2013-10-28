@@ -63,3 +63,5 @@ h5 {font: sans-serif;font-size: 14px; }
 #Poem { text-align: left; line-height: 25px; font-weight: bold; padding: 30px; font-family:helvetica;}
 
 .Small {line-height: 25px;}
+
+li {text-decoration: none; color:black;}
