@@ -54,7 +54,17 @@ table {
 
 
 
-.Links ul li  {background-color:#262410 ;color:#C19471; font-size:18px; display:inline; padding: 20px; text-align: center; display: inline;}
+.Links ul li  {background-color:#262410 ;
+				color:#C19471; 
+				font-size:18px; 
+				display:inline; 
+				padding: 20px; 
+				text-align: center; 
+				display: inline;
+				text-align: none;
+
+
+			}
 
 .Small-titles {color:#262410; font-size:30px; text-align: center;}
 
