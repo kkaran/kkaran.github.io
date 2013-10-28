@@ -47,15 +47,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*
+-------------------------------
+*/
 
 
 
 
+.Links {background-color:#262410 ;color:#C19471; text-decoration: none; font-size: 24px; display: inline;}
 
+.Small-titles {color:#262410; font-size:30px; text-align: center;}
 
+.Paragraph {color:#262410; text-align: center;}
 
-
-
-
+#Footer{background-color:#262410; color:##C19471; text-align: center;}
 
 
