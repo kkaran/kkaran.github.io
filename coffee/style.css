@@ -55,6 +55,8 @@ table {
 
 .Links  {background-color:#262410 ;}
 
+.Links ul {width: 300px; margin: auto;}
+
 .Links ul li  {color:#C19471; 
 				font-size:18px; 
 				display:inline; 
