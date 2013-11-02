@@ -1,67 +1,114 @@
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+ul {
+	list-style-type: none;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+
+ul li a {
+	display: inline;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+header {
+	width: 100%;
+	height: 45px;
+	margin: 0px 0 20px 0;
+	padding: 0 0 20px 0;
+	border-bottom: 3px solid black;
+}
+
+body {
+	font-family: Helvetica, Arial, Verdana; 
+	width: 960px;
+	max-width: 90%;
+	margin: auto;
+}
+
+
+footer {
+	width: 100%;
+	height:10px;
+	margin: 0 0 0 0;
+	padding: 10px 0 20px 0; 
+	border-top: 3px solid black;
+	font-weight: bold;
+	float: left;
+}
+
+
+nav {
+	float: right;
+	margin: 0px 0 0 0;
+	padding: 0 0 0 0;
+	
+}
+
+aside {
+	width: 30%;
+	float: left;
+	margin-right: 5%
+}
+
+section {
+	width: 65%;
+	float: left;
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+h1, h2 {
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-.Head { font-size:50px; font-family: impact; padding: 30px}
-
-body{ }
-h2{font-family: impact, fantasy;}
-
-h5 {font: sans-serif;font-size: 14px; }
-
-.Body {line-height: 30px; padding: 30px;}
+h1 {
+	font-size: 32px;
+	float: left;
+	margin: 20px 0 0 0;
+	padding: 0 0 0 0 ;
+}
 
 
-.Titles {font-size: 28px;text-transform: uppercase;}
+h2 {
+	font-size: 24px;
+}
 
-#Poem { text-align: left; line-height: 25px; font-weight: bold; padding: 30px; font-family:helvetica;}
+h5 {
+	font-size: 12px;
+}
 
-.Small {line-height: 25px;}
 
-#Top-Nav ul li a  {text-decoration: none; color:black; font-weight: bold; float:right; display: inline;}
+p {
+	line-height: 22px;
+	margin: 0 0 20px 0;
+
+}
+
+
+aside ul li{ 
+	line-height: 25px;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+	padding: 0 0 0 0 ;
+	
+
+}
+
+
+.Body {
+	width: 100%;
+	margin: 10px 0 0 0 ;
+}
+
+
+#Nav {
+	display: inline;
+}
+
+
+
+
+
+
+
