@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica, Arial, Verdana; 
+	font-family: Helvetica; 
 	width: 960px;
 	max-width: 90%;
 	margin: auto;
@@ -102,6 +102,7 @@ p {
 	display: block;
 	line-height: 30px;
 }
+
 
 
 
