@@ -78,3 +78,14 @@ p{
 .left { 
         color: #3A1C00;
 }
+
+
+
+
+
+
+
+@font-face {
+        font-family: 'LeagueGothic';
+        src: url('tpye/LeagueGothic');
+}
