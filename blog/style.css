@@ -1,8 +1,9 @@
 body {
-	font-family: Helvetica; 
+	font-family: Helvetica, Verdana; 
 	width: 960px;
 	max-width: 90%;
 	margin: auto;
+	font-size: 14px;
 }
 
 header {
@@ -35,10 +36,9 @@ aside {
 	width: 30%;
 	float: left;
 	margin-right: 5%;
-	line-height: 25px;
+	line-height: 5px;
 	font-weight: bold;
 	display: block;
-	line-height: 20px;
 }
 
 section {
@@ -53,6 +53,7 @@ h1, h2, h5{
 }
 
 h1 {
+	font-family: 'league_gothicregular';
 	font-size: 45px;
 	float: left;
 	margin: 20px 0 0 0;
@@ -61,6 +62,8 @@ h1 {
 
 
 h2 {
+	font-family: 'league_gothicregular';
+	letter-spacing: 0.5px;
 	font-size: 24px;
 }
 
@@ -98,10 +101,12 @@ p {
 
 .Body {
 	width: 100%;
-	margin-top: 10px;
+	margin-top: 0px;
 	display: block;
-	line-height: 30px;
+	line-height: 17px;
+	
 }
+
 
 
 
