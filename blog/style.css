@@ -27,7 +27,7 @@ footer {
 
 nav {
 	float: right;
-	margin: 32px 0 0 0;
+	margin: 48px 0 0 0;
 	padding: 0 0 0 0;
 	
 }
@@ -115,12 +115,18 @@ p {
 	.Body{ 
 	font-size:18px;
 	width: auto;
-	float: none;1
+	float: none;
 }
-
+	aside{
+		width:100%;
+		text-align: center;
+	}
 
 	h1 {
 		font-size: 58px;
+	}
+	nav{
+		margin-top: 32px;
 	}
 
 	li {
