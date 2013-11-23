@@ -30,20 +30,19 @@ header {
 	overflow-x:hidden;
 	position: fixed;
 	width: 101%;
-	height:192.72px;
+	height:165px;
 	z-index: 1;
 }
 
 .logo img{ 
 	max-width: 130px;
 	max-height: 130px;
-	padding-top: 5px;
+	padding-top: 10px;
 }
 
 nav{
 	text-align: center;
 	width: 100%;
-	margin-bottom: 120px;
 }
 
 nav div {
@@ -52,7 +51,7 @@ nav div {
 	font-size:19px;
 	padding: 10px 45px;
 	text-transform: uppercase;
-
+	vertical-align: middle;
 }
 
 nav div a{
@@ -60,7 +59,7 @@ nav div a{
 	display: block;
 	padding: 15px;
 	text-decoration: none;
-	margin-bottom: 120px;
+
 }
 
 nav div:first-child{
