@@ -13,6 +13,8 @@ contact
 
 
 ID - 
+splashes
+navi
 
 
-
+color text - 68, 88 92
