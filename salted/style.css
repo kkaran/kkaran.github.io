@@ -1,0 +1,122 @@
+@font-face {
+    font-family: '_.regular';
+    src: url('type/novecentosanswide-bold-webfont-webfont.eot');
+    src: url('type/novecentosanswide-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/novecentosanswide-bold-webfont-webfont.woff') format('woff'),
+         url('type/novecentosanswide-bold-webfont-webfont.ttf') format('truetype'),
+         url('type/novecentosanswide-bold-webfont-webfont.svg#_.regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'novecento_sans_widemedium';
+    src: url('type/novecentosanswide-medium-webfont-webfont.eot');
+    src: url('type/novecentosanswide-medium-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/novecentosanswide-medium-webfont-webfont.woff') format('woff'),
+         url('type/novecentosanswide-medium-webfont-webfont.ttf') format('truetype'),
+         url('type/novecentosanswide-medium-webfont-webfont.svg#novecento_sans_widemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navigation --------*/
+
+header {
+	z-index: 1;
+	box-shadow: 0px 0px 55px 0px rgba(0,0,0,0.5 );
+	background-color: #FFF;
+	margin: -10px 0px 0px -10px;
+	overflow-x:hidden;
+	position: fixed;
+	width: 100%;
+	height:192.72px;
+}
+
+.logo img{ 
+	max-width: 130px;
+	max-height: 130px;
+	padding-top: 5px;
+}
+
+nav{
+	text-align: center;
+	width: 100%;
+}
+
+nav div {
+	display: inline-block;
+	font-family:'novecento_sans_widemedium';
+	font-size:19px;
+	padding: 10px 45px;
+	text-transform: uppercase;
+
+}
+
+nav div a{
+	color: rgb(68,88,92);
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+}
+
+nav div:first-child{
+	padding: 10px 45px 10px 0px;
+}
+
+nav div:last-child{
+	padding: 10px 0px 10px 45px;
+}
+
+/* ENTIRE PAGE */
+.container {
+	margin: 0 auto;
+	width: 100%;
+	
+}
+
+/* Navigation end ------*/
+
+
+/* Body --------*/
+
+#splashes{
+	margin: 0 auto;
+}
+.splash {
+
+	background-color: red;
+	height: 500px;
+	clear: both;
+	margin-top: 10px;
+	
+}
+
+#splashes img {
+	width: 1410px;
+}
+.shop {
+	background-color: blue;
+	height: 200px;
+	width: 100%;
+	clear: both;
+
+}
+
+.faq {
+	background-color: green;
+	height: 200px;
+	width: 100%;
+	clear: both;
+
+
+}
+
+.contact {
+	background-color: black;
+	height: 200px;
+	width: 100%;
+	clear: both;
+
+
+}
