@@ -89,7 +89,9 @@ nav div:last-child{
 	overflow-x:hidden;
 }
 
-.splash {}
+div .splash {
+	margin-top: -10px;
+}
 
 
 .shop {
