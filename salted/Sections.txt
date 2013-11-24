@@ -10,11 +10,17 @@ splash
 shop
 faq
 contact
+container_shop
+row
+
 
 
 ID - 
 splashes
 navi
-
+home
+shop
+faq
+contact
 
 color text - 68, 88 92
