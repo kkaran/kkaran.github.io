@@ -83,6 +83,7 @@ nav div:last-child{
 
 /* Body --------*/
 
+/* Body ALL --------*/
 #splashes img{
 	margin: 0 auto;
 	width: 100%;
@@ -95,27 +96,73 @@ div .splash {
 
 
 .shop {
-	background-color: blue;
-	height: 200px;
-	width: 100%;
+	background-color: white;
 	clear: both;
-
+	height: 800px;
+	width: 100%;
 }
 
 .faq {
 	background-color: green;
-	height: 200px;
-	width: 100%;
 	clear: both;
-
-
+	height: 800px;
+	width: 100%;	
 }
+
 
 .contact {
 	background-color: black;
-	height: 200px;
-	width: 100%;
 	clear: both;
-
-
+	height: 800px;
+	width: 100%;
 }
+
+
+
+/* Body SHOP ---------*/
+
+.container_shop{
+	padding: 135px 120px 45px 200px;
+}
+
+.row img {
+	max-width: 30%;
+	margin: auto;
+	float: left;
+	padding: 0px 0px;
+}
+
+
+
+
+
+
+/* Body FAQ ---------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
