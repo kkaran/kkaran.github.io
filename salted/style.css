@@ -21,17 +21,15 @@
 
 header {
 	
-	/* --
+
 	box-shadow: 0px 0px 55px 0px rgba(0,0,0,0.8 );
 	background-color: rgba(240,248,255,0.5);
-
-	--*/
 	
 	margin: -10px 0px 0px -10px;
 	overflow-x:hidden;
 	position: fixed;
 	width: 101%;
-	height:165px;
+	height:160px;
 	z-index: 1;
 }
 
@@ -104,7 +102,7 @@ div .splash {
 }
 
 .faq {
-	background-color: blue;
+	background-color: white;
 	clear: both;
 	height: 800px;
 	width: 100%;	
@@ -133,28 +131,37 @@ div .splash {
 	padding: 0px 0px;
 }
 
-/* Body SHOP  ---------*/
-
-
 /* Body FAQ ---------*/
 
+.faq {
+	
+}
+#empty {
+	padding-top: 80px;
+	width: 100%;
+	max-height: 100px;
+	border-top: 2px;
+	border-style: solid;
+	border-color: #727272;
+}
+
+.faq {
+	padding-top: 90px;
+}
 
 /* Body Contact  ---------*/
 
+    #map {  top:-10; bottom:0; width:100%; }
+
+/* TESTING TESTING TESTING --*//
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.right {
+    float:right;
+}
+.hide {
+    display:none
+}
 
 
 

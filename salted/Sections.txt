@@ -1,26 +1,26 @@
-Sections -
+Sections 
+
+
+<body>
+	
+	<div class="container">
+		<div class="logo">
 
 
 
-
-Classes - 
-
-logo
-splash
-shop
-faq
-contact
-container_shop
-row
+<Splash Page START>
+	<div class="splash" id="home">
+		<div id="splashes">
+<Splash Page END>
 
 
+<Shop Page START> 
+	<div class="shop" id="shop">
+		<div class="container_shop"
 
-ID - 
-splashes
-navi
-home
-shop
-faq
-contact
+			<div class="row">
+			<div class="row">
+<Shop Page END>
 
-color text - 68, 88 92
+
+

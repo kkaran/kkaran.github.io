@@ -8,7 +8,35 @@
   			<link href="style.css" rel="Stylesheet" type="text/css" />
   	  		<link href="type.css" rel="Stylesheet" type="text/css" />
   	  		<link rel="shortcut icon" href="images/favicon.ico" />
+  	  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	  		<script type="text/javascript" src="script.js"></script>
+  	  		<script type="text/javascript" src="autoScrollTo.js"></script>
 
+  	  		
+  	  		<script type="text/javascript">
+  	  			$(function(){
+   					 $('#shrink').data('size','big');
+				});
+
+				$(window).scroll(function(){
+   			 		var $nav = $('#shrink');
+    				if ($('body').scrollTop() > 0) {
+        				if ($nav.data('size') == 'big') {
+            				$nav.data('size','small').stop().animate({
+                				height:'80px'
+           					}, 475);
+       					}
+   					} else {
+        				if ($nav.data('size') == 'small') {
+            				$nav.data('size','big').stop().animate({
+                				height:'160px'
+            				}, 1000);
+        				}  
+   					 }
+				});
+			</script>
+
+		
 	</head>
 
 
@@ -16,31 +44,36 @@
  		
  		<div class="container"> 
  			
- 			<header> 
+ 			<header id="shrink"> 
  				
  				<nav>
 
- 					<div><a href ="#home"> Home </a></div>
-					<div><a href ="#shop"> Shop </a></div>
+ 					<div><a href ="#home_id" onclick="return false;" onmousedown="scrollProcess('home_id');"> Home </a></div>
+					
+					<div><a href="#shop_id" onclick="return false;" onmousedown="scrollProcess('shop_id');"> Shop </a></div>
+					
 					<div class="logo"><img src="images/logo.png" ></div>
-					<div><a href ="#faq"> FAQ </a></div>
-					<div><a href ="#contact"> Contact </a></div>
+					
+					<div><a href ="#faq_id" <a href="#" onclick="return false;" onmousedown="scrollProcess('faq_id');"> FAQ </a></div>
+					
+					<div><a href ="#contact_id" <a href="#" onclick="return false;" onmousedown="scrollProcess('contact_id');"> Contact </a></div>
 
 				</nav>
+
 
  			</header>
 
 
 
  		<!-- Splash Page START -->
- 		<div class="splash" id="home">
+ 		<div class="splash" id="home_id">
  			<div id="splashes"><img src="images/splashpage.jpg"></div>
  		</div>
  		<!-- Splash Page END -->
 
 
  		<!-- Shop Page START -->
- 		<div class="shop" id="shop">
+ 		<div class="shop" id="shop_id">
 
  			<div class="container_shop">
 
@@ -63,15 +96,34 @@
 
 
  		<!-- FAQ Page START -->
- 		<div class="faq" id="faq">
+ 		<div class="faq" id="faq_id">
+
+ 			<div id="empty"></div>
+ 			<div>
+ 			<p><a href="#">The Helmets</a></p>
+ 			<p><a href="#">Sizing</a></p>
+ 			<p><a href="#">Technical Advantages</a></p>
+ 			<p><a href="#">How to put on your helmet</a></p>
+ 			<p><a href="#">In case of an impact</a></p>
+ 			<p><a href="#">Shipping & Returns</a></p>
+ 			<p><a href="#">Certifications</a></p>
+ 			<p><a href="#">Specifications</a></p>
+ 			<p><a href="#">Other Requests</a></p>
+ 			</div>
  			
  		</div>
  		<!-- FAQ Page END -->
 
 
  		<!-- Contact Page START -->
- 		<div class="contact" id="contact">
+ 		<div class="contact" id="contact_id">
+ 		
+ 			<div id="map">
+ 				<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/kp08sk.gcci3g94/mm/index.html?secure=1#15/41.8806/-87.6333'></iframe>
  			
+ 			</div>
+ 			
+
  		</div>
  		<!-- Contact Page END -->
 
@@ -82,10 +134,33 @@
 
 
 
+ 		<------TEST TEST TEST
+ 		Collapse effect 
+
+
+		<a class="right" href="javascript:toggle_messege('inline')" id='href_about'>The  Helmets </a><br />
+		<a class="right hide" href="javascript:toggle_messege('none')" id='f101'> (Close)</a>
+
+			<div id='f1' class='hide'>OUR helmets are only available for a single season or until sold, then replaced by “new” designs that we hand pick. sometimes we have helmets not listed for super cool reasons, contact us, we’ll let you know.</div>
+
+		<a class="right" href="javascript:toggle_messege('inline')" id='href_about'>Sizing</a><br />
+		<a class="right hide" href="javascript:toggle_messege('none')" id='f102'> (Close)</a>
+
+			<div id='f2' class='hide'>OURUBABABABA helmets are only available for a single season or until sold, then replaced by “new” designs that we hand pick. sometimes we have helmets not listed for super cool reasons, contact us, we’ll let you know.</div>
+		
+		<a class="right" href="javascript:toggle_messege('inline')" id='href_about'>Technical Advantages</a><br />
+		<a class="right hide" href="javascript:toggle_messege('none')" id='hreh_close'> (Close)</a>
+
+			<div id='f3' class='hide'>OURABABBABA helmets are only available for a single season or until sold, then replaced by “new” designs that we hand pick. sometimes we have helmets not listed for super cool reasons, contact us, we’ll let you know.</div>
+		-->
+
+
+
 
 
 
 
 </div>
+
 	</body>
 </html>
