@@ -31,17 +31,21 @@ header {
 	width: 101%;
 	height:160px;
 	z-index: 1;
+
 }
 
 .logo img{ 
 	max-width: 130px;
 	max-height: 130px;
 	padding-top: 10px;
+	position: relative;
+	z-index: 2000;
 }
 
 nav{
 	text-align: center;
 	width: 100%;
+	position: fixed;
 }
 
 nav div {
@@ -51,6 +55,7 @@ nav div {
 	padding: 10px 45px;
 	text-transform: uppercase;
 	vertical-align: middle;
+
 }
 
 nav div a{
@@ -68,6 +73,7 @@ nav div:first-child{
 nav div:last-child{
 	padding: 10px 0px 10px 45px;
 }
+
 
 
 /*----- ENTIRE PAGE ----*/
@@ -121,7 +127,7 @@ div .splash {
 /* Body SHOP ---------*/
 
 .container_shop{
-	padding: 135px 120px 45px 200px;
+	padding: 100px 120px 45px 200px;
 }
 
 .row img {

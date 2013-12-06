@@ -1,6 +1,9 @@
 <!-- autoScrollTo.js ... logic for a lightweight reusable external framework -->
 
+
+
 // autoScrollTo.js Written By Adam Khoury - Nov 2012
+
 var scrollY = 0;
 var distance = 40;
 var speed = 24;
@@ -58,4 +61,5 @@ function autoScrollUp(el) {
 	    }
 	}
 }
+
 
