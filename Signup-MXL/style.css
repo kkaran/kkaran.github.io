@@ -35,30 +35,30 @@
     margin:0;
   }
 
-.one { background: #ffffff;
+.one { background: #117283;
   height: 100vh;
 }
 
 .two { 
-  background: #f28705;
+  background: #1BA88D;
   height: 100vh;
   display:none;
 }
 
 .three { 
-  background: #f2b705;
+  background: #F1E174;
   height: 100vh;
   display:none;
 }
 
 .four { 
-  background: #6093bf;
+  background: #DA6240;
   height: 100vh;
   display:none;
 }
 
 .five {
-  background: #005395;
+  background: #E74337;
   height: 100vh;
   display:none;
 }
@@ -130,14 +130,14 @@ h2 {
 	  font: normal normal 700 1em/4em Arial,sans-serif;
 	  overflow: hidden;
 	  width: 300px;
-	  background-color: #6acbde;
+	  background-color: #117283;
 	  font-size: 30px;
 	  margin: 0 auto;
 
 	}
 
 	.blue-btn:hover{
-	   background-color: #6acbde;
+	   background-color: #117283;
 	}
 
 	.blue-btn a:hover{
@@ -414,6 +414,55 @@ form input[type='text']:focus{color:#000}
 /* FIFTH PAGE ----*/
 ------------------------------------*
 
+/*SIGN UP BUTTON ----------------------*/
+
+  .buttontwo{
+    margin-top: 4.4em;
+  
+  }
+  .red-btn a{
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    display:block; /* important */
+
+  }
+
+  .red-btn, .first-link{
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;     
+  }
+
+
+  .red-btn{
+    height: 100px;
+    font: normal normal 700 1em/4em Arial,sans-serif;
+    overflow: hidden;
+    width: 300px;
+    background-color: #117283;
+    font-size: 30px;
+    margin: 0 auto;
+
+  }
+
+  .red-btn:hover{
+     background-color: #117283;
+  }
+
+  .red-btn a:hover{
+    text-decoration: none;
+  }
+
+  .first-link{
+    margin-top: 0em;   
+  }
+
+  .red-btn:hover .first-link{
+    margin-top: -4em;
+  }
 
 
 
