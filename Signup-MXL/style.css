@@ -95,8 +95,8 @@ h2 {
 		display: block;
 	    margin-left: auto;
 	    margin-right: auto;
-	    padding-top: 14.2em;
-	    max-width: 240px;
+	    padding-top: 12.2em;
+	    max-width: 400px;
 
 	}
 
@@ -106,7 +106,7 @@ h2 {
 /*SIGN UP BUTTON ----------------------*/
 
 	.button{
-		margin-top: 4.4em;
+		margin-top: 6.4em;
 	}
 	.blue-btn a{
 	  color: white;
@@ -418,7 +418,7 @@ form input[type='text']:focus{color:#000}
 
   .buttontwo{
     margin-top: 4.4em;
-  
+
   }
   .red-btn a{
     color: white;
