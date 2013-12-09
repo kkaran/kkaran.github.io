@@ -29,9 +29,35 @@
  
     z-index: 1;
     height: 100%;
-    background: #60d7a9;
     -webkit-overflow-scrolling: touch;
+    hyphens: none;
   }
+
+.one { background: #6acbde;
+}
+
+.two { 
+  background: #f63b03;
+  height: 100%;
+
+}
+
+.three { 
+  background: #eeeb80;
+  height: 100%;
+}
+
+.four { 
+  background: #6bbce9;
+  height: 100%;
+}
+
+.five {
+  background: #60d7a9;
+  height: 100%;
+}
+
+
 
 /*FIRST PAGE ------ */
 
@@ -79,14 +105,14 @@
 	  font: normal normal 700 1em/4em Arial,sans-serif;
 	  overflow: hidden;
 	  width: 300px;
-	  background-color: #60d7a9;
+	  background-color: #6acbde;
 	  font-size: 30px;
 	  margin: 0 auto;
 
 	}
 
 	.blue-btn:hover{
-	   background-color: #60d7a9;
+	   background-color: #6acbde;
 	}
 
 	.blue-btn a:hover{
@@ -241,8 +267,10 @@
   }
   .about ul.about-tiles li {
     margin-left: -3px;
-    line-height: 1.625;
+    line-height: 1.4;
     margin-bottom: 80px;
+    width: 400px;
+
   }
   .about ul.about-tiles h4 {
     margin-bottom: 0;
@@ -287,14 +315,17 @@
 		max-width: 80px;
 		clear: both;
 		margin-left: 60px;
-		margin-top: 2.5em;
+		margin-top: 1.5em;
+    padding-top: 0.2em;
+    padding-bottom: 4.9em;
 	}
 
 	.arrow {
 	 	
 	 	margin: 0 auto;
 	 	max-width: 10em;
-	 	padding-top: 3.250em;
+    padding-top: 3.4em;
+	 	
 	 	
 	 }
 
@@ -312,7 +343,7 @@
 	.forms {
 	margin:0 auto;
 	position: relative;
-	margin-top: 12.5em;
+  padding-top: 250px;
 	width: 455px;
 	}
 	
