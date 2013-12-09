@@ -73,7 +73,7 @@ h2 {
   padding-top: 100px;
 }
 
-
+.two, .three, .four, .five{visibility:hidden;}
 /*FIRST PAGE ------ */
 
 	.first {
