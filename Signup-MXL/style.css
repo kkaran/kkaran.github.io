@@ -74,7 +74,10 @@ h2 {
   padding-top: 100px;
 }
 
-.two, .three, .four, .five{display: none;}
+-----------------
+/*.two, .three, .four, .five {display: none;}
+-----------------
+
 /*FIRST PAGE ------ */
 
 	.first {
@@ -376,7 +379,7 @@ h2 {
 	#name, #company, #email, #phone {
 		font-size: 14px;
 		width: 450px;
-		color : #d9d7d8;
+    color : #000000;
 		height:45px;
 		border:0;
 		padding:4px 8px;
@@ -396,6 +399,8 @@ h2 {
 		border-radius:3px;
 	}
 
+
+form input[type='text']:focus{color:#000}
 
 
 

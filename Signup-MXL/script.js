@@ -8,7 +8,7 @@ $(nextDiv).css('display', 'block');
 
 function nextPage(curDiv, nextDiv){
 $(curDiv).hide();
-$(nextDiv).show(0).delay(5000);
+$(nextDiv).show(0).delay(2000);
 }
 
 
