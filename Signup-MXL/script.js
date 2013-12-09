@@ -1,6 +1,6 @@
 function nextPage(curDiv, nextDiv){
-$(curDiv).hide();
-$(nextDiv).show(0).delay(5000);
+$(curDiv).css('display', 'none');
+$(nextDiv).css('display', 'block').delay(5000);
 }
 
 
