@@ -3,16 +3,45 @@ function nextPage(curDiv, nextDiv){
 $(curDiv).css('display', 'none');
 $(nextDiv).css('display', 'block');
 }
+author:Tom Benneche class="tomIsAwesome"
 */
 
 
 function nextPage(curDiv, nextDiv){
-$(curDiv).hide();
-$(nextDiv).show(0).delay(2000);
+
+	if ($('#oneone').is(':visible')){
+		curDiv = $('#oneone');
+		nextDiv = $('#twotwo');
+		
+	} 
+	if ($('#twotwo').is(':visible')){
+		curDiv = $('#twotwo');
+		nextDiv = $('#threethree');
+	} 
+	if ($('#threethree').is(':visible')){
+		curDiv = $('#threethree');
+		nextDiv = $('#fourfour');
+	} 
+	if ($('#fourfour').is(':visible')){
+		curDiv = $('#fourfour');
+		nextDiv = $('#fivefive');
+	} 
+
+	
+	
+	$(nextDiv).slideDown(1000);
+	$(curDiv).slideUp(1000);
+
 }
 
 
-$('nextButtonOne').on('click', nextPage('.tomIsAwesomeOne', '.tomIsAwesomeTwo'));
-$('nextButtonTwo').on('click', nextPage('.tomIsAwesomeTwo', '.tomIsAwesomeThree'));
-$('nextButtonThree').on('click', nextPage('.tomIsAwesomeThree', '.tomIsAwesomeFour'));
-$('nextButtonFour').on('click', nextPage('.tomIsAwesomeFour', '.tomIsAwesomeFive'));
+$(function() {
+  $('.nextButtonOne').click(nextPage);
+
+$('.nextButtonTwo').click(nextPage);
+
+$('.nextButtonThree').click(nextPage);
+
+$('.nextButtonFour').click(nextPage);
+
+});

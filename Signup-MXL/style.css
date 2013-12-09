@@ -31,31 +31,36 @@
     height: 100vh;
     -webkit-overflow-scrolling: touch;
     hyphens: none;
+    padding:0;
+    margin:0;
   }
 
-.one { background: #6acbde;
+.one { background: #ffffff;
   height: 100vh;
 }
 
 .two { 
-  background: #f63b03;
+  background: #f28705;
   height: 100vh;
-
+  display:none;
 }
 
 .three { 
-  background: #eeeb80;
+  background: #f2b705;
   height: 100vh;
+  display:none;
 }
 
 .four { 
-  background: #6bbce9;
+  background: #6093bf;
   height: 100vh;
+  display:none;
 }
 
 .five {
-  background: #60d7a9;
+  background: #005395;
   height: 100vh;
+  display:none;
 }
 
 
@@ -74,11 +79,12 @@ h2 {
   padding-top: 100px;
 }
 
------------------
-/*.two, .three, .four, .five {display: none;}
------------------
+---------------
 
 /*FIRST PAGE ------ */
+
+
+
 
 	.first {
 		
@@ -357,7 +363,7 @@ h2 {
 	 }
 
 	 #arrowtwo img{
-	 	margin-top: 1em;
+	 	margin-top: 5em;
 	 }
 
  
