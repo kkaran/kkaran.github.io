@@ -6,5 +6,6 @@ $(nextDiv).css('display', 'block');
 
 $('nextButtonOne').on('click', nextPage('.tomIsAwesomeOne', '.tomIsAwesomeTwo'));
 $('nextButtonTwo').on('click', nextPage('.tomIsAwesomeTwo', '.tomIsAwesomeThree'));
-$('nextButtonTwo').on('click', nextPage('.tomIsAwesomeThree', '.tomIsAwesomeFour'));
+$('nextButtonThree').on('click', nextPage('.tomIsAwesomeThree', '.tomIsAwesomeFour'));
+$('nextButtonFour').on('click', nextPage('.tomIsAwesomeFour', '.tomIsAwesomeFive'));
 
