@@ -127,7 +127,7 @@ h2 {
 
 	.blue-btn{
 	  height: 100px;
-	  font: normal normal 700 1em/4em Arial,sans-serif;
+	  font: normal normal 300 1em/4em Helvetica,sans-serif;
 	  overflow: hidden;
 	  width: 300px;
 	  background-color: #117283;
@@ -173,53 +173,50 @@ h2 {
     text-transform: none;
     line-height: 1;
 
+
     -webkit-font-smoothing: antialiased;
   }
 
   /* ICONS -------------------------- */
-  /*Page 2 ------------------*/
-    .fa_icon_push:before {
-    content: "\f06a";
-    }
-    .fa_icon_inapp:before {
-      content: "\f0e0";
-    }
-    .fa_icon_social:before {
-    content: "\f082  \f099  \f08c";
-    }
-    .fa_icon_mobile:before {
-    content: "\f10a  \f10b";
-    }
-    .fa_icon_media:before {
-    content: "\f152  \f130  \f0c6";
-    }
-    .fa_icon_built:before {
-    content: "\f011";
-    }
+    /*Page 2 ------------------*/
+      .fa_icon_push:before {
+      content: "\f06a";
+      }
+      .fa_icon_inapp:before {
+        content: "\f0e0";
+      }
+      .fa_icon_social:before {
+      content: "\f082  \f099  \f08c";
+      }
+      .fa_icon_mobile:before {
+      content: "\f10a  \f10b";
+      }
+      .fa_icon_media:before {
+      content: "\f152  \f130  \f0c6";
+      }
+      .fa_icon_built:before {
+      content: "\f011";
+      }
 
-  /*Page 3 ------------------*/
-  	
-
-
-  /*Page 5 ------------------*/
-	.fa_icon_portfolio:before {
-    content: "\f06c";
-    }
-    .fa_icon_testimonials:before {
-      content: "\f086";
-    }
-    .fa_icon_pricing:before {
-    content: "\f09d";
-    }
-    .fa_icon_contact:before {
-    content: "\f098";
-    }
-    .fa_icon_tech:before {
-    content: "\f0ee";
-    }
-    .fa_icon_analytics:before {
-    content: "\f0ad";
-    }
+    /*Page 5 ------------------*/
+  	.fa_icon_portfolio:before {
+      content: "\f06c";
+      }
+      .fa_icon_testimonials:before {
+        content: "\f086";
+      }
+      .fa_icon_pricing:before {
+      content: "\f09d";
+      }
+      .fa_icon_contact:before {
+      content: "\f098";
+      }
+      .fa_icon_tech:before {
+      content: "\f0ee";
+      }
+      .fa_icon_analytics:before {
+      content: "\f0ad";
+      }
 
   /*------------------------------------*/
 
@@ -414,19 +411,25 @@ form input[type='text']:focus{color:#000}
 /* FIFTH PAGE ----*/
 ------------------------------------*
 
-/*SIGN UP BUTTON ----------------------*/
+/*You're all done BUTTON ----------------------*/
 
   .buttontwo{
-    margin-top: 4.4em;
-
+    clear: both;
   }
-  .red-btn a{
+
+#buttonbutton{
+  padding-top: 25em;
+  border-radius: 4px;
+}  
+.red-btn a{
     color: white;
     text-decoration:none;
     text-align: center;
     display:block; /* important */
+    font-family:Helvetica;
+    font-size:20px;
 
-  }
+}
 
   .red-btn, .first-link{
     -webkit-transition: 0.4s;
@@ -438,13 +441,15 @@ form input[type='text']:focus{color:#000}
 
 
   .red-btn{
-    height: 100px;
-    font: normal normal 700 1em/4em Arial,sans-serif;
-    overflow: hidden;
-    width: 300px;
-    background-color: #117283;
-    font-size: 30px;
-    margin: 0 auto;
+  height: 64px;
+  font: normal normal 700 1em/4em Helvetica,sans-serif;
+  overflow: hidden;
+  width: 300px;
+  background-color: #117283;
+  margin-left: 550px;
+  border-radius: 4px;
+
+
 
   }
 
@@ -456,12 +461,13 @@ form input[type='text']:focus{color:#000}
     text-decoration: none;
   }
 
-  .first-link{
-    margin-top: 0em;   
-  }
 
   .red-btn:hover .first-link{
-    margin-top: -4em;
+    margin-top: -4.2em;
+  }
+
+  .first-link{
+    margin-top: -0.2em;
   }
 
 
