@@ -88,7 +88,7 @@ nav div a{
 .row img:hover {
 	opacity: 0.6;
 	
- 	transition: img all 0.2s ease-in-out;
+ 	transition: all 0.2s ease-in-out;
  	img
 }
 
@@ -122,28 +122,42 @@ nav div a{
                color:rgba(255,255,255,.85);
                font-size:26px;}
 
-#text {
-	font-size: 1.7em;
+#about {
+	font-size: 2.6em;
 	text-align: center;
 	font-family: 'Varela Round', sans-serif;
-	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 0;
+
+}
+
+#text {
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'Varela Round', sans-serif;
 	z-index: 1000;
 	background-color: rgba(255,255,255,0.9);
 }
 
 .middle {
 	color: rgb(27,28,22);
-	max-width: 60%;
+	max-width: 65%;
 	text-align: center;
 	margin: 0 auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	line-height: 1.5em;
 /*	text-shadow: 2px 2px 5px rgba(253, 152, 3, 0.4);
 */
 
 }
 
 /*-- FOURTH SECTION --------------------------------*/
+#fourth {
+	border-top: 10px solid;
+	border-color:#373737;
+}
+
 #pricing-table {
 	margin: 100px auto;
 	text-align: center;
