@@ -2,19 +2,20 @@
 
 body{
 	background-image: url("../images/polkadot.png");
-	background-color: #373737;
+	background-color: rgba(38,38,38,1);
 }
 
 #wrapper { 
 	width:100%;
  	margin:9.438em auto; 
  	text-align:center; 
+ 	margin-top: 6em;
  }
 
  #social {
  	margin: 0 auto;
- 	padding-left: 34.688em;
- 	padding-top: 1.250em;
+ 	padding-left: 35.688em;
+ 	padding-top: 2.5em;
  }
 
 div.icons { 
@@ -35,17 +36,15 @@ div .icons img{
 	text-align: center;
 }
 
-div .icons a {
-	cursor: crosshair;
-}
 
 
 
 #comingsoon{
-	font-size: 1.2em;
+	font-size: 1.3em;
 	color: white;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	line-height: 1.6em;
+	font-weight: 1000;
 
 }
 
@@ -56,7 +55,7 @@ div .icons a {
 #portfoliolink {
 	color: #e31956;
 	text-decoration: none;
-	cursor: crosshair;
+3
 }
 img.a {
 	position: absolute;
