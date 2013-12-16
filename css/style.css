@@ -1,0 +1,72 @@
+
+
+body{
+	background-image: url("../images/polkadot.png");
+	background-color: #373737;
+}
+
+#wrapper { 
+	width:100%;
+ 	margin:9.438em auto; 
+ 	text-align:center; 
+ }
+
+ #social {
+ 	margin: 0 auto;
+ 	padding-left: 34.688em;
+ 	padding-top: 1.250em;
+ }
+
+div.icons { 
+	height:60px; 
+	position:relative; 
+	width:10%; 
+	float:left; 
+	
+} 
+
+#logo {
+	position: relative;
+
+	}
+
+div .icons img{
+	max-width: 45%;
+	text-align: center;
+}
+
+div .icons a {
+	cursor: crosshair;
+}
+
+
+
+#comingsoon{
+	font-size: 1.2em;
+	color: white;
+	font-family: 'Droid Sans', sans-serif;
+	line-height: 1.6em;
+
+}
+
+#name {
+	color: #e31956;
+}
+
+#portfoliolink {
+	color: #e31956;
+	text-decoration: none;
+	cursor: crosshair;
+}
+img.a {
+	position: absolute;
+	left: 0;
+	top: 0;
+    z-index: 10;
+	}
+ 
+img.b {
+	position: absolute;
+	left: 0;
+	top: 0;
+	}

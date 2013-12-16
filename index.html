@@ -2,16 +2,74 @@
 
 <html>
 
-<head><title>Hello World.</title></head>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	
+
+	<title>The Me of Karan</title>
+
+<script type='text/javascript'>
+$(document).ready(function(){
+ 
+$("img.a").hover(
+function() {
+$(this).stop().animate({"opacity": "0"}, "fast");
+},
+function() {
+$(this).stop().animate({"opacity": "1"}, "fast");
+});
+ 
+});
+</script>
 
 
 <body>
-<h1>Hello World</h1>
+	<div id="wrapper">
+		
+			<div id="logo">
+				<img src="images/logo.png" >
+			</div>
+			
+			<div id="comingsoon">
+				<p> <br/> You've reached the portfolio of <span id="name">Karan Patel. </span> <br/> Eight weeks ago, I couldn't write a single line of code.<br/> Now, I'm building my new portfolio from scratch.<br/> Here's a link to my
+				<a id="portfoliolink" href="www.patelkaran.com">temporary portfolio.</a> </p>
+			</div>
 
-<p> My name is Karan Patel. </p>
-<p>Born in Nairobi, Kenya, raised in Toronto, Karan's diverse upbringing has employed him an unique perspective on life, with the exceptional ability to understand people. </p>
-<p>He constantly pushes the boundaries of his knowledge and skills with the goal of eventually being able to apply himself towards improving the quality of human interactions. </p>
+			<div id="social">
 
-<img src="https://dl.dropboxusercontent.com/u/25195513/582623_10151563217160389_502160388_23894187_1984973384_n.jpg">
 
+				<div class="icons" id="mail">
+					<a href="mailto:kp08sk@gmail.com"><img src="images/icons/mail.png" class="a"></a>
+					<a href="mailto:kp08sk@gmail.com"><img src="images/icons/mailpink.png" class="b"></a>	
+				</div>
+
+				<div class="icons" id="linkedin">
+					<a target="_blank" href="http://www.linkedin.com/in/patelkaran"><img src="images/icons/linkedin.png" class="a"></a>
+					<a target="_blank" href="http://www.linkedin.com/in/patelkaran"><img src="images/icons/linkedinpink.png" class="b"></a>
+				</div>
+
+				<div class="icons" id="twitter">
+					<a target="_blank" href="https://twitter.com/karaniod"><img src="images/icons/twitter.png" class="a"></a>
+					<a target="_blank" href="https://twitter.com/karaniod"><img src="images/icons/twitterpink.png" class="b"></a>	
+				</div>
+
+				<div class="icons" id="github">
+				<a target="_blank" href="https://github.com/kkaran"><img src="images/icons/github.png" class="a"></a>	
+				<a target="_blank" href="https://github.com/kkaran"><img src="images/icons/githubpink.png" class="b"></a>	
+				</div>
+
+			</div>
+
+		
+
+			
+
+
+
+
+
+	</div>
 </html>
