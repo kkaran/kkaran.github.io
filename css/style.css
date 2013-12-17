@@ -3,7 +3,7 @@
 body{
 	background-image: url("../images/polkadot.png");
 	background-color: rgba(38,38,38,1);
-}
+	
 
 #wrapper { 
  	margin:0 auto; 
@@ -33,7 +33,6 @@ div.icons {
 	}
 
 div.icons img{
-	/*max-width: 45%;*/
 	text-align: center;
 	height:40px;
 }
