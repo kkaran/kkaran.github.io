@@ -10,6 +10,39 @@ body{
  	text-align:center; 
 }
 
+/*-Logo -------------------------------------*/ 
+
+#logo {
+	position: relative;
+	padding-top:80px;
+	}
+
+
+/*-Pargraph - Coming soon -------------------*/ 
+
+#comingsoon{
+	font-size: 1.3em;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1.6em;
+}
+
+#name {
+	/*color: #ef4a53;*/
+	/*color: #019875;*/
+	color: #e31956;
+}
+
+#portfoliolink {
+	/*color: #ef4a53;*/
+	/*color: #019875;*/
+	color: #e31956;
+	text-decoration: none;
+}
+
+
+/*-Social Media Icons ----------------------*/ 
+
 #social {
  	width:40%;
  	height:50px;
@@ -24,36 +57,12 @@ div.icons {
 	padding-right:40px; 
 	position:relative; 
 	display:inline-block;
-
 } 
-
-#logo {
-	position: relative;
-	padding-top:80px;
-	}
 
 div.icons img{
 	text-align: center;
 	height:40px;
 	margin-left: 20px;
-}
-
-#comingsoon{
-	font-size: 1.3em;
-	color: white;
-	font-family: 'Josefin Sans', sans-serif;
-	line-height: 1.6em;
-}
-
-#name {
-	/*color: #ef4a53;*/
-	color: #019875;
-}
-
-#portfoliolink {
-	/*color: #ef4a53;*/
-	color: #019875;
-	text-decoration: none;
 }
 
 img.a {
@@ -68,3 +77,39 @@ img.b {
 	left: 0;
 	top: 0;
 	}
+
+
+/*-Media Queries  ----------------------*/ 
+
+@media screen and (max-width: 350px) {
+
+	div #logo img {max-width: 250px;}
+}
+
+
+@media screen and (max-width: 1080px) {
+
+#social {
+ 	width:80%;
+ 	height:100px;
+ 	}
+}
+
+@media screen and (max-width: 540px) {
+
+#social {
+ 	width:100%;
+
+ 	}
+
+.lower {
+	margin-top: 50px;
+}
+
+ div.icons img{
+	text-align: center;
+	height:40px;
+	margin-left: 20px;
+
+}
+}
