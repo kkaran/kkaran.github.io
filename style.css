@@ -46,11 +46,13 @@ div.icons img{
 }
 
 #name {
-	color: #ef4a53;
+	/*color: #ef4a53;*/
+	color: #019875;
 }
 
 #portfoliolink {
-	color: #ef4a53;
+	/*color: #ef4a53;*/
+	color: #019875;
 	text-decoration: none;
 }
 
