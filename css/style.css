@@ -6,46 +6,43 @@ body{
 }
 
 #wrapper { 
-	width:100%;
- 	margin:9.438em auto; 
+ 	margin:0 auto; 
  	text-align:center; 
- 	margin-top: 6em;
  }
 
  #social {
- 	margin: 0 auto;
- 	padding-left: 35.688em;
- 	padding-top: 2.5em;
- }
+ 	width:30%;
+ 	height:50px;
+ 	background-color: none;
+ 	display:inline-block;
+ 	padding-top:30px;
+ 	}
 
 div.icons { 
-	height:60px; 
+	margin-left:20px;
+	padding-left:40px;
+	padding-right:40px; 
 	position:relative; 
-	width:10%; 
-	float:left; 
-	
+	display:inline-block;
+
 } 
 
 #logo {
 	position: relative;
-
+	padding-top:30px;
 	}
 
-div .icons img{
-	max-width: 45%;
+div.icons img{
+	/*max-width: 45%;*/
 	text-align: center;
+	height:40px;
 }
-
-
-
 
 #comingsoon{
 	font-size: 1.3em;
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
 	line-height: 1.6em;
-	font-weight: 1000;
-
 }
 
 #name {
@@ -55,8 +52,8 @@ div .icons img{
 #portfoliolink {
 	color: #e31956;
 	text-decoration: none;
-3
 }
+
 img.a {
 	position: absolute;
 	left: 0;
