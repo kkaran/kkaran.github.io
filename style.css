@@ -93,6 +93,7 @@ img.b {
  	width:80%;
  	height:100px;
  	}
+
 }
 
 @media screen and (max-width: 540px) {
@@ -106,10 +107,11 @@ img.b {
 	margin-top: 50px;
 }
 
- div.icons img{
+div.icons img{
 	text-align: center;
 	height:40px;
 	margin-left: 20px;
 
 }
+
 }
