@@ -21,8 +21,8 @@ body{
 /*-Pargraph - Coming soon -------------------*/ 
 
 #comingsoon{
-	font-size: 1.3em;
 	color: white;
+	font-size: 1.3em;
 	font-family: 'Josefin Sans', sans-serif;
 	line-height: 1.6em;
 }
@@ -44,25 +44,26 @@ body{
 /*-Social Media Icons ----------------------*/ 
 
 #social {
- 	width:40%;
- 	height:50px;
- 	background-color: none;
+	background-color: none;
  	display:inline-block;
+ 	height:50px;
  	padding-top:30px;
+ 	width:40%;
+ 	
  	}
 
 div.icons { 
+	display:inline-block;
 	margin-left:20px;
 	padding-left:40px;
 	padding-right:40px; 
 	position:relative; 
-	display:inline-block;
 } 
 
 div.icons img{
-	text-align: center;
 	height:40px;
 	margin-left: 20px;
+	text-align: center;
 }
 
 img.a {
