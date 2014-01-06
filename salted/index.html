@@ -23,7 +23,7 @@
     				if ($('body').scrollTop() > 0) {
         				if ($nav.data('size') == 'big') {
             				$nav.data('size','small').stop().animate({
-                				height:'80px'
+                				height:'100px'
            					}, 475);
        					}
    					} else {
@@ -48,7 +48,7 @@
 
 			</script>
 
-		
+     
 	</head>
 
 
@@ -61,15 +61,15 @@
 
  				<nav>
 
- 					<div><a href ="#home_id" onclick="return false;" onmousedown="scrollProcess('home_id');"> Home </a></div>
+ 					<div><a href ="#home_id" onclick="return false;" onmousedown="scrollProcess('home_id');" class="active" > Home </a></div>
 					
-					<div><a href="#shop_id" onclick="return false;" onmousedown="scrollProcess('shop_id');"> Shop </a></div>
+					<div><a href="#shop_id" onclick="return false;" onmousedown="scrollProcess('shop_id');" class="active"> Shop </a></div>
 					
 					<div class="logo"><img src="images/logo.png" ></div>
 					
-					<div><a href ="#faq_id" <a href="#" onclick="return false;" onmousedown="scrollProcess('faq_id');"> FAQ </a></div>
+					<div><a href ="#faq_id" <a href="#" onclick="return false;" onmousedown="scrollProcess('faq_id');" class="active"> FAQ </a></div>
 					
-					<div><a href ="#contact_id" <a href="#" onclick="return false;" onmousedown="scrollProcess('contact_id');"> Contact </a></div>
+					<div><a href ="#contact_id" <a href="#" onclick="return false;" onmousedown="scrollProcess('contact_id');" class="active"> Contact </a></div>
 
 				</nav>
 
