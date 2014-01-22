@@ -362,10 +362,7 @@ div #subTitle {
 
 
 
-/**********************************************************/
 /*----------------- THUMBNAILS -----------------------*/
-/**********************************************************/
-
 #portfolio {
 	position: relative;
 }
@@ -388,4 +385,62 @@ div #subTitle {
 
 
 
+/*----------------- ABOUT -----------------------*/
+
+/*#about{
+	position: relative;
+	height: 1000px;
+	background-color: red;
+	display: inline;
+}*/
+
+.centered {
+	margin: 0 auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	position: absolute;
+	padding-left: 1em;
+	padding-top: 1em;
+
+
+}
+
+#about #Left {
+	width: 60%;
+	height: 1000px;
+	background-color: blue;
+	display: inline-block;
+
+}
+
+#Experience {
+
+	width: 49%;
+	background-color: red;
+	height: 100%;
+	display: inline-block;
+}
+
+#Skills {
+	width: 50%;
+	background-color: black;
+	height: 100%;
+	display: inline-block;
+}
+
+#about #Right {
+	width: 39%;
+	height: 1000px;
+	background-color: pink;
+	display: inline-block;
+
+}
+
+#whoAmI {
+	width: 80%;
+	position: absolute;
+	top: 1em; left: 0; bottom: 0; right: 0;
+	margin: 0 auto;
+	height: 80%;
+	background-color: green;
+}
 
