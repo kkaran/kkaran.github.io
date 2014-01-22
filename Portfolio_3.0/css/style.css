@@ -93,9 +93,7 @@ h4 {
 }
 
 
-/**********************************************************/
 /*------------------- NAVIGATION  -----------------------*/
-/**********************************************************/
 
 
 ul#navigation {
@@ -230,10 +228,8 @@ ul#navigation li a:hover {
 	filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 
-
-/**********************************************************/
 /*----------------- NAVIGATION END -----------------------*/
-/**********************************************************/
+
 
 
 #splash {
@@ -264,7 +260,7 @@ div #title {
 div #subTitle {
 	font-size: .6em;
 	font-family: 'Lato';
-	font-weight: 100;
+	font-weight: 300;
 	color: #e31956;
 	font-style: italic;
 	text-transform: capitalize;
@@ -378,19 +374,18 @@ div #subTitle {
 	position: relative;
 	top: 0;
 	margin: 0 auto;
-	padding-top: 101vh;
+	padding-top: 100vh;
+
 
 }
 
 .thumbnail img {
-	max-width: 20%;
+	max-width: 25%;
 	display: inline;
 	float: left;
 	margin: 0 auto;
-
-
 }
 
-.
+
 
 
