@@ -266,6 +266,15 @@ div #subTitle {
 	text-transform: capitalize;
 }
 
+div #subText {
+	font-size: 0.4em;
+	font-family: 'Lato';
+	font-weight: 100;
+	font-style: italic;
+	color: white;
+	padding-top: 1em;
+}
+
 /**********************************************************/
 /*----------------- CYCLE WORDS (Thinking about it)-------*/
 /**********************************************************/
