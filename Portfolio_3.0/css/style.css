@@ -391,21 +391,6 @@ div #subText {
 	
 }
 
-/*------------ MOUSE OVER SHRINKS ---------------*/
-.Shrink img {
-	overflow: hidden;
-	-webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
-
-.Shrink img:hover {
-	overflow: hidden;
-	max-width: 24.6%;
-}
-
 
 
 /*----------------- ABOUT -----------------------*/
@@ -417,7 +402,7 @@ div #subText {
 	display: inline;
 }*/
 
-.centered {
+.textBody {
 	margin: 0 auto;
 	top: 0; left: 0; bottom: 0; right: 0;
 	position: relative;
@@ -425,7 +410,7 @@ div #subText {
 
 #about #Left {
 	width: 60%;
-	height: 900px;
+	height: 800px;
 	background-color: blue;
 	display: inline-block;
 	position: relative;
@@ -451,7 +436,7 @@ div #subText {
 
 #about #Right {
 	width: 39%;
-	height: 900px;
+	height: 800px;
 	background-color: pink;
 	position: absolute;
 	display: inline-block;
