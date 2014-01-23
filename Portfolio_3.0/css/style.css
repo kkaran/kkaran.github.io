@@ -437,14 +437,26 @@ div #subText {
 	border-right: solid;*/
 }
 
+.Date {
+	font-family: 'Lato';
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+.Position {
+	font-family: 'Lato';
+	font-size: 1em;
+	font-weight: 300;
+}
+
 #Skills {
 	width: 48%;
 /*	background-color: orange;
-*//*	height: 800px;
-*/	display: inline-block;
+*/	/*height: 800px;*/
+	display: inline-block;
 	position: absolute;
 	padding-left: 4em;
-	padding-top: 8.6em;
+	padding-top: 9.761em;
 }
 
 #about #Right {
@@ -470,10 +482,19 @@ div #subText {
 	padding-top: 3em;
 	color: white;
 }
+#whoAmIbody {
+	font-family: 'Lato';
+	font-weight: 100;
+	font-size: 1.1em;	
+}
+
+#makeItPink {
+	color: #e31956;
+}
 
 .titleA {
 	font-family: 'Lato';
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 1.8em;
 	text-transform: uppercase;
 	color: #e31956;
@@ -485,9 +506,20 @@ div #subText {
 	font-size: 1.2em;
 
 }
+.titleC {
+	font-family: 'Lato';
+	font-weight: 500;
+	font-size: 1.8em;
 
+}
 .line {
 	color: rgba(60,60,60, 0.5);
 	font-weight: 700;
+	font-family: 'Lato';
+}
+
+.line1 {
+	color: rgba(250,250,250, 0.5);
+	font-weight: 100;
 	font-family: 'Lato';
 }
