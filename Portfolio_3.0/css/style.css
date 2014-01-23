@@ -369,13 +369,13 @@ div #subText {
 /*----------------- THUMBNAILS -----------------------*/
 #portfolio {
 	position: relative;
+	overflow: hidden;
 }
 
 #squares{
 	position: relative;
 	top: 0; left: 0; bottom: 0; right: 0;
 	margin: 0 auto;
-	overflow: hidden;
 	
 }
 
@@ -387,13 +387,12 @@ div #subText {
 	padding-left: 0;
 	padding-right: 0;
 	top: 0; left: 0; bottom: 0; right: 0;
-	overflow: hidden;
 	float: left;
 	
 }
 
-
-#LinkedIn img {
+/*------------ MOUSE OVER SHRINKS ---------------*/
+.Shrink img {
 	overflow: hidden;
 	-webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -402,10 +401,11 @@ div #subText {
           transition: all 1s ease;
 }
 
-#LinkedIn img:hover {
+.Shrink img:hover {
 	overflow: hidden;
 	max-width: 24.6%;
 }
+
 
 
 /*----------------- ABOUT -----------------------*/
