@@ -2,13 +2,13 @@
 	$(document).ready(function(){
 	 $(window).scroll(function(){
 	  // get the height of #cover_home
-	  var h = $(".cover_home").outerHeight();
+	  var h = $("#splash").outerHeight();
 	  var y = $(window).scrollTop();
 	  if( y > (h*0.35) ){
 	   // if we are show keyboardTips
-		   $(".home_scrollbutton").fadeOut(300);
+		   $(".scrollbutton").fadeOut(400);
 	  } else {
-		   $(".home_scrollbutton").fadeIn(300);
+		   $(".scrollbutton").fadeIn(400);
 	  }
 	 });
 	})	
@@ -55,38 +55,5 @@
 		});
 	});
 	
-	$(document).ready(function() {
-		$(".scroll").click(function() {
-			$(".scroll").addClass("active");
-		});
-	});
 	
-	$(document).ready(function() {
-		if (window.location.href.match("http://www.timbrack.de/#arbeiten")) {
-			$(".scroll").addClass("active");
-		} 
-		else {
-		}
-	});
-
-	<!-- SMOOTH SCROLLING -->
-	$(document).ready(function() {
-		$(".scroll").click(function(event){		
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
-		});
-	});
 	
-	<!-- SMOOTH SCROLLING LIVE -->
-	 $(document).ready(function() {
-		$(".scroll").live('click', function(event) {		
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
-		});
-	});
-		
-	  $(document).ready(function() {
-		$(".page_item_has_children").mouseover(function() {
-			$(this).children(".children").fadeIn();
-		})
-	  });

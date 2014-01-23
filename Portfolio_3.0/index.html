@@ -21,13 +21,16 @@
 			<script type="text/javascript" src="js/jquery.js"></script>
 			<script type="text/javascript" src="js/various_functions.js"></script>
 
+			
+
 		</head>
+
 
 
 
 <body>
 
-  	<!-- NAVIGATION ---------------------------------------------->
+  	<!-- NAVIGATION -->
     
 	    <nav>
 	        
@@ -39,9 +42,9 @@
 		        	            
 		       	 <li>Hello</li>
 
-		         	<li><a href="#"> Home  </a></li>
-		            <li><a href="#"> Work  </a></li>
-		            <li><a href="#"> About </a></li>
+		         	<li><a href="#top"> Home  </a></li>
+		            <li><a href="#work"> Work  </a></li>
+		            <li><a href="#about"> About </a></li>
 
 		        	<ul>
 		                 
@@ -67,13 +70,14 @@
 		        
 	    </nav> 
 
-    <!-- NAVIGATION END ------------------------------------------------>
+    <!-- End of NAVIGATION -->
 
 
 
-	<!-- SPLASH PAGE ------------------------------------------------>
+	<!-- SPLASH PAGE -->
     
-    	<div id="splash">
+    	<div id="splash" name="top">
+
 	 	
 		 	<div id="title">
 		 		<p></p> Karan Patel
@@ -86,12 +90,17 @@
 			 	
 			 	<div id="subText"> Chicago. </div>
 			 
-			 </div>
+			 </div>	
+
+			 <a href="#work"><img class="scrollbutton" id="moveDown" src="Images/icon_scrolldown1.png"></a>
+
 
 		 </div>
 	
 
-		<!-- Cycle words ---------------------------------------------------
+	<!-- End of SPLASH PAGE -->
+
+		<!-- Cycle words 
 			<h2 class="rw-sentence">
 								<div class="rw-words rw-words-1">
 									<span>UI & UX Designer</span>
@@ -106,7 +115,7 @@
 	<!-- Thumbnails ------------------------------------------------>
 
 	
-	<div id="portfolio">
+	<div id="portfolio" name="work">
 		
 		<div id="squares">
 
@@ -172,7 +181,7 @@
 
  	<!-- About ME ------------------------------------------------>
 
-<div id="about">
+<div id="about" name="about">
 
 	<div id="Left">
 	
@@ -185,6 +194,7 @@
 				<br/>
 
 				<p class="titleB">Experiences<br/><span class="line">______________</span></p>
+
 				<p>
 					<span class="Date"> October 2013 - December 2013 </span><br/>
 					<span class="Position">Startup Institute / Product and Design Student <br/>
@@ -285,7 +295,8 @@
 				<br/>
 
 			<span id="whoAmIbody">	
-			<br/>My name is Karan and I'm a <span id="makeItPink">UI & UX Designer</span> living in Chicago. Industrial Design is my background. However,<br/> I currently help design and develop platforms within ecosystems that address visuals and interactions to help in ideal user experiences. 
+			<br/>My name is Karan and I'm a <span id="makeItPink">UI & UX Designer</span> living in Chicago. Industrial Design is my background. However,<br/>
+			I currently help design and develop platforms within ecosystems that address visuals and interactions to help in ideal user experiences.
 			<br/><br/>
 			Born in Nairobi, Kenya and raised in Toronto, I've had a diverse upbringing and it has employed me a unique perspective on life. I constantly push the boundaries of my knowledge and skills with the goal of eventually being able to apply myself towards improving the quality of human lives. 
 			<br/><br/>
@@ -296,12 +307,40 @@
 			<div class="line-separatorB"></div>	
 			<br/>
 			<span id='copyright'>&copy Karan Patel 2014	</span>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<a href="#top" id="BackToTop">Back to Top <a>
 		</div>
 
 	</div>
 
 </div>
 
+
+<!-- SMOOTH SCROLL -->
+
+				<script>
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				});
+				</script>
+			<!-- End of SMOOTH SCROLL -->
 
 
 </body>

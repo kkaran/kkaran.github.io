@@ -1,20 +1,4 @@
-/*---- Author Notes: --------------------------------------
-
-Colour values:
-#e31956    - pinkish red
-#262626    - greyish black
-#001620    - dark blue 
-#111111    - darkish grey
-
-Font Family: Lato:  src (http://www.google.com/fonts#UsePlace:use/Collection:Lato)
-
-Navigation Menu Authored by: Tim Brack (http://www.timbrack.de/)
-Background image: Jules Bassoleil (http://www.julesbassoleil.fr/)
-Cycle words: Chris Coyier (http://css-tricks.com/snippets/jquery/cycle-through-a-list/)
-
-
----------------------------------------------------------*/
-
+/*--- Author Notes at the bottom ----*/
 
 body, 
 html {
@@ -185,7 +169,7 @@ ul#navigation li a:hover {
 }
 
 .show_navigation img {
-	width: 200%;
+	width: 150%;
 	position:absolute;
 	left:0px;
 	bottom:0px;
@@ -197,17 +181,17 @@ ul#navigation li a:hover {
 }
 
 .show_navigation img:hover {
-	opacity:0.40;
+	opacity:0.50;
 	filter:alpha(opacity=40); /* For IE8 and earlier */ 
 }
 
 .close_navigation {
 	position:relative;
-	width:29px; 
-	height:29px; 
+	width:40px; 
+	height:40px; 
 	float:right; 
 	margin-right:62px; 
-	top:-421px;
+	top:-415px;
 }
 
 .close_navigation img {
@@ -268,6 +252,18 @@ div #subText {
 	font-style: italic;
 	color: white;
 	padding-top: 1em;
+}
+
+#moveDown {
+	width: 3%;
+	position: relative;
+	top: 85%;
+	left: 92.9%;
+}
+
+#moveDown:hover {
+	opacity: 0.4;
+
 }
 
 /**********************************************************/
@@ -470,8 +466,10 @@ div #subText {
 #about #Right {
 	width: 40%;
 	height: 800px;
-/*	background-color: #001620;
-*/	background-image: url('../Images/Pattern/pattern_about1.png');
+/*	background-color: #001620;*/	
+	background-image: url('../Images/Pattern/pattern_about10.png');
+	background-size: 100%;
+
 	position: absolute;
 	display: inline-block;
 	float: left;
@@ -484,9 +482,9 @@ div #subText {
 	position: absolute;
 	top: 1em; left: -3em; bottom: 0; right: 0;
 	margin: 0 auto;
-/*	height: 800px;
-*//*	background-color: green;
-*/	position: absolute;
+/*	height: 800px;*/ 
+/*  background-color: rgba();*/
+	position: absolute;
 	padding-top: 3em;
 	color: white;
 }
@@ -555,5 +553,38 @@ div #subText {
 #copyright {
 	font-family: 'Lato';
 	font-weight: 100;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
 
 }
+
+#BackToTop {
+	text-decoration: none;
+	font-family: 'Lato';
+	font-weight: 500;
+	font-size: 1em;
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+#BackToTop:hover {
+	color: #e31956;
+}
+
+/*---- Author Notes: --------------------------------------
+
+Colour values:
+#e31956    - pinkish red
+#262626    - greyish black
+#001620    - dark blue 
+#111111    - darkish grey
+
+Font Family: Lato:  src (http://www.google.com/fonts#UsePlace:use/Collection:Lato)
+
+Navigation Menu Authored by: Tim Brack (http://www.timbrack.de/)
+Background image: Jules Bassoleil (http://www.julesbassoleil.fr/)
+Cycle words: Chris Coyier (http://css-tricks.com/snippets/jquery/cycle-through-a-list/)
+
+Busted out this website in a few days thanks to Jasper Reyes and Adam Brown.
+
+---------------------------------------------------------*/
