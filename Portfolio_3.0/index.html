@@ -30,12 +30,18 @@
 
 <body>
 
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+
   	<!-- NAVIGATION -->
     
 	    <nav>
 	        
 		    <div class="show_navigation">
-		        <img src="Images/icon_navi_toggletest.png" >
+		        <img src="Images/icon_navi_toggle.png" >
 		    </div>
 		        
 		    <ul id="navigation">
@@ -78,7 +84,7 @@
     
     	<div id="splash" name="top">
 
-	 	
+	 		
 		 	<div id="title">
 		 		<p></p> Karan Patel
 		 		
@@ -92,7 +98,7 @@
 			 
 			 </div>	
 
-			 <a href="#work"><img class="scrollbutton" id="moveDown" src="Images/icon_scrolldown3.png"></a>
+			 <a href="#work"><img class="scrollbutton" id="moveDown" src="Images/icon_scrolldown.png"></a>
 
 
 		 </div>
@@ -323,6 +329,19 @@
 
 
 
+<!-- PRELOADER -->
+	
+	<script type="text/javascript">
+		//<![CDATA[
+			$(window).load(function() { // makes sure the whole site is loaded
+				$('#status').fadeOut(); // will first fade out the loading animation
+				$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+				$('body').delay(350).css({'overflow':'visible'});
+			})
+		//]]>
+	</script> 
+<!-- End of PRELOADER
+
 <!-- SMOOTH SCROLL -->
 
 				<script>
@@ -342,6 +361,7 @@
 				});
 				</script>
 <!-- End of SMOOTH SCROLL -->
+
 
 
 
