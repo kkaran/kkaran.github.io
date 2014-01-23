@@ -4,11 +4,11 @@
 	  // get the height of #cover_home
 	  var h = $("#splash").outerHeight();
 	  var y = $(window).scrollTop();
-	  if( y > (h*0.35) ){
+	  if( y > (h*0.25) ){
 	   // if we are show keyboardTips
-		   $(".scrollbutton").fadeOut(400);
+		   $(".scrollbutton").fadeOut(200);
 	  } else {
-		   $(".scrollbutton").fadeIn(400);
+		   $(".scrollbutton").fadeIn(200);
 	  }
 	 });
 	})	
