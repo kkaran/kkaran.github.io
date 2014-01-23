@@ -410,45 +410,84 @@ div #subText {
 
 #about #Left {
 	width: 60%;
-	height: 800px;
-	background-color: blue;
+/*	height: 800px;
+*/	/*background-color: blue;*/
 	display: inline-block;
 	position: relative;
+	float: left;
 
 }
 
+#about #Left ul li {
+	list-style: none;
+}
+
+
 #Experience {
 
-	width: 48%;
-	background-color: red;
-	height: 800px;
-	display: inline-block;
+	width: 45%;
+/*	background-color: red;
+*//*	height: 800px;
+*/	display: inline-block;
 	position: relative;
+	padding-left: 4em;
+	padding-top: 4em;
+/*	border-right-width: 10px;
+	border-right-color: blue;
+	border-right: solid;*/
 }
 
 #Skills {
 	width: 48%;
-	background-color: orange;
-	height: 800px;
-	display: inline-block;
+/*	background-color: orange;
+*//*	height: 800px;
+*/	display: inline-block;
 	position: absolute;
+	padding-left: 4em;
+	padding-top: 8.6em;
 }
 
 #about #Right {
-	width: 39%;
+	width: 40%;
 	height: 800px;
-	background-color: pink;
+	background-color: #001620;
+	/*background-image: url('../Images/Background.jpg');*/
 	position: absolute;
 	display: inline-block;
+	float: left;
+
 }
+
 
 #whoAmI {
-	width: 80%;
+	width: 72%;
 	position: absolute;
-	top: 1em; left: 0; bottom: 0; right: 0;
+	top: 1em; left: -3em; bottom: 0; right: 0;
 	margin: 0 auto;
-	height: 80%;
-	background-color: green;
-	position: absolute;
+/*	height: 800px;
+*//*	background-color: green;
+*/	position: absolute;
+	padding-top: 3em;
+	color: white;
 }
 
+.titleA {
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	color: #e31956;
+}
+
+.titleB {
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 1.2em;
+
+}
+
+.line {
+	color: rgba(60,60,60, 0.5);
+	font-weight: 700;
+	font-family: 'Lato';
+}
