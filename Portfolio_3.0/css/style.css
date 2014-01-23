@@ -471,7 +471,7 @@ div #subText {
 	width: 40%;
 	height: 800px;
 /*	background-color: #001620;
-*/	background-image: url('../Images/Pattern/pattern_about5.png');
+*/	background-image: url('../Images/Pattern/pattern_about2.png');
 	position: absolute;
 	display: inline-block;
 	float: left;
@@ -499,8 +499,10 @@ div #subText {
 
 #makeItPink {
 	color: #e31956;
-	font-family: 'Lato'
-}
+	font-family: 'Lato';
+	font-weight: 300;
+/*	font-style: italic;
+*/}
 
 .titleA {
 	font-family: 'Lato';
@@ -553,5 +555,5 @@ div #subText {
 #copyright {
 	font-family: 'Lato';
 	font-weight: 100;
-	
+
 }
