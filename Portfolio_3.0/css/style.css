@@ -251,9 +251,10 @@ a .navText:active {
 
 /*----------------- SECTION 1 ----------------------------*/
 #splash {
-	background-image: url("../Images/Background.jpg");
+	background-image: url("../Images/Background1.jpg");
 	height: 100vh;
 	width: 100%;
+	background-size: 100% 800px;
 	margin: 0 auto;
  	position: relative;
 
@@ -761,6 +762,10 @@ Font Family: Lato:  src (http://www.google.com/fonts#UsePlace:use/Collection:Lat
 Navigation Menu Authored by: Tim Brack (http://www.timbrack.de/)
 Background image: Jules Bassoleil (http://www.julesbassoleil.fr/)
 Cycle words: Chris Coyier (http://css-tricks.com/snippets/jquery/cycle-through-a-list/)
+
+Photo Credit: <a href="http://www.flickr.com/photos/41864721@N00/3906312352/">ecstaticist</a> via 
+<a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">
+cc</a>
 
 Busted out this website in a few days thanks to Jasper Reyes and Adam Brown.
 
