@@ -72,10 +72,6 @@ h4 {
 
 /*------------------- PRELOADER  -----------------------*/
 
-@charset "utf-8";
-body {
-	overflow: hidden;
-}
 
 /* Preloader */
 #preloader {
@@ -645,25 +641,56 @@ div #subText {
 /*----------------- PORTFOLIO WORK ----------------------------*/
 /***************************************************************/
 .image {
-	max-width: 50%;
+	max-width: 55%;
+	position: relative;
 	display: block;
 	margin: auto;
-  	position: relative;
   	top: 0; left: 0; bottom: 0; right: 0;
   	padding-top: 5em;
 }
 
 /*----------------- LINKEDIN ----------------------------*/
 
-#LinkedIn img {
+#LinkedIn {
 	margin: auto;
   	position: absolute;
   	top: 0; left: 0; bottom: 0; right: 0;
+  	/*background-color: #e31956;
+  	height: 1000px;*/
+
 }
 
 
+/*----------------- MIGO ----------------------------*/
+
+.migo {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	max-width: 55%;
+	
+}
 
 
+/*----------------- ONTARIO ----------------------------*/
+
+/*----------------- NOKIA ----------------------------*/
+
+/*----------------- HADRIAN ----------------------------*/
+
+.hadrian {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	max-width: 55%;
+
+}
+
+#hadrianTop {
+	padding-top: 5em;
+}
 
 
 
