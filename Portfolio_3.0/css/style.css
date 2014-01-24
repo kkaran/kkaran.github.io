@@ -251,10 +251,12 @@ a .navText:active {
 
 /*----------------- SECTION 1 ----------------------------*/
 #splash {
-	background-image: url("../Images/Background.jpg");
+/*	background-image: url("../Images/Background.jpg");*/
+	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");
+/*	background-image: url('../Images/Pattern/pattern_about2.png');*/
 	height: 100vh;
-	width: 100%;
-	background-size: 100% 800px;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	margin: 0 auto;
  	position: relative;
 
@@ -279,7 +281,7 @@ div #title {
 div #subTitle {
 	font-size: .6em;
 	font-family: 'Lato';
-	font-weight: 300;
+	font-weight: 700;
 	color: #e31956;
 	font-style: italic;
 	text-transform: capitalize;
@@ -289,7 +291,6 @@ div #subText {
 	font-size: 0.4em;
 	font-family: 'Lato';
 	font-weight: 100;
-	font-style: italic;
 	color: white;
 	padding-top: 1em;
 }
@@ -310,10 +311,11 @@ div #subText {
 
 
 #poetic {
-	background-image: url("../Images/Background1.jpg");
-	height: 100vh;
+/*	background-image: url("../Images/Background4.jpg");*/
+	height: 300px;
 	width: 100%;
-	background-size: 100% 800px;
+/*	background-size: 100% 700px;*/
+	background-color: #111;
 	margin: 0 auto;
  	position: relative;
 
@@ -323,12 +325,13 @@ div #subText {
 	top: 0; left: 0; bottom: 0; right: 0;
 	margin: 0 auto;
 	position: absolute;
-	top: 50%;
 	font-family: 'Lato';
 	font-size: 2em;
 	font-weight: 100;
+	font-style: italic;
 	color: white;
 	text-align: center;
+	padding-top: 2.5em;
 }
 /*----------------- SECTION 1 END ----------------------------*/
 
@@ -534,24 +537,35 @@ div #subText {
 #about #Right {
 	width: 40%;
 	height: 800px;
-/*	background-color: #001620;*/	
-	background-image: url('../Images/Pattern/pattern_about10.png');
+	background-image: url('../Images/Pattern/pattern_about12.jpg');
 	background-size: 100%;
-
+	background-repeat: no-repeat;
 	position: absolute;
 	display: inline-block;
 	float: left;
 
 }
+/* ---- Use in the event "About Me" picture changes 
+- adds a background w/ opacity ------------
+
+#spacing {
+	
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 75%;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+----------------------------------------------*/
 
 
 #whoAmI {
-	width: 72%;
+	width: 70%;
 	position: absolute;
 	top: 1em; left: -3em; bottom: 0; right: 0;
 	margin: 0 auto;
 /*	height: 800px;*/ 
-/*  background-color: rgba();*/
 	position: absolute;
 	padding-top: 3em;
 	color: white;
@@ -561,6 +575,7 @@ div #subText {
 	font-weight: 100;
 	font-size: 1em;	
 	letter-spacing: 0.04em;
+
 }
 
 #makeItPink {
@@ -623,6 +638,7 @@ div #subText {
 	font-weight: 100;
 	font-size: 0.8em;
 	letter-spacing: 0.1em;
+	padding-top: 1.5em;
 
 }
 
@@ -637,8 +653,8 @@ div #subText {
 
 #developerName {
 	font-family: 'Lato';
-	font-weight: 100;
-	font-size: 0.8em;
+	font-weight: 300;
+	font-size: 0.9em;
 	letter-spacing: 0.1em;
 	color: #e31956;
 
@@ -647,7 +663,7 @@ div #subText {
 #BackToTop {
 	text-decoration: none;
 	font-family: 'Lato';
-	font-weight: 300;
+	font-weight: 200;
 	font-size: 1em;
 	color: white;
 	letter-spacing: 0.1em;
@@ -785,9 +801,11 @@ Navigation Menu Authored by: Tim Brack (http://www.timbrack.de/)
 Background image: Jules Bassoleil (http://www.julesbassoleil.fr/)
 Cycle words: Chris Coyier (http://css-tricks.com/snippets/jquery/cycle-through-a-list/)
 
-Photo Credit: <a href="http://www.flickr.com/photos/41864721@N00/3906312352/">ecstaticist</a> via 
-<a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">
-cc</a>
+Spalsh page Photo Credit: 
+<a href="http://www.flickr.com/photos/24894289@N08/3437374511/">kern.justin</a> 
+via <a href="http://compfight.com">
+Compfight</a> 
+<a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">cc</a>
 
 Busted out this website in a few days thanks to Jasper Reyes and Adam Brown.
 
