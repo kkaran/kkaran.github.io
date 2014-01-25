@@ -265,7 +265,10 @@ a .navText:active {
 	padding-top: 8%;
 	left: 7%;
 	max-width: 100px;
-	position: absolute;
+	position: fixed;
+	/*z-index: 9999;*/
+	/*position: absolute;*/
+
 }
 
 #logoWork img {
@@ -695,10 +698,43 @@ div #subText {
 
 
 
+/* ACCORDING TO MIKE - MAKE A CLASS FOR EVERYTHING I WANT TO HIDE
+AND THEN APPLY IT HERE ON @MEDIA SCREEN - ? TEST IT OUT!
+@media screen and (max-width: 1000px){
+
+#preloader {
+	display: none;
+}
+
+.show_navigation {
+	display: none;
+}
+
+#splash{
+	display: none;
+}
+
+#poetic{
+	display: none;
+} 
+
+#portfolio{
+	display: none;
+} 
+#about{
+	display: none;
+} 
+#Right {
+	display: none;
+}
 
 
 
+body .visually_hidden {
+	background-image: url('http://www.romainbriaux.fr/images/assets/home_bg.jpg');
+}
 
+*/
 
 
 
