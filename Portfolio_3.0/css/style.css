@@ -311,8 +311,7 @@ div #subText {
 
 /*----------------- QUOTE  ----------------------------*/
 #poetic {
-/*	background-image: url("../Images/Background4.jpg");*/
-	height: 300px;
+	height: 200px;
 	width: 100%;
 /*	background-size: 100% 700px;*/
 	background-color: #111;
@@ -326,11 +325,11 @@ div #subText {
 	margin: 0 auto;
 	position: absolute;
 	font-family: 'Lato';
-	font-size: 2em;
-	font-weight: 100;
+	font-size: 1.5em;
+	font-weight: 300;
 	font-style: italic;
-	text-transform: uppercase;
 	letter-spacing: 0.08em;
+	text-transform: uppercase;
 	color: white;
 	text-align: center;
 	padding-top: 3.8em;
