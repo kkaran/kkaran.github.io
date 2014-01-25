@@ -249,12 +249,13 @@ a .navText:active {
 
 /*----------------- SPLASH PAGE ----------------------------*/
 #splash {
-/*	background-image: url("../Images/Background.jpg");*/
+	background-image: url("../Images/Background4.jpg");
+/*	background-image: url('../Images/Pattern/pattern_about2.png');*/
 /*	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");*/
-	background-image: url('../Images/Pattern/pattern_about2.png');
+
 	height: 100vh;
-/*	background-size: 100%;
-	background-repeat: no-repeat;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
 	margin: 0 auto;
  	position: relative;
 
@@ -454,7 +455,7 @@ div #subText {
 #about #Right {
 	width: 40%;
 	height: 800px;
-	background-image: url('../Images/Pattern/pattern_about11.png');
+	background-image: url('../Images/Pattern/pattern_about2.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -462,8 +463,12 @@ div #subText {
 	float: left;
 
 }
-/* ---- Use in the event "About Me" picture changes 
-- adds a background w/ opacity ------------*/
+
+/* ---- Use code below in the event 
+"About Me" picture changes 
+- adds a background w/ opacity 
+& addresses padding on left and right
+------------*/
 
 #spacing {
 	
