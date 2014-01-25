@@ -1,4 +1,4 @@
-	<!-- LOGO SCALING -->
+<!-- LOGO SCALING -->
 	$(document).ready(function(){
 	 $(window).scroll(function(){
 	  // get the height of #cover_home
@@ -55,5 +55,7 @@
 		});
 	});
 	
-	
+
+
+
 	

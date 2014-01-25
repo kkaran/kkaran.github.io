@@ -186,10 +186,10 @@ ul#navigation li a:hover {
 }*/
 
 .show_navigation {
-	width:20px;
-	height:40px;
+	width:25px;
+	height:45px;
 	position:fixed;
-	left: 92.910%;
+	left: 92.80%;
 	top:20%;
 	z-index:9999999;
 	cursor:pointer;
@@ -208,7 +208,7 @@ ul#navigation li a:hover {
 }
 
 .show_navigation img:hover {
-	opacity:0.50;
+	opacity:0.70;
 	filter:alpha(opacity=40); /* For IE8 and earlier */ 
 }
 
@@ -249,7 +249,7 @@ a .navText:active {
 
 /*----------------- SPLASH PAGE ----------------------------*/
 #splash {
-	background-image: url("../Images/Background4.jpg");
+	background-image: url("../Images/Background.jpg");
 /*	background-image: url('../Images/Pattern/pattern_about2.png');*/
 /*	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");*/
 
@@ -259,6 +259,20 @@ a .navText:active {
 	margin: 0 auto;
  	position: relative;
 
+}
+
+#logo img{
+	padding-top: 8%;
+	left: 7%;
+	max-width: 100px;
+	position: absolute;
+}
+
+#logoWork img {
+	padding-top: 9%;
+	left: 5%;
+	width: 7%;
+	position: fixed;
 }
 
 div #title {
@@ -629,9 +643,6 @@ div #subText {
 	color: #e31956;
 }
 
-#BackToHome:visited {
-	text-decoration: none;
-}
 /*----------------- LINKEDIN --------------------------*/
 
 #LinkedIn {
