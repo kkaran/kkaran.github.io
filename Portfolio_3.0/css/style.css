@@ -72,31 +72,29 @@ h4 {
 
 /*------------------- PRELOADER  -----------------------*/
 
-
-/* Preloader */
 #preloader {
 	position: fixed;
 	top:0;
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#111111; /* change if the mask should have another color then white */
-	z-index:99; /* makes sure it stays on top */
+	background-color:#111111; 
+	z-index:99; 
 }
 
 #status {
 	width:200px;
 	height:200px;
 	position:absolute;
-	left:50%; /* centers the loading animation horizontally one the screen */
-	top:50%; /* centers the loading animation vertically one the screen */
-	background-image:url(../Images/status.gif); /* path to your loading animation */
+	left:50%; 
+	top:50%; 
+	background-image:url(../Images/status.gif); 
 	background-repeat:no-repeat;
 	background-position:center;
-	margin:-100px 0 0 -100px; /* is width and height divided by two */
+	margin:-100px 0 0 -100px; 
 }
 
-/*------------------- PRELOADER END  -----------------------*/
+/*------------------- End of PRELOADER -----------------------*/
 
 
 
@@ -109,7 +107,7 @@ ul#navigation {
 	top:0px;
 	right:0px;
 	width:100%; 
-	background:#111;
+	background: #111111;
 	/*background: rgba(0, 0, 0, .92);*/
 	height:100%;
 	width:460px;
@@ -191,8 +189,8 @@ ul#navigation li a:hover {
 	width:20px;
 	height:40px;
 	position:fixed;
-	right:75px;
-	top:140px;
+	left: 92.910%;
+	top:20%;
 	z-index:9999999;
 	cursor:pointer;
 }
@@ -246,10 +244,10 @@ a .navText:active {
 	color: #e31956;
 } 
 
-/*----------------- NAVIGATION END -----------------------*/
+/*----------------- End of NAVIGATION -----------------------*/
 
 
-/*----------------- SECTION 1 ----------------------------*/
+/*----------------- SPLASH PAGE ----------------------------*/
 #splash {
 /*	background-image: url("../Images/Background.jpg");*/
 /*	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");*/
@@ -299,7 +297,7 @@ div #subText {
 	width: 40px;
 	position: absolute;
 	top: 85%;
-	left: 93.05%;
+	left: 92.6%;
 	/*top: 85%;
 	left: 48%;*/
 }
@@ -309,7 +307,9 @@ div #subText {
 
 }
 
+/*----------------- End of SPLASH PAGE ----------------------------*/
 
+/*----------------- QUOTE  ----------------------------*/
 #poetic {
 /*	background-image: url("../Images/Background4.jpg");*/
 	height: 300px;
@@ -329,107 +329,14 @@ div #subText {
 	font-size: 2em;
 	font-weight: 100;
 	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 	color: white;
 	text-align: center;
-	padding-top: 2.5em;
+	padding-top: 3.8em;
 }
-/*----------------- SECTION 1 END ----------------------------*/
 
-
-/**********************************************************/
-/*----------------- CYCLE WORDS (Thinking about it)-------*/
-/**********************************************************/
-
-		/*.rw-sentence{
-			
-				position: absolute;
-				margin: 0 auto;
-				text-align: center;
-				top: 55%;
-				left: 32.5%;
-
-		}
-
-
-		.rw-words-1 span{
-			position: absolute;
-			width: 10em;
-			font-family: 'Lato';
-			font-weight: 100;
-			font-size: 1.8em;
-			line-height: 2em;
-			opacity: 0;
-			overflow: hidden;
-			color: #e31956;
-			-webkit-animation: rotateWord 8s linear infinite 0s;
-			-moz-animation: rotateWord 8s linear infinite 0s;
-			-o-animation: rotateWord 8s linear infinite 0s;
-			-ms-animation: rotateWord 8s linear infinite 0s;
-			animation: rotateWord 8s linear infinite 0s;
-		}
-		.rw-words-1 span:nth-child(2) { 
-		    -webkit-animation-delay: 2.67s; 
-			-moz-animation-delay: 2.67s; 
-			-o-animation-delay: 2.67s; 
-			-ms-animation-delay: 2.67s; 
-			animation-delay: 2.67s; 
-			color: #e31956;
-		}
-		.rw-words-1 span:nth-child(3) { 
-		    -webkit-animation-delay: 5.3s; 
-			-moz-animation-delay: 5.3s; 
-			-o-animation-delay: 5.3s; 
-			-ms-animation-delay: 5.3s; 
-			animation-delay: 5.3s; 
-			color: #e31956;	
-		}*/
-
-		/*@-webkit-keyframes rotateWord {
-		    0% { opacity: 0; }
-		    2% { opacity: 0; -webkit-transform: translateY(-5px); }
-			5% { opacity: 1; -webkit-transform: translateY(0px);}
-		    17% { opacity: 1; -webkit-transform: translateY(0px); }
-			20% { opacity: 0; -webkit-transform: translateY(5px); }
-			80% { opacity: 0; }
-		    100% { opacity: 0; }
-		}
-		@-moz-keyframes rotateWord {
-		    0% { opacity: 0; }
-		    2% { opacity: 0; -moz-transform: translateY(-5px); }
-			5% { opacity: 1; -moz-transform: translateY(0px);}
-		    17% { opacity: 1; -moz-transform: translateY(0px); }
-			20% { opacity: 0; -moz-transform: translateY(5px); }
-			80% { opacity: 0; }
-		    100% { opacity: 0; }
-		}
-		@-o-keyframes rotateWord {
-		    0% { opacity: 0; }
-		    2% { opacity: 0; -o-transform: translateY(-5px); }
-			5% { opacity: 1; -o-transform: translateY(0px);}
-		    17% { opacity: 1; -o-transform: translateY(0px); }
-			20% { opacity: 0; -o-transform: translateY(5px); }
-			80% { opacity: 0; }
-		    100% { opacity: 0; }
-		}
-		@-ms-keyframes rotateWord {
-		    0% { opacity: 0; }
-		    2% { opacity: 0; -ms-transform: translateY(-5px); }
-			5% { opacity: 1; -ms-transform: translateY(0px);}
-		    17% { opacity: 1; -ms-transform: translateY(0px); }
-			20% { opacity: 0; -ms-transform: translateY(5px); }
-			80% { opacity: 0; }
-		    100% { opacity: 0; }
-		}
-		@keyframes rotateWord {
-		    0% { opacity: 0; }
-		    2% { opacity: 0; transform: translateY(-10px); }
-			5% { opacity: 1; transform: translateY(0px);}
-		    17% { opacity: 1; transform: translateY(0px); }
-			20% { opacity: 0; transform: translateY(10px); }
-			80% { opacity: 0; }
-		    100% { opacity: 0; }
-		}*/
-
+/*----------------- End of QUOTE ----------------------------*/
 
 
 /*----------------- THUMBNAILS -----------------------*/
@@ -457,7 +364,7 @@ div #subText {
 	
 }
 
-/*----------------- THUMBNAILS END ----------------------------*/
+/*----------------- End of THUMBNAILS ----------------------------*/
 
 
 /*----------------- ABOUT -----------------------*/
@@ -673,13 +580,18 @@ div #subText {
 #BackToTop:hover {
 	color: #e31956;
 }
-/*----------------- ABOUT END ----------------------------*/
+/*----------------- End of ABOUT ----------------------------*/
 
 
 
 /***************************************************************/
+/*----------------- SUB-SECTIONS ------------------------------*/
 /*----------------- PORTFOLIO WORK ----------------------------*/
 /***************************************************************/
+
+
+/*----------------- ALL PAGES --------------------------*/
+
 .image {
 	max-width: 55%;
 	position: relative;
@@ -689,7 +601,7 @@ div #subText {
   	padding-top: 5em;
 }
 
-/*----------------- LINKEDIN ----------------------------*/
+/*----------------- LINKEDIN --------------------------*/
 
 #LinkedIn {
 	margin: auto;
@@ -701,7 +613,7 @@ div #subText {
 }
 
 
-/*----------------- MIGO ----------------------------*/
+/*----------------- MIGO -------------------------------*/
 
 .migo {
 	position: relative;
@@ -715,7 +627,7 @@ div #subText {
 
 /*----------------- ONTARIO ----------------------------*/
 
-/*----------------- NOKIA ----------------------------*/
+/*----------------- NOKIA ------------------------------*/
 
 /*----------------- HADRIAN ----------------------------*/
 
@@ -733,8 +645,10 @@ div #subText {
 }
 
 
-
-
+/***************************************************************/
+/*----------------- End of PORTFOLIO WORK ---------------------*/
+/*----------------- End of SUB-SECTIONS -----------------------*/
+/***************************************************************/
 
 
 
@@ -793,21 +707,12 @@ div #subText {
 Colour values:
 #e31956    - pinkish red
 #262626    - greyish black
-#001620    - dark blue 
+#001620    - Semi-dark blue 
+##13181C   - Dark blue
 #111111    - darkish grey
 
 Font Family: Lato:  src (http://www.google.com/fonts#UsePlace:use/Collection:Lato)
-
 Navigation Menu Authored by: Tim Brack (http://www.timbrack.de/)
-Background image: Jules Bassoleil (http://www.julesbassoleil.fr/)
-Cycle words: Chris Coyier (http://css-tricks.com/snippets/jquery/cycle-through-a-list/)
-
-Spalsh page Photo Credit: 
-<a href="http://www.flickr.com/photos/24894289@N08/3437374511/">kern.justin</a> 
-via <a href="http://compfight.com">
-Compfight</a> 
-<a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">cc</a>
-
 Busted out this website in a few days thanks to Jasper Reyes and Adam Brown.
 
 ---------------------------------------------------------*/
