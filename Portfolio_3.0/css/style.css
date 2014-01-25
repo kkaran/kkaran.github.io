@@ -297,10 +297,8 @@ div #subText {
 #moveDown {
 	width: 40px;
 	position: absolute;
-	top: 85%;
-	left: 92.6%;
-	/*top: 85%;
-	left: 48%;*/
+	/*top: 85%; left: 92.6%; /* !Use cordinates for RIGHT BOTTOM positioning */
+	top: 85%; left: 48%;     /* !Use cordinates for CENTER positioning------ */
 }
 
 #moveDown:hover {
