@@ -311,12 +311,15 @@ div #subText {
 
 /*----------------- QUOTE  ----------------------------*/
 #poetic {
-	height: 200px;
+	height: 150px;
 	width: 100%;
-/*	background-size: 100% 700px;*/
-	background-color: #111;
 	margin: 0 auto;
  	position: relative;
+/*	background-size: 100% 700px;*/
+	background-color: white;	
+/* 	background-image: url('../Images/Pattern/pattern_about3.png');
+ 	background-size: 100%;*/
+
 
 }
 
@@ -327,13 +330,21 @@ div #subText {
 	font-family: 'Lato';
 	font-size: 1.5em;
 	font-weight: 300;
-	font-style: italic;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	color: white;
+	color: #001620;
 	text-align: center;
-	padding-top: 3.8em;
+	padding-top: 2em;
 }
+ 
+#poeticTextSub {
+	font-size: 0.7em;
+	text-transform: none;
+	text-transform: italic;
+	color: #e31956;
+
+}
+
 
 /*----------------- End of QUOTE ----------------------------*/
 
@@ -600,6 +611,25 @@ div #subText {
   	padding-top: 5em;
 }
 
+#BackToHome {
+	text-decoration: none;
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	text-align: right;
+	float: right;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+#BackToHome:hover {
+	color: #e31956;
+}
+
+#BackToHome:visited {
+	text-decoration: none;
+}
 /*----------------- LINKEDIN --------------------------*/
 
 #LinkedIn {
