@@ -251,7 +251,7 @@ a .navText:active {
 #splash {
 	margin: 0 auto;
  	position: relative;
- 	height: 872px;
+ 	height: 800px;
 	background-image: url("../Images/Background.jpg");
 /*	background-image: url('../Images/Pattern/pattern_about2.png');*/
 /*	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");*/
@@ -631,19 +631,21 @@ div #subText {
 
 /*----------------- ALL PAGES --------------------------*/
 
+#logoWork {
+	z-index: 99999;
+}
 
 #Parallax {
 	overflow: scroll;
-	height: 800px;
+	height: 100vh;
 	width: 100%;
 }
 
 #portfolio_writeup {
-	background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	margin: 0 auto;
 	top: 0; left: 0; bottom: 0; right: 0;
 	font-family: 'Lato';
@@ -655,11 +657,18 @@ div #subText {
 	z-index: -999;
 }
 
+
 #explain {
 	font-family: 'Lato';
 	font-size: 0.4em;
 }
 
+.whiteBackground{
+	background-color: white;
+	height: 800px;
+	width: 100%;
+
+}
 
 .image {
 	max-width: 55%;
@@ -668,6 +677,7 @@ div #subText {
 	margin: auto;
   	top: 0; left: 0; bottom: 0; right: 0;
   	padding-top: 5em;
+
 }
 
 #BackToHome {
@@ -689,6 +699,9 @@ div #subText {
 
 
 /*----------------- LINKEDIN --------------------------*/
+.linkedin_background {
+		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/3.jpg');
+}
 
 #LinkedIn {
 	margin: auto;
@@ -701,6 +714,10 @@ div #subText {
 
 
 /*----------------- MIGO -------------------------------*/
+.migo_background {
+		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/3.jpg');
+}
+
 
 .migo {
 	position: relative;
@@ -712,11 +729,23 @@ div #subText {
 }
 
 
+
 /*----------------- ONTARIO ----------------------------*/
+.ontario_background {
+		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/2.jpg');
+}
+
 
 /*----------------- NOKIA ------------------------------*/
+.nokia_background {
+	background-image: url('https://d262ilb51hltx0.cloudfront.net/fit/c/1600/1280/gradv/29/81/60/darken/25/1*4ncz3hLxmL8E_bUh-0z62w.jpeg');
+}
+
 
 /*----------------- HADRIAN ----------------------------*/
+.hadrian_background {
+		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/1.jpg');
+}
 
 .hadrian {
 	position: relative;
@@ -728,7 +757,7 @@ div #subText {
 }
 
 #hadrianTop {
-	padding-top: 5em;
+	padding-top: 2em;
 }
 
 

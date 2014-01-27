@@ -80,26 +80,49 @@
 
 
 <!-- HADRIAN -->
+	<section id="Parallax">
+
 	<div id="logoWork"><a href="../../index.html" title="Take Me Home"><img src="../../Images/logo_grey.png"></a></div>
-	   
+	
 
+	<div class="hadrian_background" id="portfolio_writeup">
+		<p> What is the future of Rapid Prototyping Technology?<br/>
+		<span id="explain"> Our goal was to research the potentials of rapid prototyping.</span></p>
+	</div>
 
-	<div id="Hadrian"></div>
-	<img class='hadrian' id="hadrianTop" src="../../Work/Hadrian/Images/1.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/2.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/3.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/4.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/5.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/6.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/7.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/8.jpg">
-	<img class='hadrian' src="../../Work/Hadrian/Images/9.jpg">
+	<div class="whiteBackground">
+		<div id="Hadrian"></div>
+		
+		<img class='hadrian' id="hadrianTop" src="../../Work/Hadrian/Images/1.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/2.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/3.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/4.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/5.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/6.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/7.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/8.jpg">
+		<img class='hadrian' src="../../Work/Hadrian/Images/9.jpg">
 
-	<a href="../../Index.html#poetic" id="BackToHome">Back to Home <a>
+		<a href="../../Index.html#poetic" id="BackToHome">Back to Home </a>
+	</div>
+
+	</section>
 
 <!-- End of HADRIAN -->
 
+<!-- PARALLAX -->
+<script>
+	$(document).ready(function () {
+            
+            $("#Parallax").scroll(function () {
+                s = $("#Parallax").scrollTop();
+                $("#Parallax #portfolio_writeup").css("-webkit-transform","translateY(" +  (s/2)  + "px)");
+            })
+        
+        })
+</script>
 
+<!-- End of PARALLAX -->
 
 <!-- GOOGLE ANALYTICS -->
 	<script>

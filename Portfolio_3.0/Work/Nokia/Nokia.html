@@ -80,41 +80,65 @@
 
 <!-- Nokia -->
 
-
+	<section id="Parallax">
 
 	<div id="logoWork"><a href="../../index.html" title="Take Me Home"><img src="../../Images/logo_grey.png"></a></div>
 
-
-	<div id="Nokia"></div>
-
-	<img class='image' src="../../Work/Nokia/Images/1.png">
-	<img class='image' src="../../Work/Nokia/Images/2.png">
-	<img class='image' src="../../Work/Nokia/Images/3.png">
+	<div class="nokia_background" id="portfolio_writeup">
+		<p> What is the future of Rapid Prototyping Technology?<br/>
+		<span id="explain"> Our goal was to research the potentials of rapid prototyping.</span></p>
+	</div>
 
 
-	<img class='image' src="../../Work/Nokia/Images/6.png">
-	<img class='image' src="../../Work/Nokia/Images/7.png">
-	<img class='image' src="../../Work/Nokia/Images/8.png">
-	<img class='image' src="../../Work/Nokia/Images/9.png">
-	<img class='image' src="../../Work/Nokia/Images/11.png">
-	<img class='image' src="../../Work/Nokia/Images/12.png">
-	<img class='image' src="../../Work/Nokia/Images/13.png">
-	<img class='image' src="../../Work/Nokia/Images/14.png">
-	<img class='image' src="../../Work/Nokia/Images/15.png">
-	<img class='image' src="../../Work/Nokia/Images/16.png">
-	<img class='image' src="../../Work/Nokia/Images/17.png">
-	<img class='image' src="../../Work/Nokia/Images/18.png">
-	<img class='image' src="../../Work/Nokia/Images/19.png">
-	<img class='image' src="../../Work/Nokia/Images/10.png">
-	<img class='image' src="../../Work/Nokia/Images/5.png">
-	<img class='image' src="../../Work/Nokia/Images/20.png">
-	<img class='image' src="../../Work/Nokia/Images/4.png">
+	<div class="whiteBackground">
+		
+		<div id="Nokia"></div>
+
+		<img class='image' src="../../Work/Nokia/Images/1.png">
+		<img class='image' src="../../Work/Nokia/Images/2.png">
+		<img class='image' src="../../Work/Nokia/Images/3.png">
+		<!-- Some Images have been Re-sequenced-->
+		<img class='image' src="../../Work/Nokia/Images/6.png">
+		<img class='image' src="../../Work/Nokia/Images/7.png">
+		<img class='image' src="../../Work/Nokia/Images/8.png">
+		<img class='image' src="../../Work/Nokia/Images/9.png">
+		<img class='image' src="../../Work/Nokia/Images/11.png">
+		<img class='image' src="../../Work/Nokia/Images/12.png">
+		<img class='image' src="../../Work/Nokia/Images/13.png">
+		<img class='image' src="../../Work/Nokia/Images/14.png">
+		<img class='image' src="../../Work/Nokia/Images/15.png">
+		<img class='image' src="../../Work/Nokia/Images/16.png">
+		<img class='image' src="../../Work/Nokia/Images/17.png">
+		<img class='image' src="../../Work/Nokia/Images/18.png">
+		<img class='image' src="../../Work/Nokia/Images/19.png">
+		<img class='image' src="../../Work/Nokia/Images/10.png">
+		<img class='image' src="../../Work/Nokia/Images/5.png">
+		<img class='image' src="../../Work/Nokia/Images/20.png">
+		<img class='image' src="../../Work/Nokia/Images/4.png">
 
 
-	<a href="../../Index.html#poetic" id="BackToHome">Back to Home </a>
+		<a href="../../Index.html#poetic" id="BackToHome">Back to Home </a>
+	</div>
+	
+	</section>
 
 <!-- End of NOKIA -->
 
+
+
+<!-- PARALLAX -->
+<script>
+	$(document).ready(function () {
+            
+            $("#Parallax").scroll(function () {
+                s = $("#Parallax").scrollTop();
+                $("#Parallax #portfolio_writeup").css("-webkit-transform","translateY(" +  (s/2)  + "px)");
+            })
+        
+        })
+</script>
+
+<!-- End of PARALLAX -->
 
 
 
