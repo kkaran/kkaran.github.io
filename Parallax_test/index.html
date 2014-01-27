@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+		<head>
+
+			<title>Karan Patel, UI/UX Designer.</title>
+
+
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic' rel='stylesheet' type='text/css'>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			
+			
+
+		</head>
+
+<body>
+    
+
+    <section id="box">
+        <img src="file:///Users/kp08sk/Desktop/kkaran.github.io/Portfolio_3.0/Images/Background.jpg"/>
+        <div>
+            <h2>The Hobbit: Part 1</h2>
+            <p>The Hobbit is an upcoming film series consisting of three epic fantasy-adventure films directed, co-written and produced by Peter Jackson and based on J. R. R. Tolkien's fantasy novel The Hobbit.</p>
+            <p><strong>Release date: December 14, 2012 (USA)</strong></p>
+            <ul>
+                <li><strong>Director:</strong>Peter Jackson</li>
+                <li><strong>Music:</strong>Howard Shore</li>
+                <li><strong>Screenplay:</strong>Fran Walsh, Philippa Boyens, Guillermo del Toro, Peter Jackson</li>
+                <li><strong>Producers:</strong>Carolynne Cunningham, Peter Jackson, Fran Walsh</li>
+                
+            </ul>
+            <h3>Plot</h3>
+            <p>
+              
+        </div>
+
+    </section>
+  
+    <script type="text/javascript">
+    $(document).ready(function () {
+            
+            $("#box").scroll(function () {
+                s = $("#box").scrollTop();
+                $("#box img").css("-webkit-transform","translateY(" +  (s/1.4)  + "px)");
+            })
+        
+        })
+    </script>
+</body>
+
+</html>

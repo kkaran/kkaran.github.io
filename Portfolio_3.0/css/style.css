@@ -246,20 +246,31 @@ a .navText:active {
 
 /*----------------- End of NAVIGATION -----------------------*/
 
+#box {
+	overflow: scroll;
+	height: 800px;
+	width: 100%;
+}
 
 /*----------------- SPLASH PAGE ----------------------------*/
 #splash {
+	margin: 0 auto;
+ 	position: relative;
+ 	height: 872px;
 	background-image: url("../Images/Background.jpg");
 /*	background-image: url('../Images/Pattern/pattern_about2.png');*/
 /*	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");*/
-	height: 800px;
-/*	background-size: 100%;*/
-	background-repeat: no-repeat;
-	margin: 0 auto;
- 	position: relative;
-
-
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center;
+	background-clip: border-box;
+	background-origin:padding-box;
+	background-size:cover;
+	top:0;
+	left:0;
 }
+
 
 #logo img{
 	padding-top: 11.2%;

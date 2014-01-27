@@ -30,7 +30,7 @@
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 			<script type="text/javascript" src="js/jquery.js"></script>
 			<script type="text/javascript" src="js/various_functions.js"></script>
-			
+
 			
 
 		</head>
@@ -96,12 +96,12 @@
 
 
 <!-- SPLASH PAGE -->
-		
-
-
+	
+    <section id="box">	
     	<div id="splash" name="top">
 
-    	<div id="logo"><a href="index.html"><img src="Images/logo_opaque.png"></a></div>
+	    	<div id="logo"><a href="index.html"><img src="Images/logo_opaque.png"></a>
+	    	</div>
 
 	 		
 		 	<div id="title">
@@ -128,11 +128,11 @@
 
 
 <!-- QUOTATION -->
-
 	<div id='poetic' name="poetic">
-	<p id="poeticText">
-	"I design interactions that create meaningful experiences"
-	<br/><span id="poeticTextSub"> Below is a realisation of some of that work.</span></p>		
+		<p id="poeticText">
+			"I design interactions that create meaningful experiences"
+			<br/><span id="poeticTextSub"> Below is a realisation of some of that work.</span>
+		</p>		
 	</div>
 	
 <!-- End of QUOTATION -->
@@ -201,7 +201,9 @@
 		</div>
 
 	</div>
-	
+
+</section>
+
 <!-- End of THUMBNAILS -->
 
 
@@ -396,6 +398,18 @@
 
 	</script>
 <!-- End of GOOGLE ANALYTICS -->
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+            
+            $("#box").scroll(function () {
+                s = $("#box").scrollTop();
+                $("#box #splash").css("-webkit-transform","translateY(" +  (s/1.4)  + "px)");
+            })
+        
+        })
+    </script>
 
 
 
