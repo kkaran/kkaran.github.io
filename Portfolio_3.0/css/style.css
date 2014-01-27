@@ -277,12 +277,6 @@ a .navText:active {
 
 }
 
-#logoWork img {
-	padding-top: 9%;
-	left: 5%;
-	width: 7%;
-	position: fixed;
-}
 
 div #title {
 	font-size: 3.4em;
@@ -303,7 +297,7 @@ div #title {
 div #subTitle {
 	font-size: .6em;
 	font-family: 'Lato';
-	font-weight: 700;
+	font-weight: 300;
 	color: #e31956;
 	font-style: italic;
 	text-transform: capitalize;
@@ -631,9 +625,17 @@ div #subText {
 
 /*----------------- ALL PAGES --------------------------*/
 
-#logoWork {
+
+/* LOGO ON WORK PAGES
+
+#logoWork img {
+	top: 50%;
+	left: 5%;
+	width: 7%;
+	position: fixed;
 	z-index: 99999;
-}
+}*/
+
 
 #Parallax {
 	overflow: scroll;
@@ -655,6 +657,7 @@ div #subText {
 	text-align: center;
 	padding-top: 2em;
 	z-index: -999;
+
 }
 
 
@@ -670,6 +673,8 @@ div #subText {
 
 }
 
+
+/* -- IMAGE SIZE AND POSITIONING ON PAGE --*/
 .image {
 	max-width: 55%;
 	position: relative;
@@ -679,6 +684,7 @@ div #subText {
   	padding-top: 5em;
 
 }
+
 
 #BackToHome {
 	text-decoration: none;
@@ -701,6 +707,10 @@ div #subText {
 /*----------------- LINKEDIN --------------------------*/
 .linkedin_background {
 		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/3.jpg');
+	
+	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);}
 }
 
 #LinkedIn {
@@ -715,8 +725,11 @@ div #subText {
 
 /*----------------- MIGO -------------------------------*/
 .migo_background {
-		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/3.jpg');
-}
+	background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/3.jpg');
+	
+	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);}
 
 
 .migo {
@@ -732,13 +745,25 @@ div #subText {
 
 /*----------------- ONTARIO ----------------------------*/
 .ontario_background {
-		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/2.jpg');
+	background-image: url('../Images/Background.jpg');
+	
+	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);}
 }
 
 
 /*----------------- NOKIA ------------------------------*/
 .nokia_background {
-	background-image: url('https://d262ilb51hltx0.cloudfront.net/fit/c/1600/1280/gradv/29/81/60/darken/25/1*4ncz3hLxmL8E_bUh-0z62w.jpeg');
+
+/* nokia_background was acting staring. Not sure of value
+that was changed. Had to add a second class and create
+background in that */
+}
+
+.nokia1 {
+	height: 300px;
+	background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/1.jpg');
 }
 
 
@@ -759,7 +784,6 @@ div #subText {
 #hadrianTop {
 	padding-top: 2em;
 }
-
 
 /***************************************************************/
 /*----------------- End of PORTFOLIO WORK ---------------------*/
