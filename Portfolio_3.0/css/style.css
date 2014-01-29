@@ -391,6 +391,19 @@ div #subText {
 	
 }
 
+.grayscale  img {
+	filter: gray;
+ 	-webkit-filter: grayscale(100%); 
+    -webkit-transition: all 0.6s ease;
+    -webkit-backface-visibility: hidden;
+}
+
+.grayscale img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+
 /*----------------- End of THUMBNAILS ----------------------------*/
 
 
@@ -688,9 +701,8 @@ div #subText {
 	top: 0; left: 0; bottom: 0; right: 0;
 	font-family: 'Lato';
 	font-size: 1em;
-	font-weight: 700;
-	font-style: italic;
-	color: red;
+	font-weight: 300;
+	color: #e31956;
 	text-align: center;
 	width: 80%;
 	padding-top: 1em;
@@ -745,7 +757,7 @@ div #subText {
 
 /*----------------- LINKEDIN --------------------------*/
 .linkedin_background {
-		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/3.jpg');
+		background-image: url('../Work/LinkedIn/Images/background.png');
 	
 	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
@@ -764,12 +776,9 @@ div #subText {
 
 /*----------------- MIGO -------------------------------*/
 .migo_background {
-	background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/3.jpg');
+	background-image: url('../Work/Migo/Images/background.png');
 	
-	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
-	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);}
-
+}
 
 .migo {
 	position: relative;
@@ -788,12 +797,11 @@ div #subText {
 	top: 0; left: 0; bottom: 0; right: 0;
 	font-family: 'Lato';
 	font-size: 1.3em;
-	font-weight: 700;
-	font-style: italic;
-	color: red;
+	font-weight: 300;
+	color: #e31956;
 	text-align: center;
 	width: 80%;
-	padding-top: 0.4em;
+	padding-top: 0.5em;
 
 
 }
@@ -802,7 +810,7 @@ div #subText {
 
 /*----------------- ONTARIO ----------------------------*/
 .ontario_background {
-	background-image: url('../Images/Pattern/pattern_about2.png');
+	background-image: url('../Work/Ontario/Images/background.png');
 	
 	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
@@ -820,13 +828,13 @@ background in that */
 
 .nokia1 {
 	height: 300px;
-	background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/1.jpg');
+	background-image: url('../Work/Nokia/Images/background.png');
 }
 
 
 /*----------------- HADRIAN ----------------------------*/
 .hadrian_background {
-		background-image: url('http://tympanus.net/Tutorials/MediumStylePageTransition/images/1.jpg');
+		background-image: url('../Work/hadrian/Images/background.png');
 }
 
 .hadrian {
