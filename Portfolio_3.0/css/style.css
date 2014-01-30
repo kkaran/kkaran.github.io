@@ -629,6 +629,10 @@ div #subText {
 	color: #e31956;
 }
 
+#AboutHiddenTablet {
+	visibility: hidden;
+}
+
 #AboutHidden{
 	visibility: hidden;
 }
@@ -948,6 +952,10 @@ background in that */
 	background-size:cover;
 }
 
+#AboutHiddenTablet {
+	visibility: visible;
+	font-weight: 100;
+}
 
 
 /*-- End of ABOUT ME (TABLET) --*/
@@ -1027,6 +1035,10 @@ background in that */
 
 /*-- SPLASH PAGE (SMARTPHONE) --*/
 
+#splash {
+	height: 100vh;
+
+}
 div #title {
 	font-size: 2em;
 }
@@ -1038,6 +1050,10 @@ div #subTitle {
 
 div #subText {
 	font-size: 0.5em;
+}
+
+#moveDown {
+	visibility: hidden;
 }
 
 /*-- End of SPLASH PAGE (SMARTPHONE) --*/
