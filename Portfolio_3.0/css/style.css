@@ -889,20 +889,24 @@ background in that */
 
 
 /***************************************************************/
-/*----------------- @MEDIA QUERIES ---------------------*/
+/*----------------- @MEDIA QUERIES ----------------------------*/
 /***************************************************************/
 
 
-/*-- IPAD & Small Screens ----------------------*/
-/*-- Min-width (641px) and Max-width (1137 px)--*/
+/*-- TABLET -----------------------*/
+/*-- Min-width (641px) and Max-width (1120 px)--*/
 
-@media screen and (min-width: 641px) and (max-width: 1024px){ 
+@media screen and (min-width: 641px) and (max-width: 1120px){ 
 
 
 
 
 
 }
+/*-- End of TABLET ---------------*/
+
+
+
 
 
 /*-- SMARTPHONE ------------------------------*/
@@ -1104,10 +1108,10 @@ div #subText {
 	
 	margin-top: 1em;
 	font-size: 1em;
+	font-weight: 400;
 	width: 80%;
 	
 }
-
 
 
 .image {
@@ -1178,37 +1182,6 @@ div #subText {
 }
 
 /*-- End of SMARTPHONE ----------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
