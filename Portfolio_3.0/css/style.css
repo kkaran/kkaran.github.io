@@ -958,9 +958,25 @@ background in that */
 }
 
 
+
 /*-- End of ABOUT ME (TABLET) --*/
 
+/*-- WORK (TABLET) --*/
+#text_over_background {
+	font-size: 1.8em;
+	width: 80%;
+}
 
+#explain {
+	
+	margin-top: 1em;
+	font-size: 1.3em;
+	font-weight: 300;
+	width: 80%;
+	
+}
+
+/*-- End of WORK (TABLET) --*/
 
 
 
@@ -1105,9 +1121,9 @@ div #subText {
 
 #AboutHidden {
 	height: 500px;
+	padding-top: 2em;
 	visibility: visible;
 	color: white;
-	);
 	background-image: url('../Images/Background_mobile.png');
 	background-color:transparent;
 	background-repeat:no-repeat;
