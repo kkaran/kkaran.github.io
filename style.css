@@ -40,6 +40,9 @@ body{
 	text-decoration: none;
 }
 
+#strikeout {
+	text-decoration: line-through;
+}
 
 /*-Social Media Icons ----------------------*/ 
 
