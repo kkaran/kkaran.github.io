@@ -103,6 +103,19 @@ textarea:focus {
 }
 
 
+.send {
+	border: 1px solid white;
+	padding: 12px 50px;
+	text-align: right;
+	float: right;
+	margin-right: 16.7%;
+
+}
+
+.send:hover{
+	color: #e31956;
+	border: 1px solid #e31956;
+}
 
 
 
