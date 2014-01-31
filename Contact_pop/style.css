@@ -6,8 +6,8 @@
 
 #contact_form {
 	position:fixed;
-/*	display: none;
-*/	font-family: 'Lato';
+	display: none;
+	font-family: 'Lato';
 	font-size: 1.1em;
 	font-weight: 300;
 /*	display:none;
@@ -87,6 +87,7 @@ textarea:focus {
 	float:right; 
 	top:155px;
 	left: 85%;
+	cursor: pointer;
 }
 
 .close img {
@@ -115,6 +116,7 @@ textarea:focus {
 	margin-right: 16.7%;
 	cursor: pointer;
 	width: 20%;
+	text-indent: -99999;
 
 }
 
