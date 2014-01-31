@@ -6,8 +6,8 @@
 
 #contact_form {
 	position:fixed;
-	display: none;
-	font-family: 'Lato';
+/*	display: none;
+*/	font-family: 'Lato';
 	font-size: 1.1em;
 	font-weight: 300;
 /*	display:none;
@@ -104,17 +104,24 @@ textarea:focus {
 
 
 .send {
+	font-family: 'Lato';
+	font-size: 0.9em;
+	font-weight: 300;
+	padding-left: 12px;
 	border: 1px solid white;
-	padding: 12px 50px;
-	text-align: right;
+	padding-right: 10px;
+	text-align: center;
 	float: right;
 	margin-right: 16.7%;
+	cursor: pointer;
+	width: 20%;
 
 }
 
 .send:hover{
 	color: #e31956;
 	border: 1px solid #e31956;
+	opacity: 0.6;
 }
 
 
