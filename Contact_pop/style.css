@@ -1,0 +1,129 @@
+.contact_show {
+	font-family: 'Lato';
+	font-size: 3em;
+	cursor: pointer;
+}
+
+#contact_form {
+	position:fixed;
+	display: none;
+	font-family: 'Lato';
+	font-size: 1.1em;
+	font-weight: 300;
+/*	display:none;
+*/	top:0px;
+	right:0px;
+	width:100%; 
+	background: #111111;
+	/*background: rgba(0, 0, 0, .92);*/
+	height:100%;
+	width:40%;
+/*	margin-right:-460px;*/
+	padding-top:8.750em;
+	-webkit-transition: all .3s linear; 
+	-moz-transition: all .3s linear; 
+	-ms-transition: all .3s linear; 
+	-o-transition: all .3s linear; 
+	transition: all .3s linear;
+	color:white;
+	z-index:988888;
+
+}
+
+form{
+	padding-left: 10%;
+	line-height: 1.5em;
+}
+
+.contact_title {
+	font-size: 1.5em;
+	font-weight: 300;
+
+}
+
+.fixy {
+	margin-bottom: 20px;
+
+}
+
+input {
+	background-color: #111;
+	height: 35px;
+	width: 80%;
+	border: 1px solid;
+	color: white;
+}
+
+input:focus {
+	outline: 0;
+}
+
+.name, .email, .subject, .message {
+	font-family: 'Lato';
+	font-size: 0.9em;
+	font-weight: 300;
+	padding-left: 12px;
+
+
+}
+
+textarea {
+	background-color: #111;
+	height: 200px;
+	width: 80%;
+	border: 1px solid white;
+	color: white;
+}
+
+textarea:focus {
+	outline: 0;
+}
+
+
+.close{
+	position:absolute;
+	width:40px; 
+	height:40px; 
+	float:right; 
+	top:155px;
+	left: 85%;
+}
+
+.close img {
+	-webkit-transition:all .3s linear; 
+	-moz-transition:all .3s linear; 
+	-ms-transition:all .3s linear; 
+	-o-transition:all .3s linear; 
+	transition:all .3s linear; 
+}
+
+.close img:hover {
+	opacity:0.40;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

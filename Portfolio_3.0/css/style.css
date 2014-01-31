@@ -191,7 +191,7 @@ ul#navigation li a:hover {
 	position:fixed;
 	left: 92.80%;
 	top:20%;
-	z-index:9999999;
+	z-index:999;
 	cursor:pointer;
 }
 
@@ -537,7 +537,7 @@ div #subText {
 #makeItPink {
 	color: #e31956;
 	font-family: 'Lato';
-	font-weight: 300;
+	font-weight: 500;
 /*	font-style: italic;
 */}
 
@@ -607,13 +607,25 @@ div #subText {
 
 }
 
+#mailto {
+	text-decoration: none;
+
+}
+
+
 #developerName {
 	font-family: 'Lato';
-	font-weight: 300;
-	font-size: 0.9em;
+	font-weight: 400;
+	font-size: 1em;
 	letter-spacing: 0.1em;
 	color: #e31956;
 
+}
+
+.contact_show {
+	cursor: pointer;
+	font-weight: 1000;
+	font-size: 1.5em;
 }
 
 #BackToTop {
@@ -900,6 +912,34 @@ background in that */
 /***************************************************************/
 
 
+/*-- DESKTOP ----------------------*/
+/*-- Media Querie set for height --*/
+@media screen and (max-height: 500px){
+
+
+ul#navigation{
+	overflow: scroll;
+	padding-top: 1em;
+}
+.navText{
+	overflow: scroll;
+	padding-top: 1em;
+
+}
+
+.close_navigation {
+	top:-380px;
+}
+
+}
+
+/*-- End of DESKTOP ----------------------------*/
+/*---------------------------------------------*/
+
+
+
+
+
 /*-- TABLET -----------------------*/
 /*-- Min-width (641px) and Max-width (1120 px)--*/
 
@@ -984,6 +1024,9 @@ background in that */
 }
 /*-- End of TABLET ----------------------------*/
 /*---------------------------------------------*/
+
+
+
 
 
 
@@ -1269,6 +1312,8 @@ div #subText {
 }
 
 /*-- End of SMARTPHONE ----------------------------*/
+/*---------------------------------------------*/
+
 
 
 
