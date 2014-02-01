@@ -17,3 +17,9 @@
                 $(".contact_show").delay(450).fadeIn(600);
         });
     });
+
+
+
+
+
+      
