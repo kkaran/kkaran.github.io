@@ -25,7 +25,7 @@ h1 {
 	font-size:48px;
 	line-height:1.30em;
 	margin:0px;
-	font-weight:normal !important;
+	font-weight:normal 
 	letter-spacing:5px;
 	color:#222;
 }
@@ -39,7 +39,7 @@ h3 {
 	padding:0;
 	margin:0;
 	width:100%;
-	font-weight:normal !important;
+	font-weight:normal;
 	color:#fff;
 	font-style:normal;
 }
@@ -51,7 +51,7 @@ h4 {
 	padding:0px 0 3px 0;
 	margin:0px 0 7% -9%;
 	letter-spacing:3px;
-	font-weight:normal !important;
+	font-weight:normal ;
 	text-align:right;
 	text-transform:uppercase;
 	color:#222;
@@ -118,7 +118,7 @@ ul#navigation {
 	-ms-transition: all .3s linear; 
 	-o-transition: all .3s linear; 
 	transition: all .3s linear;
-	color:#999 !important;
+	color:#999;
 	z-index:988888;
 }
 
@@ -127,12 +127,12 @@ ul#navigation img {
 }
 
 ul#navigation li.current_page_item a {
-	color:#e31956 !important;
+	color:#e31956;
 	/*padding: 0px 14px;*/
 }
 
 .active {
-	color:#e31956 !important;
+	color:#e31956;
 }
 
 ul#navigation li {
@@ -162,7 +162,7 @@ ul#navigation li a {
 }
 
 ul#navigation li a:hover {
-	color:#e31956 !important;
+	color:#e31956;
 
 }
 
@@ -171,18 +171,18 @@ ul#navigation li a:hover {
 }
 
 .children li {
-	font-size:0.85em !important;
-	margin:0 0 10px 0 !important;
+	font-size:0.85em;
+	margin:0 0 10px 0;
 }
 
 .children li:first-child {
-	text-transform:none !important; 
-	 letter-spacing:0em !important; 
-	 margin-top:10px !important;
+	text-transform:none; 
+	 letter-spacing:0em; 
+	 margin-top:10px;
 }
 
 .children li:last-child {
-	margin-bottom:25px !important;
+	margin-bottom:25px;
 }*/
 
 .show_navigation {
@@ -625,7 +625,7 @@ div #subText {
 .contact_show {
 	cursor: pointer;
 	font-weight: 1000;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 #BackToTop {
@@ -788,8 +788,9 @@ div #subText {
 	
 	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
-	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);}
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
 }
+
 
 #LinkedIn {
 	margin: auto;
@@ -849,8 +850,9 @@ div #subText {
 	
 	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
-	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);}
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
 }
+
 
 
 /*----------------- NOKIA ------------------------------*/

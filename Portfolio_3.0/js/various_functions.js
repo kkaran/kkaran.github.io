@@ -18,12 +18,17 @@
 		$(".show_navigation").hide().delay(300).fadeIn(600),
 		$(".home_scrollbutton").hide().delay(500).fadeIn(600);
 	}); 
-	  
-	  <!-- NAVIGATION TOGGLE -->
+
+<!-- End of LOGO SCALING -->	
+<!--*****************************************************************************-->
+
+
+<!-- NAVIGATION TOGGLE -->
+
 	  $(document).ready(function() {
 	  	   var navwidth = ($("#navigation").width());
 				$(".show_navigation").click(function() {
-				$("#navigation").fadeIn(0).animate({marginRight: "0px"},0),
+				$("#navigation").fadeIn(100).animate({marginRight: "0px"},100),
 				$(".close_navigation").fadeIn(300),
 				$(".site").animate({"left": - (navwidth - 30)}, 370),
 				$(".show_navigation").fadeOut(500);
@@ -54,12 +59,17 @@
 			$(this).children("em").animate({"top": "0px"}, 50);
 		});
 	});
-	
-	 <!-- CONTACT TOGGLE NAVIGATION -->
+
+<!-- End of NAVIGATION TOGGLE -->
+<!--*****************************************************************************-->
+
+
+<!-- CONTACT TOGGLE NAVIGATION -->
+
 	  $(document).ready(function() {
 	  	   var navwidth = ($("#navigation").width());
 				$(".contact_show").click(function() {
-				$("#navigation").fadeIn(0).animate({marginRight: "0px"},0),
+				$("#navigation").fadeIn(300).animate({marginRight: "0px"},0),
 				$(".close_navigation").fadeIn(300),
 				$(".site").animate({"left": - (navwidth - 30)}, 370),
 				$(".contact_show");
@@ -81,6 +91,10 @@
 				$(".contact_show").delay(450).fadeIn(600);
 		});
 	});
+
+<!-- End of CONTACT TOGGLE NAVIGATION -->
+<!--*****************************************************************************-->
+
 
 
 	
