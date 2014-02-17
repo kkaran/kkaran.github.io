@@ -804,6 +804,20 @@ div #subText {
 }
 
 
+#explain_metro {
+	margin: 0 auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin-top: 1em;
+	font-family: 'Lato';
+	font-weight: 100;
+	font-size: 1.1em;
+	color: white;
+	text-align: center;
+	width: 35%;
+	word-spacing: 0.2em;
+
+}
+
 
 /*----------------- LINKEDIN --------------------------*/
 .linkedin_background {
@@ -1270,6 +1284,14 @@ div #subText {
 	font-weight: 400;
 	width: 80%;
 	
+}
+
+#explain_metro {
+	margin-top: 1em;
+	font-size: 1em;
+	font-weight: 400;
+	width: 80%;
+
 }
 
 
