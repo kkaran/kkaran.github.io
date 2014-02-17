@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+
+		<head>
+
+			<title>Karan Patel, UI/UX Designer.</title>
+
+
+			<meta name="keywords" content=" Chicago, UX/UI design, industrial design, front-end developer, designer, Toronto, OCAD, HTML, CSS">
+			<meta name="description" content="Karan Patel Portfolio: UX and UI Designer">
+			<meta name="author" content="Karan Patel">
+			<meta property="og:title" content="Karan Patel Portfolio" />
+ 			<meta property="og:description" content="What is the future of Rapid Prototyping? In this project we tackle potential..." />
+  			<meta property="og:type" content="website" />
+			<meta property="og:image" content="../../Images/favicon.ico" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="icon" type="image/png" href="../../Images/favicon.ico">
+
+
+			<link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+			<link rel="stylesheet" type="text/css" href="../../css/style.css">
+			<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic' rel='stylesheet' type='text/css'>
+
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../../js/jquery.js"></script>
+			<script type="text/javascript" src="../../js/various_functions.js"></script>
+
+			
+
+		</head>
+
+
+<body>
+
+<!-- NAVIGATION -->	
+	
+	    <nav>
+	        
+		    <div class="show_navigation">
+		        <img src="../../Images/Navigation/icon_navi_toggle.png" >
+		    </div>
+		        
+		    <ul id="navigation">
+		        	            
+		       	 <li>NAVIGATION</li>
+
+		         	<li><a class="navText" href="../../index.html"> Home  </a></li>
+		            <li><a class="navText" href="../../index.html#poetic"> Work  </a></li>
+		            <li><a class="navText" href="../../index.html#about" id="HiddenOnMobile"> About </a></li>
+
+		    <ul>
+		                 
+		                <li>CONTACT</li>
+		             	
+		             	<li><a class="navText" href="mailto:responsivekaran@gmail.com?Subject=Hello" target="_self">Email</a></li>
+		                
+		                <li><a class="navText" href="https://twitter.com/karaniod" target="_blank">Twitter</a></li>
+		                
+		                <li><a class="navText" href="http://www.linkedin.com/in/patelkaran" target="_blank">LinkedIn</a></li>
+		                
+		                <li><a class="navText" href="https://github.com/kkaran" target="_blank">Github</a></li>
+		                
+		                <li><a class="navText" href="https://medium.com/@karaniod" target="_blank">Medium</a></li>
+		               
+		                <div class="close_navigation">
+		                	<img src="../../Images/Navigation/icon_navi_close.png">
+		                </div>
+		                
+		        	</ul>
+
+		    </ul>
+		        
+	    </nav> 
+
+<!-- End of NAVIGATION -->
+
+
+
+<!-- ONTARIO -->
+
+	<section id="Parallax">
+
+	
+	<div class="metro_background" id="portfolio_writeup">
+		
+		<div>
+			<p id="text_over_background"> UI/UX Strenghts & Weaknesses</p>
+			<p id="explain"> A 2 day exercise to evaluate my strenghts and weaknesses in UI/UX Design. The project was created from receiving client brief, creating project plan to wireframing and visual mock-ups. Completed by a self evaluation of where I fit within UI/UX.</p>
+			
+			<div id="tags">
+				<ul>
+					<li>Tags:</li>
+					<li>UI / UX Design,</li>
+					<li>Wireframing,</li>
+					<li>Visual Design</li>
+				</ul>
+			</div>
+		
+		</div>
+
+	</div>
+	
+	<div class="whiteBackground">
+		<div id="Ontario"></div>
+		<img class='image_metro' src="../../Work/Metro/Images/1.png">
+		<img class='image_metro' src="../../Work/Metro/Images/2.png">
+		<img class='image_metro' src="../../Work/Metro/Images/3.png">
+		<img class='image_metro' src="../../Work/Metro/Images/4.png">
+		<img class='image_metro' src="../../Work/Metro/Images/5.png">
+		<img class='image_metro' src="../../Work/Metro/Images/6.png">
+		<img class='image_metro' src="../../Work/Metro/Images/7.png">
+		<img class='image_metro' src="../../Work/Metro/Images/8.png">
+		<img class='image_metro' src="../../Work/Metro/Images/9.png">
+		<img class='image_metro' src="../../Work/Metro/Images/10.png">
+		<img class='image_metro' src="../../Work/Metro/Images/12.png">
+		<img class='image_metro' src="../../Work/Metro/Images/13.png">
+		<img class='image_metro' src="../../Work/Metro/Images/14.png">
+		<img class='image_metro' src="../../Work/Metro/Images/15.png">
+		<img class='image_metro' src="../../Work/Metro/Images/16.png">
+		<img class='image_metro' src="../../Work/Metro/Images/17.png">
+		<img class='image_metro' src="../../Work/Metro/Images/18.png">
+		<img class='image_metro' src="../../Work/Metro/Images/19.png">
+
+
+		
+	
+	<a href="http://kkaran.me/Portfolio_3.0/#poetic" id="BackToHome">Back to Home </a>
+	</div>
+
+
+	</section>
+
+<!-- End of ONTARIO -->
+
+
+<!-- PARALLAX -->
+<script>
+	$(document).ready(function () {
+            
+            $("#Parallax").scroll(function () {
+                s = $("#Parallax").scrollTop();
+                $("#Parallax #portfolio_writeup").css("-webkit-transform","translateY(" +  (s/2)  + "px)");
+            })
+        
+        })
+</script>
+
+<!-- End of PARALLAX -->
+
+
+
+<!-- GOOGLE ANALYTICS -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-47463341-1', 'kkaran.me');
+	  ga('send', 'pageview');
+
+	</script>
+<!-- End of GOOGLE ANALYTICS -->
+
+</body>

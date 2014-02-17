@@ -778,6 +778,33 @@ div #subText {
 
 
 
+/*----------------- METRO --------------------------*/
+
+.image_metro {
+	max-width: 55%;
+	position: relative;
+	display: block;
+	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+
+}
+
+
+.metro_background {
+	background-image: url('../Work/Metro/Images/background.png');
+	background-color:transparent;
+	background-position: center;
+	background-clip: border-box;
+	background-origin:padding-box;
+	background-size:cover;
+	
+	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+}
+
+
+
 /*----------------- LINKEDIN --------------------------*/
 .linkedin_background {
 	background-image: url('../Work/LinkedIn/Images/background.png');
@@ -1247,6 +1274,23 @@ div #subText {
 
 
 .image {
+	max-width: 100%;
+	position: relative;
+	display: block;
+	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	padding-top: 5em;
+  	background-color:transparent;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:left;
+	background-clip: border-box;
+	background-origin:padding-box;
+	background-size:cover;
+
+}
+
+.image_metro {
 	max-width: 100%;
 	position: relative;
 	display: block;
