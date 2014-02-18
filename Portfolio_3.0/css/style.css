@@ -876,8 +876,50 @@ div #subText {
 	width: 80%;
 	padding-top: 0.5em;
 
+}
+
+/*----------------- FRONT-END DEVELOPMENT ---------------*/
+.front_background {
+	background-image: url('../Work/Front/Images/background.png');
+	background-color:transparent;
+	background-position: center;
+	background-clip: border-box;
+	background-origin:padding-box;
+	background-size:cover;
+	opacity: 0.9;
+	
+	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+}
+
+
+
+
+#octocat img:hover {
+	opacity: 0.3;
+}
+
+
+.image_front {
+	padding-top: 0em;
+	max-width: 55%;
+	position: relative;
+	display: block;
+	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	padding-top: 1em;
 
 }
+
+.image_front:hover {
+	opacity: .7;
+}
+
+#image_front_1 {
+	padding-top: 5em;
+}
+
 
 
 
@@ -1328,6 +1370,16 @@ div #subText {
 	background-size:cover;
 
 }
+.image_front {
+	padding-top: 0em;
+	max-width: 100%;
+	position: relative;
+	display: block;
+	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	padding-top: 0.3em;
+}
+
 
 #BackToHome { 
 	padding-top: 1em;
