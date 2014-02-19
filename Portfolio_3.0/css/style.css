@@ -380,7 +380,7 @@ div #subText {
 }
 
 .thumbnail img {
-	max-width: 25%;
+	max-width: 24.9%;
 	display: inline-block;
 	font-size: 0;
 	margin: 0 auto;
@@ -388,6 +388,8 @@ div #subText {
 	padding-right: 0;
 	top: 0; left: 0; bottom: 0; right: 0;
 	float: left;
+	position: relative;
+	padding: 0.5px 0.5px 0px 0.5px;
 	
 }
 
@@ -403,6 +405,10 @@ div #subText {
     -webkit-filter: grayscale(0%);
 }
 
+
+#empty {
+	height: 10px;
+}
 
 
 /*----------------- End of THUMBNAILS ----------------------------*/
@@ -1034,7 +1040,7 @@ ul#navigation{
 /*-- PORTFOLIO (TABLET) --*/
 
 .thumbnail img {
-	max-width: 33.33%;
+	max-width: 33%;
 }
 
 
@@ -1044,6 +1050,10 @@ ul#navigation{
 
 #blankFiller {
 	display: block;
+}
+
+#empty {
+	display: none;
 }
 /*-- End of PORTFOLIO (TABLET) --*/
 
@@ -1076,6 +1086,7 @@ ul#navigation{
 	background-clip: border-box;
 	background-origin:padding-box;
 	background-size:cover;
+	margin-top: 40px;
 }
 
 #AboutHiddenTablet {
