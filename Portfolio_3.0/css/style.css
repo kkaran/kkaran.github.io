@@ -393,7 +393,7 @@ div #subText {
 	
 }
 
-.grayscale  img {
+/*.grayscale  img {
 	filter: gray;
  	-webkit-filter: grayscale(100%); 
     -webkit-transition: all 0.6s ease;
@@ -403,7 +403,7 @@ div #subText {
 .grayscale img:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
-}
+}*/
 
 
 #empty {
