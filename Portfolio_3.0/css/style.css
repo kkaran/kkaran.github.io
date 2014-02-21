@@ -252,8 +252,8 @@ a .navText:active {
 	margin: 0 auto;
  	position: relative;
  	height: 800px;
-	background-image: url("../Images/Background1.jpg");
-/*	background-image: url("../Images/Background.jpg");	*/
+	background-image: url("../Images/Background.jpg");
+/*	background-image: url("../Images/Background1.jpg");	*/
 /*	background-image: url('../Images/Pattern/pattern_about2.png');*/
 /*	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");*/
 	background-color:transparent;
@@ -298,17 +298,18 @@ div #title {
 div #subTitle {
 	font-size: .6em;
 	font-family: 'Lato';
-	font-weight: 100;
-	color: white;
+	font-weight: 300;
+	font-style: italic;
+	color: #e31956;
 	text-transform: capitalize;
 }
 
 div #subText {
-	font-size: 0.6em;
+	font-size: 0.4em;
 	font-family: 'Lato';
-	font-weight: 100;
+	font-weight: 300;
 	color: #e31956;
-	padding-top: 0.8em;
+	padding-top: 1em;
 }
 
 #moveDown {
@@ -349,7 +350,7 @@ div #subText {
 	font-weight: 300;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	color: #001620;
+	color: #e31956;
 	text-align: center;
 	padding-top: 2em;
 }
@@ -358,7 +359,7 @@ div #subText {
 	font-size: 0.7em;
 	text-transform: none;
 	text-transform: italic;
-	color: #e31956;
+	color: #001620;
 
 }
 
@@ -380,9 +381,9 @@ div #subText {
 }
 
 .thumbnail img {
-	max-width: 24.9%;
-	padding: 0.5px 0.5px 0px 0.5px;
-	display: inline-block;
+	max-width: 25%;
+/*	padding: 0.5px 0.5px 0px 0.5px;
+*/	display: inline-block;
 	font-size: 0;
 	margin: 0 auto;
 	padding-left: 0;
@@ -397,7 +398,7 @@ div #subText {
 
 .grayscale img:hover{
 	filter: gray;
- 	-webkit-filter: grayscale(50%) opacity(0.8) blur(2px);
+ 	-webkit-filter: grayscale(80%) brightness(90%);
     -webkit-transition: all 0.5s ease;
     -webkit-backface-visibility: hidden;
 }
