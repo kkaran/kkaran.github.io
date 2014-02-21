@@ -252,7 +252,8 @@ a .navText:active {
 	margin: 0 auto;
  	position: relative;
  	height: 800px;
-	background-image: url("../Images/Background.jpg");
+	background-image: url("../Images/Background1.jpg");
+/*	background-image: url("../Images/Background.jpg");	*/
 /*	background-image: url('../Images/Pattern/pattern_about2.png');*/
 /*	background-image: url("http://farm4.staticflickr.com/3316/3437374511_b97e230c2e_b.jpg");*/
 	background-color:transparent;
