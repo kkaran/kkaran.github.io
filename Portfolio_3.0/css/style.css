@@ -381,6 +381,7 @@ div #subText {
 
 .thumbnail img {
 	max-width: 24.9%;
+	padding: 0.5px 0.5px 0px 0.5px;
 	display: inline-block;
 	font-size: 0;
 	margin: 0 auto;
@@ -389,26 +390,26 @@ div #subText {
 	top: 0; left: 0; bottom: 0; right: 0;
 	float: left;
 	position: relative;
-	padding: 0.5px 0.5px 0px 0.5px;
+
 	
 }
 
-/*.grayscale  img {
+
+.grayscale img:hover{
 	filter: gray;
- 	-webkit-filter: grayscale(100%); 
-    -webkit-transition: all 0.6s ease;
+ 	-webkit-filter: grayscale(50%) opacity(0.8) blur(2px);
+    -webkit-transition: all 0.5s ease;
     -webkit-backface-visibility: hidden;
 }
-
-.grayscale img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-}*/
 
 
 #empty {
 	height: 10px;
 }
+
+
+
+
 
 
 /*----------------- End of THUMBNAILS ----------------------------*/
