@@ -1,0 +1,23 @@
+
+/*--------- App Demo Page --*/
+
+body {
+	background-color: #404042;
+}
+
+#iphone-demo {
+	margin-top: 20px;
+}
+
+iframe {
+  margin: auto;
+  position: absolute;
+  top: 100px; left: 0; bottom: 0; right: 0;
+}
+
+
+#back-btn {
+	width: 15%;
+	margin-top: 825px;
+	margin-left: 43%;
+}
