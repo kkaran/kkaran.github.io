@@ -18,6 +18,7 @@ iframe {
 
 #back-btn {
 	width: 15%;
-	margin-top: 825px;
-	margin-left: 43%;
+	margin: auto;
+  	position: absolute;
+  	top: 135%; left: 0; bottom: 0; right: 0;
 }
