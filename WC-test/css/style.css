@@ -1,0 +1,45 @@
+#nav{
+	height: 1000px;
+	width: 200px;
+	position: absolute;
+	background-color: #9be22d;
+	z-index: 10000;
+	margin: 0 auto;
+	top: -20px;
+}
+
+#sub-nav {
+	position: relative;
+	float: left;
+	z-index: 999;
+	width: 100vw;
+	height: 120px;
+	margin: 0 auto;
+	top: -25px;
+	background-color: #46e7ef;
+}
+
+#macbook {
+	max-width: 75%;
+	position: absolute;
+	margin: 0 auto;
+	top:150px; bottom: 0;
+	left: -100px;
+}
+
+#macbook img {
+	max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 805px){
+
+	#nav, #sub-nav, #macbook, #macbook img {
+		display: none;
+	}
+
+
+
+
+}
