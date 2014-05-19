@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  dir="ltr">
+<head>	<title>Create a CSS Flipping Animation Example</title>
+	<meta name="description" content="CSS flip animation effect uses CSS animations (transitions) to show the front and back of an element.  The flip effect can be opacity, transitions, or animations." />
+	<!--[if lt IE 9]>
+	<script src="/wp-content/themes/jack/js/lib/html5shiv/src/html5shiv.js?{{ themeVersion }}"></script>
+<![endif]-->
+<link rel="stylesheet" href="/wp-content/themes/jack/css/all.css" type="text/css" />
+<style>
+	
+	nav .search {
+		display: none;
+	}
+
+	.demoFrame header,
+	.demoFrame .footer,
+	.demoFrame h1,
+	.demoFrame .p {
+		display: none !important;
+	}
+
+	h1 {
+		font-size: 2.6em;
+	}
+
+	h2, h3 {
+		font-size: 1.7em;
+	}
+
+	.left {
+		width: 920px !important;
+		padding-bottom: 40px;
+		min-height: auto !important;
+		padding-right: 0;
+		float: left;
+	}
+
+	div.p {
+		font-size: .8em;
+		font-family: arial;
+		margin-top: -20px;
+		font-style: italic;
+		padding: 10px 0;
+	}
+
+	.footer {
+		padding: 20px;
+		margin: 20px 0 0 0;
+		background: #f8f8f8;
+		font-weight: bold;
+		font-family: arial;
+
+	}
+
+	.left > p:first-of-type { 
+		background: #ffd987; 
+		font-style: italic; 
+		padding: 5px 10px; 
+		margin-bottom: 40px;
+	}
+
+	.demoAds {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 270px;
+		padding: 10px 0 0 10px;
+		background: #f8f8f8;
+	}
+	.demoAds a {
+		margin: 0 10px 10px 0 !important;
+		display: inline-block !important;
+	}
+
+	#promoNode { 
+		margin: 20px 0; 
+	}
+
+	@media only screen and (max-width : 1024px) {
+		.left {
+			float: none;
+		}
+
+		body .one .bsa_it_ad {
+			position: relative !important;
+		}
+	}
+</style>	<style type="text/css">
+
+		/* simple */
+		.flip-container {
+			-webkit-perspective: 1000;
+			-moz-perspective: 1000;
+			-ms-perspective: 1000;
+			perspective: 1000;
+
+			-ms-transform: perspective(1000px);
+			-moz-transform: perspective(1000px);
+    			-moz-transform-style: preserve-3d; 
+    			-ms-transform-style: preserve-3d; 
+
+		}
+
+			/*
+			.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+				filter: FlipH;
+    			-ms-filter: "FlipH";
+			}
+			*/
+
+
+			/* START: Accommodating for IE */
+			.flip-container:hover .back, .flip-container.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+		
+		/* END: Accommodating for IE */
+
+		.flip-container, .front, .back {
+			width: 320px;
+			height: 427px;
+		}
+
+		.flipper {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			-ms-transition: 0.6s;
+
+			-moz-transition: 0.6s;
+			-moz-transform: perspective(1000px);
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+
+			transition: 0.6s;
+			transform-style: preserve-3d;
+
+			position: relative;
+		}
+
+		.front, .back {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+		    -webkit-transition: 0.6s;
+		    -webkit-transform-style: preserve-3d;
+
+		    -moz-transition: 0.6s;
+		    -moz-transform-style: preserve-3d;
+
+		    -o-transition: 0.6s;
+		    -o-transform-style: preserve-3d;
+
+		    -ms-transition: 0.6s;
+		    -ms-transform-style: preserve-3d;
+
+		    transition: 0.6s;
+		    transform-style: preserve-3d;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.front {
+			-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			background: lightgreen;
+			z-index: 2;
+		}
+
+		.back {
+			background: lightblue;
+			-webkit-transform: rotateY(-180deg);
+		    -moz-transform: rotateY(-180deg);
+		    -o-transform: rotateY(-180deg);
+		    -ms-transform: rotateY(-180deg);
+		    transform: rotateY(-180deg);
+		}
+
+		.front .name {
+			font-size: 2em;
+			display: inline-block;
+			background: rgba(33, 33, 33, 0.9);
+			color: #f8f8f8;
+			font-family: Courier;
+			padding: 5px 10px;
+			border-radius: 5px;
+			bottom: 60px;
+			left: 25%;
+			position: absolute;
+			text-shadow: 0.1em 0.1em 0.05em #333;
+			display: none;
+
+			-webkit-transform: rotate(-20deg);
+			-moz-transform: rotate(-20deg);
+			-ms-transform: rotate(-20deg);
+			transform: rotate(-20deg);
+		}
+
+		.back-logo {
+			position: absolute;
+			top: 40px;
+			left: 90px;
+			width: 160px;
+			height: 117px;
+			background: url(logo.png) 0 0 no-repeat;
+		}
+
+		.back-title {
+			font-weight: bold;
+			color: #00304a;
+			position: absolute;
+			top: 180px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+			font-family: Courier;
+			font-size: 2em;
+		}
+
+		.back p {
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			padding: 0 20px;
+		}
+
+		/* vertical */
+		.vertical.flip-container {
+			position: relative;
+		}
+
+			.vertical .back {
+				-webkit-transform: rotateX(180deg);
+				-moz-transform: rotateX(180deg);
+				-ms-transform: rotateX(180deg);
+				transform: rotateX(180deg);
+			}
+
+			.vertical.flip-container .flipper {
+				-webkit-transform-origin: 100% 213.5px;
+				-moz-transform-origin: 100% 213.5px;
+				-ms-transform-origin: 100% 213.5px;
+				transform-origin: 100% 213.5px;
+			}
+
+			/*
+			.vertical.flip-container:hover .flipper {
+				-webkit-transform: rotateX(-180deg);
+				-moz-transform: rotateX(-180deg);
+				-ms-transform: rotateX(-180deg);
+				transform: rotateX(-180deg);
+			}
+			*/
+
+			/* START: Accommodating for IE */
+			.vertical.flip-container:hover .back, .vertical.flip-container.hover .back {
+			    -webkit-transform: rotateX(0deg);
+			    -moz-transform: rotateX(0deg);
+			    -o-transform: rotateX(0deg);
+			    -ms-transform: rotateX(0deg);
+			    transform: rotateX(0deg);
+			}
+
+			.vertical.flip-container:hover .front, .vertical.flip-container.hover .front {
+			    -webkit-transform: rotateX(180deg);
+			    -moz-transform: rotateX(180deg);
+			    -o-transform: rotateX(180deg);
+			    transform: rotateX(180deg);
+			}
+		/* END: Accommodating for IE */
+	</style>
+</head>
+<body>
+
+	
+
+<div id="contentHolder">
+
+
+	<h2>Styled Card (Vertical Flip)</h2>
+	<div class="flip-container vertical" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front" style="background: url(bulb-1.png) 0 0 no-repeat;">
+				<span class="name">David Walsh</span>
+			</div>
+			<div class="back" style="background: url(bulb-2.png) 0 0 no-repeat;">
+		
+			</div>
+		</div>
+	</div>
+	<br /><br />
+
+
+
+	
+</section>
+
+
+</div>
+
+
+
+	
+</script>
+</body>
+</html>
