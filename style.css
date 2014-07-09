@@ -3,6 +3,7 @@
 body{
 	background-image: url("./images/polkadot.png");
 	background-color: rgba(38,38,38,1);
+	background-repeat: repeat;
 }	
 
 #wrapper { 
@@ -51,7 +52,7 @@ body{
  	display:inline-block;
  	height:50px;
  	padding-top:30px;
- 	width:40%;
+ 	width:50%;
  	
  	}
 
@@ -94,16 +95,24 @@ img.b {
 @media screen and (max-width: 1080px) {
 
 #social {
- 	width:80%;
+ 	width:85%;
  	height:100px;
  	}
+
+}
+@media screen and (max-width: 624px) {
+
+#social {width: 100%;}
 
 }
 
 @media screen and (max-width: 540px) {
 
+#comingsoon{font-size: 16px;}
+
 #social {
  	width:100%;
+ 	padding-top: 0;
 
  	}
 
@@ -111,10 +120,11 @@ img.b {
 	margin-top: 50px;
 }
 
+div.icons {padding-left: 0;}
 div.icons img{
 	text-align: center;
 	height:40px;
-	margin-left: 20px;
+	margin-left: 0px !important;
 
 }
 
