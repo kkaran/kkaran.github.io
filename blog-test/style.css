@@ -45,8 +45,9 @@ a:visited {
 	color: #333;
 }
 
-ul li a:visited { text-decoration: line-through;
-
+ul li a:visited { 
+	text-decoration: line-through;
+	color: #333;
 }
 .inspiration-links {
 	display: inline-block;
