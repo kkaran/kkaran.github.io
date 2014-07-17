@@ -2,13 +2,14 @@ body {
 
 	background-color: #e4e4e4;
 	font-family: 'Open Sans', sans-serif;
+	color: #333;
 }
 
 
 .gif {
 	max-width: 75%;
-	border: 1px solid #e4e4e4;
 	margin: 0 auto;
+	padding: 25px 0;
 }
 
 .gif img {max-width: 100%;}
@@ -22,7 +23,7 @@ p {
 .list {
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin: 10% 0;
 }
 
 ul {
@@ -32,21 +33,33 @@ ul {
 ul li {
 	display: inline-block;
 	font-size: 28px;
-	font-weight: bold;
-	text-decoration: underline;
-	padding: 0 40px ;
+	padding: 0 40px;
+	color: #333;
 }
 
-a:link {text-decoration: none;}
-a:visited {color: black;}
+a:link {text-decoration: inherit;}
+a:visited {
+	color: black;
+	text-decoration: line-through;
+}
 
-.inspiration-links {display: inline-block;}
+.inspiration-links {
+	display: inline-block;
+	padding: 10px 0 45px 0;
+}
+
+.wordpress-links {
+	padding: 20px 0 45px 0;
+	max-width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 65px;
+}
 
 
 .wordpress {font-size: 32px;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 20px;
 	}
 
 .nav-img {
