@@ -37,12 +37,17 @@ ul li {
 	color: #333;
 }
 
-a:link {text-decoration: inherit;}
+a:link { color:black;
+	text-decoration: none;
+}
 a:visited {
-	color: black;
-	text-decoration: line-through;
+	text-decoration: underline;
+	color: #333;
 }
 
+ul li a:visited { text-decoration: line-through;
+
+}
 .inspiration-links {
 	display: inline-block;
 	padding: 10px 0 45px 0;
