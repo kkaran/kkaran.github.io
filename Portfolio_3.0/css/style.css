@@ -25,7 +25,7 @@ h1 {
 	font-size:48px;
 	line-height:1.30em;
 	margin:0px;
-	font-weight:normal 
+	font-weight:normal; 
 	letter-spacing:5px;
 	color:#222;
 }
@@ -542,7 +542,7 @@ div #subText {
 
 }
 
-#makeItPink {
+.makeItPink {
 	color: #e31956;
 	font-family: 'Lato';
 	font-weight: 500;
