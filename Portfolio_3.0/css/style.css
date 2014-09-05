@@ -788,6 +788,23 @@ div #subText {
 }
 
 
+/*----------------- QUESTIA ----------------------------*/
+.ontario_background {
+	background-image: url('../Work/Questia/Images/background.png');
+	background-color:transparent;
+	background-clip: border-box;
+	background-origin:padding-box;
+	background-size:cover;
+	
+	-webkit-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -114px 205px -96px rgba(0,0,0,0.75);
+}
+
+#reg-symbol {
+	vertical-align: super;
+	font-size: 18px;
+}
 
 /*----------------- METRO --------------------------*/
 
