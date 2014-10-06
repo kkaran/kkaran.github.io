@@ -789,9 +789,9 @@ div #subText {
 
 
 /*----------------- QUESTIA ----------------------------*/
-.ontario_background {
+.questia_background {
 	background-image: url('../Work/Questia/Images/background.png');
-	background-color:transparent;
+	background-color:rgb(45,48,87);
 	background-clip: border-box;
 	background-origin:padding-box;
 	background-size:cover;
@@ -804,6 +804,14 @@ div #subText {
 #reg-symbol {
 	vertical-align: super;
 	font-size: 18px;
+}
+
+#coming-soon {
+
+	font-size: 24px;
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 350px;
 }
 
 /*----------------- METRO --------------------------*/
