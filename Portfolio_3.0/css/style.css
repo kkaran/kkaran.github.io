@@ -390,10 +390,10 @@ div #subText {
 	padding-right: 0;
 	top: 0; left: 0; bottom: 0; right: 0;
 	float: left;
-	position: relative;
-
-	
+	position: relative;	
 }
+
+.thumbnail.blank {display: none;}
 
 
 .grayscale img:hover{
@@ -1105,8 +1105,8 @@ ul#navigation{
 }
 
 
-.blank {
-	display: none;
+.thumnial .blank {
+	display: visible;
 }
 
 #blankFiller {
