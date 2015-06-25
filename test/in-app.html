@@ -1,0 +1,493 @@
+<html>
+	<head>
+		<title>
+		</title>
+
+		 <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
+		
+		<style type="text/css">
+		body {
+		height: 100px;
+		display: block;
+		padding: 0;
+		margin: 0 auto;
+		background: #f8f8f8;
+		font-family: 'Open Sans', sans-serif;
+		}
+		.top-bar {
+		background: #2d2f57;
+		width: 100%;
+		height: 64px;
+		margin: 0 auto;
+		}
+		.qta-logo{
+		width: 170px;
+		height: 64px;
+		background-repeat: no-repeat;
+		background-image: url(data:image/png;base64,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);
+		background-position: center;
+		background-size: contain;
+		margin: 0 auto;
+		}
+		.main-container {
+		background: white;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		max-width: 500px;
+		max-height: 700px;
+		margin: 0 auto;
+		margin-top: 50px;
+		cursor: pointer;
+		}
+		.main-container h2 {
+		color: #2d2f57;
+		font-weight: 600;
+		font-size: 1.2em;
+		line-height: 26px;
+		max-width: 63%;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 40px;
+		}
+		/*--- Carousel -------------*/
+		.carousel {
+		max-height: 200px;
+		}
+		.carousel .autoplay  .slick-list{
+		max-height: 160px;
+		}
+		.carousel-item {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 75%;
+		margin: 30px 0;
+		}
+		.carousel-item h3 {
+		font-weight: 600;
+		font-size: 1em;
+		color: #2d2f57;
+		}
+		.carousel-item p {
+		max-width: 80%;
+		margin: 0 auto;
+		font-size: 0.9em;
+		font-weight: 100;
+		color: #2d2f57;
+		line-height: 21px;
+		}
+		ul.slick-dots {
+		text-align: center;
+		list-style: none;
+		display: block;
+		padding: 0;
+		width: 100%;
+		margin-top: 10px;
+		}
+		.slick-dots li {
+		position: relative;
+		display: inline-block;
+		height: 20px;
+		margin:  0px 5px;
+		padding: 0;
+		}
+		.slick-dots li button {
+		border: 0;
+		background: transparent;
+		display: block;
+		height: 20px;
+		width: 20px;
+		outline: none;
+		line-height: 0;
+		font-size: 0;
+		color: transparent;
+		padding: 5px;
+		cursor: pointer;
+		outline: none;
+		}
+		.slick-dots li button:focus { outline: none; }
+		.slick-dots li button:before {
+		position: absolute;
+		top: 0; left: 0;
+		content: '\2022';
+		width: 20px;
+		height: 20px;
+		font-family: "slick";
+		font-size: 30px;
+		line-height: 20px;
+		text-align: center;
+		color: #333;
+		opacity: 0.15;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		}
+		.slick-dots li.slick-active button:before { opacity: 0.75; }
+		/* -- End of Carousel -----------*/
+		input[type="radio"] {
+		display:none;
+		}
+		input[type="radio"] + label {
+		color: #333;
+		font-size:1em;
+		background-color:white;
+		display: inline-block;
+		height: 150px;
+		width: 125px;
+		border: 1px solid #ddd;
+		background: white;
+		margin: 0 10px;
+		}
+		input[type="radio"] + label span {
+		}
+		input[type="radio"]:checked + label{
+		border: 1px solid #76bc3c;
+		color: #76bc3c;
+		}
+		input[type="radio"] + label,
+		input[type="radio"]:checked + label {
+		-webkit-transition: 0.4s linear;
+		-o-transition: 0.4s linear;
+		-moz-transition: 0.4s linear;
+		transition: 0.4s linear;
+		}
+		.membership-plans {
+		margin: 0 auto;
+		text-align: center;
+		padding: 40px 10px 30px 10px;
+		}
+		.membership-plans .plans {
+		display: inline-block;
+		}
+		.plan-length {
+		display: block;
+		margin: 0 auto;
+		padding: 20px 0 15px 0;
+		}
+		.plan-price {
+		font-size: 1.5em;
+		}
+		.btn {
+		border: 1px solid #ddd;
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		padding: 7px 5px;
+		border-radius: 3px;
+		margin-top: 15px;
+		}
+		input[type="radio"]:checked + label .btn{
+		border: 1px solid #76bc3c;
+		color: #76bc3c;
+		}
+		input[type="radio"]:checked + label .select-btn{
+		display: none;
+		}
+		input[type="radio"] + label .selected-btn{
+		display: none;
+		}
+		input[type="radio"]:checked + label .selected-btn{
+		display: inline-block;
+		background-color: #76bc3b;
+		color: white;
+		}
+		input[type="radio"] + label .selected-btn,
+		input[type="radio"]:checked + label .selected-btn{
+		-webkit-transition: 0.4s linear;
+		-o-transition: 0.4s linear;
+		-moz-transition: 0.4s linear;
+		transition: 0.4s linear;
+		}
+		.membership-plans p {
+		font-family: helvetica;
+		font-size: 0.7em;
+		font-weight: 600;
+		color: #2d2f57;
+		}
+		/*----------------------------*/
+		.subscribe {
+		width: 300px;
+		padding: 12px 0;
+		background-color: #0066cc;
+		color: white;
+		display: block;
+		border-radius: 3px;
+		font-size: 1.3em;
+		font-weight: 100;
+		text-align: center;
+		margin: 0 auto;
+		cursor: pointer;
+		}
+		.restore {
+		width: 300px;
+		padding: 10px 0;
+		border: 1px solid #0066cc;
+		color: #0066cc;
+		display: block;
+		border-radius: 3px;
+		font-size: 1em;
+		font-weight: 100;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		}
+		/*----- Slick Carousel CSS (default) ----- */
+		.slick-slider
+		{
+		position: relative;
+		display: block;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-touch-callout: none;
+		-khtml-user-select: none;
+		-ms-touch-action: pan-y;
+		touch-action: pan-y;
+		-webkit-tap-highlight-color: transparent;
+		}
+		.slick-list
+		{
+		position: relative;
+		display: block;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		}
+		.slick-list:focus
+		{
+		outline: none;
+		}
+		.slick-list.dragging
+		{
+		cursor: pointer;
+		cursor: hand;
+		}
+		.slick-slider .slick-track,
+		.slick-slider .slick-list
+		{
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		}
+		.slick-track
+		{
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+		}
+		.slick-track:before,
+		.slick-track:after
+		{
+		display: table;
+		content: '';
+		}
+		.slick-track:after
+		{
+		clear: both;
+		}
+		.slick-loading .slick-track
+		{
+		visibility: hidden;
+		}
+		.slick-slide
+		{
+		display: none;
+		float: left;
+		height: 100%;
+		min-height: 1px;
+		}
+		[dir='rtl'] .slick-slide
+		{
+		float: right;
+		}
+		.slick-slide img
+		{
+		display: block;
+		}
+		.slick-slide.slick-loading img
+		{
+		display: none;
+		}
+		.slick-slide.dragging img
+		{
+		pointer-events: none;
+		}
+		.slick-initialized .slick-slide
+		{
+		display: block;
+		}
+		.slick-loading .slick-slide
+		{
+		visibility: hidden;
+		}
+		.slick-vertical .slick-slide
+		{
+		display: block;
+		height: auto;
+		border: 1px solid transparent;
+		}
+		@media only screen and (min-width: 320px) and (max-width: 580px){
+		
+		body { background-color: white;}
+		
+		.main-container {
+		background: white;
+		border: 0px;
+		}
+		
+		.carousel { max-height: 400px; }
+		
+		.carousel .autoplay  .slick-list{
+		height: 170px;
+		max-height: 170px;
+		}
+		
+		input[type="radio"] + label {
+		margin: 0 3px;
+		}
+		}
+		@media only screen and (max-width: 430px) {
+		
+			.main-container h2 {
+			max-width: 80%;
+			}
+			.membership-plans {
+			padding: 40px 0;
+			}
+			
+			input[type="radio"] + label {
+			margin: 0 5px;
+			width: 110px;
+			}
+		}
+
+		@media only screen and (max-width: 375px) {
+
+			.main-container {margin-top: 15px;}
+			
+			.main-container h2 {max-width: 90%;}
+
+			.carousel-item p {max-width: 90%;}
+
+			.membership-plans {padding: 20px 0;}
+
+			input[type="radio"] + label {
+				width: 90px;
+				height: 138px;
+			}
+
+			ul.slick-dots {margin-top: 20px;}
+			.plan-price {font-size: 1.2em;}
+			.plan-length {font-size: 0.8em;}
+			.btn {
+				font-size: 0.8em;
+				margin-top: 20px;
+			}
+
+
+		}
+
+		</style>
+
+		
+	</head>
+	<body>
+		<div class="top-bar">
+			<div class="qta-logo"></div>
+		</div>
+		<div class="main-container">
+			<h2>Get the most out of Questia with a Premium subscription</h2>
+			<div class="carousel">
+				<div class="autoplay ">
+					<div class="carousel-item">
+						<h3>Start exploring Questia's library</h3>
+						<p>
+							More than 83,000 academic books and 10 million articles to chose, from over a thousand of the world’s leading publishers - and nothing is ever checked out!
+						</p>
+					</div>
+					<div class="carousel-item">
+						<h3>Tools to jump start your research</h3>
+						<p>
+							Highlight, Add Notes, Bookmark and Create Citations are some of the few tools we offer to help jump start your research
+						</p>
+					</div>
+					<div class="carousel-item">
+						<h3>Create organized projects</h3>
+						<p>
+							Integrated with Questia's Writing Center, you can save items in individual project folders, to help keep your organized and clutter free.
+						</p>
+					</div>
+					<div class="carousel-item">
+						<h3>Take Questia wherever you go</h3>
+						<p>
+							Registering with Questia, your information is synced across all devices and is available on any device, anywhere.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="membership-plans">
+				<div class="plans">
+					<input type="radio" id="radio01" name="radio" />
+					<label for="radio01">
+						<span class="plan-length">Monthly</span>
+						<span class="plan-price">$19.99</span>
+						<span class="btn select-btn">Select</span>
+						<span class="btn selected-btn">Selected</span>
+					</label>
+				</div>
+				<div class="plans">
+					<input type="radio" id="radio02" name="radio" />
+					<label for="radio02">
+						<span class="plan-length">3 months</span>
+						<span class="plan-price">$39.99</span>
+						<span class="btn select-btn">Select</span>
+						<span class="btn selected-btn">Selected</span>
+					</label>
+				</div>
+				<div class="plans">
+					<input type="radio" id="radio03" name="radio" />
+					<label for="radio03">
+						<span class="plan-length">Annual</span>
+						<span class="plan-price">$99.99</span>
+						<span class="btn select-btn">Select</span>
+						<span class="btn selected-btn">Selected</span>
+					</label>
+				</div>
+				<p>Subscription plans are shown in U.S currency</p>
+			</div>
+			<a class="subscribe">Subscribe</a>
+			<a class="restore">Restore purchase</a>
+		</div>
+		
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+					$('.autoplay').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 3000,
+					dots: true,
+					arrows: false,
+					});
+			});
+							
+		</script>
+	</body>
+</html>
