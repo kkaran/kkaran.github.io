@@ -140,27 +140,36 @@ input[type="radio"] {
 }
 
 input[type="radio"] + label {
-	color: red;
+	color: #ddd;
 	font-family:helvetica;
 	font-size:1em;
+	background-color:white;
+	display: inline-block;
+	height: 150px;
+	width: 125px;
+	border: 1px solid #ddd;
+	background: white;
+	margin: 0 10px;
 }
-input[type="radio"] + label span {
 
-}
 input[type="radio"] + label span {
-background-color:blue;
+	
 }
-input[type="radio"]:checked + label span{
-background-color:green;
-border: 1px solid blue;
+
+input[type="radio"]:checked + label{
+	border: 1px solid #76bc3c;
+	color: #76bc3c;
 }
-input[type="radio"] + label span,
-input[type="radio"]:checked + label span {
--webkit-transition:background-color 0.4s linear;
--o-transition:background-color 0.4s linear;
--moz-transition:background-color 0.4s linear;
-transition:background-color 0.4s linear;
+
+input[type="radio"] + label,
+input[type="radio"]:checked + label {
+-webkit-transition: 0.4s linear;
+-o-transition: 0.4s linear;
+-moz-transition: 0.4s linear;
+transition: 0.4s linear;
 }
+
+
 
 
 .membership-plans {
@@ -171,12 +180,56 @@ transition:background-color 0.4s linear;
 
 .membership-plans .plans {
 	display: inline-block;
-	height: 150px;
 	width: 125px;
-	border: 1px solid #ddd;
-	background: white;
 	margin: 0 10px;
+}
 
+.plan-length {
+	  display: block;
+  margin: 0 auto;
+  padding: 20px 0 15px 0;
+}
+
+.plan-price {
+	font-size: 1.5em;
+
+}
+
+.btn {
+	border: 1px solid #ddd;
+	display: block;
+  	width: 80%;
+  	margin: 0 auto;
+  	padding: 10px 5px;
+  	border-radius: 3px;
+  	margin-top: 23px;
+}
+
+input[type="radio"]:checked + label .btn{
+	border: 1px solid #76bc3c;
+	color: #76bc3c;
+}
+
+input[type="radio"]:checked + label .select-btn{
+	display: none;
+}
+
+input[type="radio"] + label .selected-btn{
+	display: none;
+}
+
+input[type="radio"]:checked + label .selected-btn{
+	display: inline-block;
+	background-color: #76bc3b;
+	color: white;
+}
+
+input[type="radio"] + label .selected-btn,
+input[type="radio"]:checked + label .selected-btn{
+-webkit-transition: 0.4s linear;
+-o-transition: 0.4s linear;
+-moz-transition: 0.4s linear;
+transition: 0.4s linear;
 
 }
 
