@@ -1,0 +1,487 @@
+/* -- Style reference -- 
+
+Values:
+	background-color: #e9eaea;
+	background-color: #f8f8f8;
+	background-color: #333333;
+	color: #f8f8f8;
+	opacity: 0.5;
+
+*/
+
+
+/* ============================================
+--------------- Base Style  -------------------
+============================================== */
+
+body {
+	background-color: #333333;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Helvetica;
+    height: 5000px;
+    
+    /* Disables excess horizontal scroll when the menu is open */
+    overflow-x: hidden;     
+
+    /* Disables selection of text */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  	-moz-user-select: none;     /* Firefox all */
+  	-ms-user-select: none;      /* IE 10+ */
+  	user-select: none;          /* Likely future */ 
+}
+
+h1, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+
+/* ============================================
+--------------- Progress Bar ------------------
+============================================== */
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index:9999;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: red;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+  color: red;
+}
+
+
+
+#progressBar::-webkit-progress-value {
+	background-color: #adadad;
+}
+
+#progressBar::-moz-progress-value {
+	background-color: #adadad;
+}
+
+
+/* ============================================
+--------- Navigation slide out  ---------------
+============================================== */
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  background: #333333;
+  overflow:auto;
+	overflow-y:scroll;
+}
+
+.nav_item {
+  width: 100%;
+  height: 50px;
+}
+
+.nav_item a {
+  display: block;
+  padding: 1em 0;
+  color: #f8f8f8;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav_item a:hover {
+  	font-weight: 600;
+  	color: white;
+}
+
+.nav_bottom {
+    width: 140px;
+    font-size: 10px;
+    line-height: 15px;
+    position: absolute;
+    bottom: 40px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+}
+
+/* Nav animations */
+.nav_trigger + label, .site_wrap {
+  transition: left 0.2s;
+}
+
+.nav_trigger:checked + label {
+  left: 215px;
+}
+
+.nav_trigger:checked ~ .site_wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+/* Nav Trigger */
+.nav_trigger {
+  position: fixed;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav_trigger"] {
+  position: fixed;
+  left: 25px; 
+  top: 25px;
+  z-index: 2;
+  height: 25px;
+  width: 30px;
+  cursor: crosshair;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+  	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ============================================
+----------- Entire site content ---------------
+============================================== */
+
+.site_wrap {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #e9eaea;
+  position: relative;
+  top: 0px;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 4em;
+  overflow-x: hidden;
+}
+
+/* ============================================
+---------------- Container Home ---------------
+============================================== */
+
+.home_skewed_rect {
+	transform: translate3d(0px, -231.391585760518px, 0px) skewY(-17deg);
+    background-color: #333333;
+    width: 550px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    margin-left: -15px;
+    margin-top: 56px;
+
+}
+.home_name {
+  	border: 6px solid #f8f8f8;
+    color: #f8f8f8;
+    cursor: crosshair;
+    height: 142px;
+    width: 520px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 300px;
+    box-shadow: 15px 55px 80px -25px rgba(50,68,100,.25);
+    -moz-transition: all .2s ease;
+
+}
+
+.home_name h1 {
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;	
+	letter-spacing: 10px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.home_name >span:nth-of-type(1) {
+	border-top: 4px solid #f8f8f8;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: -6px;
+    margin-bottom: 6px;
+}
+
+.home_title {
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+
+}
+
+
+/* ============================================
+---------------- Container About --------------
+============================================== */
+
+.container_skewed_about {
+	transform: translate3d(0px, -231.391585760518px, 0px) skewY(-17deg);
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 1000px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    margin-left: -4em;
+    margin-top: 1000px;
+    opacity: 0.5;
+}
+
+
+.about_experience {}
+
+.about_experience h1 {
+	text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.about_experience span:nth-of-type(1){
+	display: block;
+	width: 30px;
+	height: 6px;
+	background-color: #333333;
+	margin-bottom: 10px;
+}
+    
+.about_experience p:nth-of-type(1){
+	font-size: 1em;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 470px;
+}
+
+
+
+   
+
+
+
+/* content */
+#content {
+	z-index: 4;
+	position: relative;
+	max-width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+	line-height: 1.7;
+	}
+	#content article {
+		width: 300px;
+		}
+		#manned-flight ,
+		#frameless-parachute,
+		#english-channel,
+		#about {
+			padding-top: 105px;
+			}
+		#manned-flight {
+			position: absolute;
+			top: 0px;
+			}
+		#frameless-parachute {
+			position: absolute;
+			top: 1090px;
+			}
+		#english-channel {
+			position: absolute;
+			top: 2180px;
+			}
+			#content h1 {
+				margin: 0 0 25px 0;
+				font-size: 60px;
+				font-weight: normal;
+				line-height: 65px;
+				}
+		#about {
+			position: absolute;
+			top: 3270px;
+			}
+/* foreground (ballons/landscape) */
+#parallax-bg3 {
+	z-index: 3;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 940px;
+	margin-left: -470px; /* move left by half element's width */
+	}
+	/* balloon */
+	#bg3-1 {
+		position: absolute;
+		top: -111px;
+		left: 355px;
+		}
+	#bg3-2 {
+		position: absolute;
+		top: 812px;
+		left: 321px;
+		}
+	#bg3-3 {
+		position: absolute;
+		top: 1628px;
+		left: 403px;
+		}
+	#bg3-4 {
+		position: absolute;
+		top: 2700px;
+		left: -85px;
+		}
+/* midground (clouds) */
+#parallax-bg2 {
+	z-index: 2;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg2-1 {
+		position: absolute;
+		top: 162px;
+		left: 200px;
+		}
+	#bg2-2 {
+		position: absolute;
+		top: 300px;
+		left: 1150px;
+		}
+	#bg2-3 {
+		position: absolute;
+		top: 543px;
+		left: -86px;
+		}
+	#bg2-4 {
+		position: absolute;
+		top: 1180px;
+		left: 250px;
+		}
+	#bg2-5 {
+		position: absolute;
+		top: 900px;
+		left: 890px;
+		}
+/* background (clouds) */
+#parallax-bg1 {
+	z-index: 1;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg1-1 {
+		position: absolute;
+		top: 85px;
+		left: -270px;
+		}
+	#bg1-2 {
+		position: absolute;
+		top: 440px;
+		left: 795px;
+		}
+	#bg1-3 {
+		position: absolute;
+		top: 900px;
+		left: -220px;
+		}
+	#bg1-4 {
+		position: absolute;
+		top: 1020px;
+		left: 450px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
