@@ -253,9 +253,9 @@ label[for="nav_trigger"] {
       margin-bottom: 20px; }
     .container_home .home_name .home_skewed_rect {
       transform: translate3d(0px, -231.39159px, 0px) skewY(-17deg);
-      -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
-      -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
-      -o-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
+      -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
+      -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
+      -o-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
       background-color: #333333;
       width: 550px;
       height: 200px;
@@ -273,9 +273,9 @@ label[for="nav_trigger"] {
 ============================================== */
 .container_skewed_about {
   transform: translate3d(0px, -231.39159px, 0px) skewY(-17deg);
-  -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
-  -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
-  -o-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
+  -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
+  -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
+  -o-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
   background-color: rgba(248, 248, 248, 0.5);
   width: 100%;
   height: 850px;
