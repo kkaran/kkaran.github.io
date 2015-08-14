@@ -28,6 +28,21 @@ h1, h3, p {
   max-width: 600px;
   margin: 0 auto 1em; }
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Hide from IE Mac \*/
+.clearfix {
+  display: block; }
+
+/* End hide from IE Mac */
 /* ============================================
 --------------- Progress Bar ------------------
 ============================================== */
@@ -246,70 +261,84 @@ label[for="nav_trigger"] {
 ============================================== */
 .container_skewed_about {
   transform: translate3d(0px, -231.39159px, 0px) skewY(-17deg);
-  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, 0.5);
   width: 100%;
   height: 850px;
   display: inline-block;
   z-index: -1;
   margin: 0 auto;
   float: left;
-  opacity: 0.5;
   position: relative;
   clear: both; }
-
-.about_experience .about_text {
-  padding: 4em; }
-  .about_experience .about_text h1 {
-    text-transform: uppercase;
-    font-size: 3em;
-    font-weight: 600;
-    line-height: 50px;
-    letter-spacing: 10px;
-    margin-bottom: 10px; }
-  .about_experience .about_text .dash {
+  .container_skewed_about .about_experience {
+    transform: translate3d(0px, -231.39159px, 0px) skewY(17deg);
     display: block;
-    width: 30px;
-    height: 6px;
-    background-color: #333333;
-    margin-bottom: 10px; }
-  .about_experience .about_text p {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 1px;
-    width: 549px;
-    margin: 0; }
-    .about_experience .about_text p span {
-      line-height: 23px;
-      padding-top: 5px;
-      display: block; }
-  .about_experience .about_text ul {
-    padding: 0;
-    padding-top: 10px;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: default;
-    margin-top: 10px; }
-    .about_experience .about_text ul li {
-      list-style-type: none;
-      display: inline-block;
-      margin: 0;
-      border: 6px solid;
-      padding: 6px; }
-    .about_experience .about_text ul li:nth-of-type(2) {
-      margin: 0 10px; }
-.about_experience .selfie {
-  display: block;
-  position: absolute;
-  top: 1070px;
-  right: 110px;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH"; }
+    position: relative;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 465px; }
+    .container_skewed_about .about_experience .about_text {
+      padding: 4em;
+      width: 45%;
+      float: left; }
+      .container_skewed_about .about_experience .about_text h1 {
+        text-transform: uppercase;
+        font-size: 3em;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 10px;
+        margin: 0;
+        margin-bottom: 10px; }
+      .container_skewed_about .about_experience .about_text .dash {
+        display: block;
+        width: 30px;
+        height: 6px;
+        background-color: #333333;
+        margin-bottom: 10px; }
+      .container_skewed_about .about_experience .about_text p {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 1px;
+        width: 549px;
+        margin: 0; }
+        .container_skewed_about .about_experience .about_text p span {
+          line-height: 23px;
+          padding-top: 10px;
+          display: block; }
+      .container_skewed_about .about_experience .about_text ul {
+        padding: 0;
+        padding-top: 10px;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: default;
+        margin-top: 10px; }
+        .container_skewed_about .about_experience .about_text ul li {
+          list-style-type: none;
+          display: inline-block;
+          margin: 0;
+          border: 6px solid;
+          padding: 6px; }
+        .container_skewed_about .about_experience .about_text ul li:nth-of-type(2) {
+          margin: 0 10px; }
+    .container_skewed_about .about_experience .selfie {
+      display: block;
+      width: 40%;
+      float: right;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH"; }
+      .container_skewed_about .about_experience .selfie img {
+        display: block; }
+      .container_skewed_about .about_experience .selfie svg {
+        stroke-width: 0.1px;
+        stroke-opacity: 1;
+        stroke: #10150b;
+        width: 120%; }
 
 /* content */
 #content {
@@ -323,19 +352,9 @@ label[for="nav_trigger"] {
 #content article {
   width: 300px; }
 
-#manned-flight,
-#frameless-parachute,
-#english-channel,
-#about {
-  padding-top: 105px; }
-
 #manned-flight {
   position: absolute;
   top: 0px; }
-
-#frameless-parachute {
-  position: absolute;
-  top: 1090px; }
 
 #english-channel {
   position: absolute;
