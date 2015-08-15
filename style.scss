@@ -48,10 +48,13 @@ h1, h3, p {
     clear:both;
     visibility:hidden;
 }
+
 .clearfix {display:inline-block;}
+
 /* Hide from IE Mac \*/
     .clearfix {display:block;}
 /* End hide from IE Mac */
+
 
 /* ============================================
 --------------- Progress Bar ------------------
@@ -222,6 +225,7 @@ label[for="nav_trigger"] {
 .site_wrap {
   min-height: 100%;
   min-width: 100%;
+  max-width: 1400px;
   background-color: #e9eaea;
   position: relative;
   top: 0px;
@@ -477,6 +481,7 @@ label[for="nav_trigger"] {
 		width: 100%;
 		position: relative;
 		top: -150px;
+		height: 100px;
 
 		h1 {
 			text-transform: uppercase;
@@ -498,6 +503,106 @@ label[for="nav_trigger"] {
 	}
 }
 
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+
+
+.flex-item {
+   background: tomato;
+  padding: 5px;
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+ 
+  line-height: 250px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  
+  background-size: cover;
+	background-clip: content-box;
+  box-sizing: border-box;
+  position: relative;
+ 
+}
+
+.flex-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  border-top: 50px solid #e9eaea;
+  top: -60px;
+  left: -45px;
+  transform: rotate(135deg);
+}
+
+
+#container {
+    width: 100%;
+    max-width: 12000px;
+    margin: 2em auto;
+}
+.cols {
+    -moz-column-count:3;
+    -moz-column-gap: 3%;
+    -moz-column-width: 30%;
+    -webkit-column-count:3;
+    -webkit-column-gap: 3%;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 3%;
+    column-width: 30%;
+}
+.box {
+    margin-bottom: 20px;
+}
+.box.one {
+    height: 200px;
+    background-color: transparent;
+        display: block;
+    margin-bottom: 150px;
+}
+.box.two {
+    height: 300px;
+    background-color: transparent;
+
+}
+.box.three {
+    background-color: transparent;
+    height: 400px;
+        display: block;
+    margin-bottom: 100px;
+}
+.box.four {
+    background-color: transparent;
+    height: 500px;
+}
+.box.five {
+    background-color: transparent;
+    height: 600px;
+}
+.box.six {
+    background-color: transparent;
+    height: 200px;
+        display: block;
+    margin-bottom: 100px;
+}
 
 /* ============================================
 ---------------- Parallax samples -------------
