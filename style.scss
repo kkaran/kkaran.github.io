@@ -521,55 +521,40 @@ label[for="nav_trigger"] {
 	-webkit-flex-flow: row wrap;
   	justify-content: space-around;
   	cursor: pointer;
-  	//margin-top: 450px;
-  	//@extend .skew_neg_17deg;
-  	width: 100%;
+  	margin-top: -150px;
 
   	.box {
    		margin: 2em 0;
    		border: 10px solid transparent;
    		list-style: none;
-   		width: 100%;
-   		//@extend .skew_17deg;
-
+   		
    		ul {
    			padding-left: 0;
    		}
    	}
 
    	.flex-item {
-	  background: tomato;
+	  background: transparent;
 	  padding: 6px;
-	  width: 100%;
+	  width: 300px;
 	  height: 250px;
 	  margin-top: 10px;
 	  list-style: none;
-	 
 	  line-height: 250px;
 	  color: white;
 	  font-weight: bold;
 	  font-size: 3em;
 	  text-align: center;
-	  
 	  background-size: cover;
 	  background-clip: content-box;
 	  box-sizing: border-box;
 	  position: relative;
-
+	  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+	  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
 
 
 	}
 
-	.flex-item:before {
-	  content: "";
-	  display: block;
-	  position: absolute;
-	  border: 50px solid transparent;
-	  border-top: 50px solid #e9eaea;
-	  top: -45px;
-	  left: -45px;
-	  transform: rotate(135deg);
-	}
 
 }
 
