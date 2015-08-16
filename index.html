@@ -10,7 +10,7 @@
 	
 	<!-- JS / jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-	<script src="js/parallax.js"></script>
+	<script src="js/main.js"></script>
 
 	<!-- Font families -->	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,600,400' rel='stylesheet' type='text/css'>
@@ -135,9 +135,8 @@
 			  <li class="flex-item">5</li>
 			  <li class="flex-item">6</li>
 			</ul> -->
-		</div> 
 
-		<div id="container" class="cols">
+			<div id="container" class="cols">
     		<div class="box one"></div>
 			    <ul class="flex-container">
 				  <li class="flex-item">1</li>
@@ -197,6 +196,9 @@
 				<ul>
 			</div>
 		</div>
+		</div> 
+
+		
 	</div>
 
 
@@ -230,64 +232,7 @@
 			
 
 
-<!-- Nav bar icon animation -->
-<script type="text/javascript">
-	$( ".nav_icon" ).click(function() {
-	    //alert($( this ).css( "transform" ));
-	    if (  $( this ).css( "transform" ) == 'none' ){
-	        $(this).css("transform","rotate(90deg)");
-	    } else {
-	        $(this).css("transform","" );
-	    }
-	});
-</script>
 
-
-<!-- Progress Bar Js --> 
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('progress').attr ({
-			max: $(document).height() - $(window).height()
-		});
-	});
-
-	$(document).scroll (function() {
-		$('progress').attr({
-	        value: $(window).scrollTop()
-	      });
-	});
-
-	$(document).resize (function() {
-		$('progress').attr({
-	        max: $(document).height() - $(window).height(),
-	        value: $(window).scrollTop()
-	      });
-	});
-</script>
-
-<!-- Time of day Js -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		sayHello();
-		setInterval('sayHello()', 10000);
-		});
-
-	function sayHello() {
-		var now = new Date();
-		var month = now.getMonth();
-		var date = now.getDate();
-		var hours = now.getHours();
-		var msg;
-		if (hours < 12) {
-		   	msg = "good morning.";
-		} else if (hours < 18) {
-		   	msg = "good afternoon.";
-		} else {
-		  	msg = "good evening.";
-		}
-		$('#header_hello h2').text(msg);
-		}
-</script>
 
 </body>
 
