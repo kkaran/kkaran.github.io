@@ -521,14 +521,14 @@ label[for="nav_trigger"] {
 	-webkit-flex-flow: row wrap;
   	justify-content: space-around;
   	cursor: pointer;
-  	margin-top: 450px;
-  	@extend .skew_neg_17deg;
+  	//margin-top: 450px;
+  	//@extend .skew_neg_17deg;
 
   	.box {
    		margin: 2em 0;
    		border: 10px solid transparent;
    		list-style: none;
-   		@extend .skew_17deg;
+   		//@extend .skew_17deg;
 
    		ul {
    			padding-left: 0;

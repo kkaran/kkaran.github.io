@@ -1,12 +1,12 @@
 /*-- Colors -- */
 /* -- Styles --*/
-.skew_neg_17deg, .container_home .home_name .home_skewed_rect, .container_skewed_about, .flex-container {
+.skew_neg_17deg, .container_home .home_name .home_skewed_rect, .container_skewed_about {
   transform: translate3d(0px, -231.39159px, 0px) skewY(-17deg);
   -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
   -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
   -o-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg); }
 
-.skew_17deg, .container_skewed_about .about_experience, .flex-container .box {
+.skew_17deg, .container_skewed_about .about_experience {
   transform: translate3d(0px, -231.39159px, 0px) skewY(17deg);
   -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
   -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(17deg);
@@ -412,8 +412,7 @@ label[for="nav_trigger"] {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  cursor: pointer;
-  margin-top: 450px; }
+  cursor: pointer; }
   .flex-container .box {
     margin: 2em 0;
     border: 10px solid transparent;
