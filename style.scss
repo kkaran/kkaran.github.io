@@ -513,11 +513,13 @@ label[for="nav_trigger"] {
   	padding: 0;
   	margin: 0;
   	list-style: none;
+
  	display: -webkit-box;
   	display: -moz-box;
   	display: -ms-flexbox;
   	display: -webkit-flex;
   	display: flex;
+
 	-webkit-flex-flow: row wrap;
   	justify-content: space-around;
   	cursor: pointer;
@@ -560,16 +562,64 @@ label[for="nav_trigger"] {
 
 	}
 
-	.flex-item:hover {
-		background-image: url('http://kkaran.me/Portfolio_3.0/Images/Thumbnail/Mi.png');
 	
-
-	}
 
 
 }
 
+.box {
+	background-repeat: no-repeat;
+}
 
+.box.one {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_fuzel.png');
+	background-size: contain;
+}
+
+.box.two {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_tiles.png');
+	background-size: contain;
+}
+
+.box.three {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_116_new.png');
+	background-size: contain;
+}
+
+.box.four {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_lw.png');
+	background-size: contain;
+}
+
+.box.five {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tlh.png');
+	background-size: contain;
+}
+
+.box.six {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tstop.png');
+	background-size: contain;
+}
+
+.box.seven {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tpp.png');
+	background-size: contain;
+}
+
+.box.eight {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_rp.png');
+	background-size: contain;
+}
+
+.box.nine {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_odin.png');
+	background-size: contain;
+}
+
+.box.ten {
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_ml.png');
+	background-size: contain;
+}
 
 
 
