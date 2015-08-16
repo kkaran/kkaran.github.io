@@ -437,6 +437,14 @@ label[for="nav_trigger"] {
     box-sizing: border-box;
     position: relative;
     -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%); }
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+    -o-transition: color .2s ease-out, background 2s ease-in;
+    -ms-transition: color .2s ease-out, background 2s ease-in;
+    -moz-transition: color .2s ease-out, background 2s ease-in;
+    -webkit-transition: color .2s ease-out, background 2s ease-in;
+    /* ...and now for the proper property */
+    transition: color .2s ease-out, background 2s ease-in; }
+  .flex-container .flex-item:hover {
+    background-image: url("http://kkaran.me/Portfolio_3.0/Images/Thumbnail/Mi.png"); }
 
 /*# sourceMappingURL=style.css.map */
