@@ -1,6 +1,6 @@
 /*-- Colors -- */
 /* -- Styles --*/
-.skew_neg_17deg, .container_home .home_name .home_skewed_rect, .container_skewed_about {
+.skew_neg_17deg, .container_home .home_skewed_rect, .container_skewed_about {
   transform: translate3d(0px, -231.39159px, 0px) skewY(-17deg);
   -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
   -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
@@ -17,9 +17,13 @@
 /* ============================================
 --------------- Base Style  -------------------
 ============================================== */
-html body {
-  width: 100%;
-  height: 100%;
+body,
+html {
+  padding: 0;
+  margin: 0; }
+
+body {
+  overflow-x: hidden;
   background-color: #e9eaea;
   color: #333333;
   font-family: 'Lato', Helvetica;
@@ -35,8 +39,11 @@ html body {
   user-select: none;
   /* Likely future */
   /* Default cursor styles */
-  cursor: default;
-  overflow-x: hidden; }
+  cursor: default; }
+
+ul, li {
+  padding: 0;
+  margin: 0; }
 
 .clearfix:after {
   content: ".";
@@ -120,6 +127,7 @@ progress::-webkit-progress-bar {
     margin: auto;
     margin-top: 300px;
     -moz-transition: all .2s ease;
+    box-sizing: border-box;
     box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
     .container_home .home_name h1 {
       font-size: 3em;
@@ -143,17 +151,16 @@ progress::-webkit-progress-bar {
       font-weight: 600;
       letter-spacing: 4px;
       margin-bottom: 20px; }
-    .container_home .home_name .home_skewed_rect {
-      background-color: #333333;
-      width: 550px;
-      height: 200px;
-      display: block;
-      position: absolute;
-      z-index: -1;
-      margin: 0 auto;
-      margin-left: -15px;
-      margin-top: 56px;
-      -webkit-backface-visibility: hidden; }
+  .container_home .home_skewed_rect {
+    background-color: #333333;
+    width: 550px;
+    height: 200px;
+    display: block;
+    position: relative;
+    z-index: -1;
+    margin: 0 auto;
+    margin-top: 56px;
+    -webkit-backface-visibility: hidden; }
 
 /* ============================================
 ---------------- Container About --------------
@@ -430,8 +437,8 @@ progress::-webkit-progress-bar {
 @media only screen and (max-width: 600px) {
   .container_home .home_name {
     width: 440px; }
-    .container_home .home_name .home_skewed_rect {
-      width: 470px; }
+  .container_home .home_skewed_rect {
+    width: 470px; }
 
   .container_skewed_about {
     height: 850px; }
@@ -451,10 +458,10 @@ progress::-webkit-progress-bar {
       margin-top: -3px; }
     .container_home .home_name .home_title {
       font-size: 1.3em; }
-    .container_home .home_name .home_skewed_rect {
-      width: 345px;
-      height: 160px;
-      margin-top: 93px; }
+  .container_home .home_skewed_rect {
+    width: 100%;
+    height: 160px;
+    margin-top: 93px; }
 
   .container_skewed_about {
     overflow: hidden; }

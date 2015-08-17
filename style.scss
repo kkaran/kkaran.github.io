@@ -28,18 +28,23 @@ $shadow : 15px 55px 80px -25px rgba(50,68,100,.25);
 /* ============================================
 --------------- Base Style  -------------------
 ============================================== */
-html{
+
+body, 
+html {
+	padding:0;
+	margin:0;
+	
+}
 
 
 body {
-	width: 100%;
- 	height: 100%;
+	overflow-x:hidden;
 	background-color: $background;
     color: $grey;
     font-family: 'Lato', Helvetica;
     -webkit-font-smoothing: subpixel-antialiased;
-  	
-    
+
+
     /* Disables excess horizontal scroll when the menu is open */
 
     /* Disables selection of text */
@@ -51,10 +56,14 @@ body {
   	/* Default cursor styles */
   	cursor: default;
   	//cursor:crosshair;
-  	overflow-x: hidden;
-
-	}
 }
+
+
+ul, li {
+	padding:0;
+	margin:0;
+}
+
 
 .clearfix:after {
     content:".";
@@ -156,7 +165,9 @@ progress::-webkit-progress-bar {
 	    margin: auto;
 	    margin-top: 300px;
 	    -moz-transition: all .2s ease;
+	    box-sizing: border-box;
 	    box-shadow: $shadow;
+
 	   
 	   h1 {
 		font-size: 3em;
@@ -186,24 +197,23 @@ progress::-webkit-progress-bar {
 			margin-bottom: 20px;
 
 		}
-
+}
 		.home_skewed_rect {
 			@extend .skew_neg_17deg;
 			background-color: $grey;
 		    width: 550px;
 		    height: 200px;
 		    display: block;
-		    position: absolute;
+		    position: relative;
 		    z-index: -1;
 		    margin: 0 auto;
-		    margin-left: -15px;
 		    margin-top: 56px;
 		    -webkit-backface-visibility: hidden;
 			
 
 		}
 
-	}
+	
 
 }
 
@@ -628,12 +638,10 @@ progress::-webkit-progress-bar {
 
   	// Logo Section
   	.container_home{
-	  	.home_name {
-		 	
-		 	width: 440px;
-		   
-			.home_skewed_rect { width: 470px; }
-			}
+	  	.home_name { width: 440px;}
+		
+		.home_skewed_rect { width: 470px; }
+			
 	}
 
 	//About Me Section
@@ -670,14 +678,14 @@ progress::-webkit-progress-bar {
 	  		h1 span:nth-of-type(1) {margin-top: -3px;}
 
 			.home_title {font-size: 1.3em;}
-
+		}
 			.home_skewed_rect {
-				    width: 345px;
+				    width: 100%;
     				height: 160px;
     				margin-top: 93px;
 			}
 	  	}
-	  }
+	  
 
 	  //About Me Section 
 	  .container_skewed_about {
