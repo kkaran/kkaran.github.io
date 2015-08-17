@@ -130,7 +130,7 @@ progress::-webkit-progress-bar {
     box-sizing: border-box;
     box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
     .container_home .home_name h1 {
-      font-size: 3em;
+      font-size: 2.6em;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 10px;
@@ -258,9 +258,8 @@ progress::-webkit-progress-bar {
 ============================================== */
 .container_work {
   width: 100%;
-  height: 850px;
+  height: 200px;
   display: block;
-  padding: 4em;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
@@ -277,7 +276,8 @@ progress::-webkit-progress-bar {
     width: 100%;
     position: relative;
     top: -150px;
-    height: 100px; }
+    height: 100px;
+    padding: 4em 4em 0 4em; }
     .container_work .work_title h1 {
       text-transform: uppercase;
       font-size: 3em;
@@ -299,81 +299,59 @@ progress::-webkit-progress-bar {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   cursor: pointer;
-  margin-top: -150px; }
+  margin-top: -150px;
+  background-repeat: no-repeat; }
   .flex-container .box {
-    margin: 0 auto;
-    border: 10px solid transparent;
-    list-style: none;
-    background-repeat: no-repeat; }
-    .flex-container .box ul {
-      padding-left: 0; }
-  .flex-container .flex-item {
-    background: transparent;
-    padding: 6px;
-    width: 300px;
-    height: 250px;
-    margin-top: 10px;
-    list-style: none;
-    line-height: 250px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
     background-size: cover;
-    background-clip: content-box;
-    box-sizing: border-box;
-    position: relative;
-    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
-    -o-transition: color .2s ease-out, background 2s ease-in;
-    -ms-transition: color .2s ease-out, background 2s ease-in;
-    -moz-transition: color .2s ease-out, background 2s ease-in;
-    -webkit-transition: color .2s ease-out, background 2s ease-in;
-    /* ...and now for the proper property */
-    transition: color .2s ease-out, background 2s ease-in; }
+    background-repeat: no-repeat; }
+    .flex-container .box .flex-item {
+      background: transparent;
+      padding: 6px;
+      width: 300px;
+      height: 300px;
+      margin-top: 10px;
+      list-style: none;
+      line-height: 250px;
+      color: white;
+      font-weight: bold;
+      font-size: 3em;
+      text-align: center;
+      background-clip: content-box;
+      box-sizing: border-box; }
 
 .box.one {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_fuzel.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_fuzel.png"); }
 
 .box.two {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_tiles.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_tiles.png"); }
 
 .box.three {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_116_new.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_116_new.png"); }
 
 .box.four {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_lw.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_lw.png"); }
 
 .box.five {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tlh.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tlh.png"); }
 
 .box.six {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tstop.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tstop.png"); }
 
 .box.seven {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tpp.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tpp.png"); }
 
 .box.eight {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_rp.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_rp.png"); }
 
 .box.nine {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_odin.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_odin.png"); }
 
 .box.ten {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_ml.png");
-  background-size: contain; }
+  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_ml.png"); }
 
 /* ============================================
 ----------- Media Queries  --------------------
@@ -434,6 +412,9 @@ progress::-webkit-progress-bar {
 
   .container_work .work_title h1, .container_work .work_title .dash {
     float: left; } }
+@media only screen and (max-width: 740px) {
+  .container_work .work_title {
+    padding-top: 7em; } }
 @media only screen and (max-width: 600px) {
   .container_home .home_name {
     width: 440px; }
@@ -448,21 +429,25 @@ progress::-webkit-progress-bar {
       .container_skewed_about .about_experience .about_text ul {
         text-align: center; } }
 @media only screen and (max-width: 470px) {
-  .container_home .home_name {
-    width: 315px;
-    height: 122px; }
-    .container_home .home_name h1 {
-      font-size: 1.6em;
-      margin-bottom: 12px; }
-    .container_home .home_name h1 span:nth-of-type(1) {
-      margin-top: -3px; }
-    .container_home .home_name .home_title {
-      font-size: 1.2em;
-      margin-top: 10px; }
-  .container_home .home_skewed_rect {
-    width: 100%;
-    height: 160px;
-    margin-top: 93px; }
+  .container_home {
+    height: 550px; }
+    .container_home .home_name {
+      width: 315px;
+      height: 122px;
+      margin-top: 250px; }
+      .container_home .home_name h1 {
+        font-size: 1.6em;
+        margin-bottom: 12px;
+        padding-left: 6px; }
+      .container_home .home_name h1 span:nth-of-type(1) {
+        margin-top: -3px; }
+      .container_home .home_name .home_title {
+        font-size: 1.2em;
+        margin-top: 10px; }
+    .container_home .home_skewed_rect {
+      width: 100%;
+      height: 160px;
+      margin-top: 93px; }
 
   .container_skewed_about {
     overflow: hidden; }
@@ -481,7 +466,19 @@ progress::-webkit-progress-bar {
     .container_skewed_about .about_experience .selfie {
       margin-top: 20px;
       background-size: 450px;
-      background-position-x: -80px; } }
+      background-position-x: -80px; }
+
+  .container_work .work_title {
+    padding-top: 0em; }
+    .container_work .work_title h1 {
+      font-size: 1.6em;
+      letter-spacing: 8px;
+      text-align: center;
+      width: 100%; }
+    .container_work .work_title .dash {
+      float: none;
+      display: block;
+      margin: 0 auto; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container_home .home_name {
     margin-top: 200px; }

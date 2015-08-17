@@ -170,7 +170,7 @@ progress::-webkit-progress-bar {
 
 	   
 	   h1 {
-		font-size: 3em;
+		font-size: 2.6em;
 		text-align: center;
 		text-transform: uppercase;	
 		letter-spacing: 10px;
@@ -351,9 +351,8 @@ progress::-webkit-progress-bar {
 
 .container_work {
 	width: 100%;
-	height: 850px;
+	height: 200px;
 	display: block;
-	padding: 4em;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;
@@ -374,6 +373,8 @@ progress::-webkit-progress-bar {
 		position: relative;
 		top: -150px;
 		height: 100px;
+		padding: 4em 4em 0 4em;
+
 
 		h1 {
 			text-transform: uppercase;
@@ -407,104 +408,80 @@ progress::-webkit-progress-bar {
   	display: -webkit-flex;
   	display: flex;
 
+  	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
   	justify-content: space-around;
   	cursor: pointer;
   	margin-top: -150px;
+  	background-repeat: no-repeat;
 
   	.box {
-   		margin: 0 auto;
-   		border: 10px solid transparent;
-   		list-style: none;
-   		background-repeat: no-repeat;
-   		
-   		ul {
-   			padding-left: 0;
-   		}
-   	}
+  		background-size: cover;
+  		background-repeat: no-repeat;
 
-   	.flex-item {
-	  background: transparent;
-	  padding: 6px;
-	  width: 300px;
-	  height: 250px;
-	  margin-top: 10px;
-	  list-style: none;
-	  line-height: 250px;
-	  color: white;
-	  font-weight: bold;
-	  font-size: 3em;
-	  text-align: center;
-	  background-size: cover;
-	  background-clip: content-box;
-	  box-sizing: border-box;
-	  position: relative;
-	  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
-	  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
-	   -o-transition:color .2s ease-out, background 2s ease-in;
-  -ms-transition:color .2s ease-out, background 2s ease-in;
-  -moz-transition:color .2s ease-out, background 2s ease-in;
-  -webkit-transition:color .2s ease-out, background 2s ease-in;
-  /* ...and now for the proper property */
-  transition:color .2s ease-out, background 2s ease-in;
+	   	.flex-item {
+		  background: transparent;
+		  padding: 6px;
+		  width: 300px;
+		  height: 300px;
+		  margin-top: 10px;
+		  list-style: none;
+		  line-height: 250px;
 
+		  color: white;
+		  font-weight: bold;
+		  font-size: 3em;
+		  text-align: center;
+		  
+		  background-clip: content-box;
+		  box-sizing: border-box;
+		  
+		 // -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+		 // clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+		 
+		}
 	}
-
-	
-
-
 }
-
 
 
 .box.one {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_fuzel.png');
-	background-size: contain;
 }
 
 .box.two {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_tiles.png');
-	background-size: contain;
 }
 
 .box.three {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_116_new.png');
-	background-size: contain;
 }
 
 .box.four {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_lw.png');
-	background-size: contain;
 }
 
 .box.five {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tlh.png');
-	background-size: contain;
 }
 
 .box.six {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tstop.png');
-	background-size: contain;
 }
 
 .box.seven {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tpp.png');
-	background-size: contain;
 }
 
 .box.eight {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_rp.png');
-	background-size: contain;
 }
 
 .box.nine {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_odin.png');
-	background-size: contain;
 }
 
 .box.ten {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_ml.png');
-	background-size: contain;
 }
 
 
@@ -631,7 +608,12 @@ progress::-webkit-progress-bar {
 	}
  }
 
-
+@media only screen
+and (max-width: 740px){
+	.container_work {
+		.work_title { padding-top: 7em;}
+	}
+}
 
 @media only screen 
   and (max-width: 600px) {
@@ -666,13 +648,17 @@ progress::-webkit-progress-bar {
 
   	// Logo Section
   	.container_home {
+  		height: 550px;
+
 	  	.home_name {
 	  		width: 315px;
 	  		height: 122px;
+	  		margin-top: 250px;
 
 	  		h1 {
 	  			font-size: 1.6em;
 	  			margin-bottom: 12px;
+				padding-left: 6px;
 	  		}
 
 	  		h1 span:nth-of-type(1) {margin-top: -3px;}
@@ -722,6 +708,26 @@ progress::-webkit-progress-bar {
 
 	  	}
 	  }
+
+	  //Work Section 
+	  .container_work {
+		.work_title { 
+			padding-top: 0em;
+			
+			h1 {
+				font-size: 1.6em;
+				letter-spacing: 8px;
+				text-align: center;
+				width: 100%;
+			}
+
+			.dash {
+				float: none;
+    			display: block;
+    			margin: 0 auto;
+			}
+		}
+	}
  }
 
 
