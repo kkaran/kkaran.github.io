@@ -36,8 +36,6 @@ body {
  	height: 100%;
 	background-color: $background;
     color: $grey;
-    margin: 0;
-    padding: 0;
     font-family: 'Lato', Helvetica;
     -webkit-font-smoothing: subpixel-antialiased;
   	
@@ -56,11 +54,6 @@ body {
   	overflow-x: hidden;
 
 	}
-}
-
-h1, h3, p {
-  max-width: 600px;
-  margin: 0 auto 1em;
 }
 
 .clearfix:after {
@@ -131,11 +124,6 @@ progress::-webkit-progress-bar {
 ----------- Entire site content ---------------
 ============================================== */
 
-.site_wrap {
-
-  background-color: $background;
- 
-}
 
 .dash {
 	display: block;
@@ -150,16 +138,10 @@ progress::-webkit-progress-bar {
 ============================================== */
 
 .container_home {
-	display: block;
-    position: relative;
     margin: 0 auto;
     height: 800px;
     width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
+   
 	.home_name {
 	  	border: 6px solid $off-white;
 	    color: $off-white;
@@ -637,8 +619,6 @@ progress::-webkit-progress-bar {
 			}
 		}
 	}
-
-
  }
 
 
