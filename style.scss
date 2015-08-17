@@ -657,7 +657,7 @@ and (max-width: 740px){
 	  		margin-top: 250px;
 
 	  		h1 {
-	  			font-size: 1.6em;
+	  			font-size: 1.4em;
 	  			margin-bottom: 12px;
 				padding-left: 6px;
 	  		}
@@ -665,7 +665,7 @@ and (max-width: 740px){
 	  		h1 span:nth-of-type(1) {margin-top: -3px;}
 
 			.home_title {
-				font-size: 1.2em;
+				font-size: 1em;
 				margin-top: 10px;
 			}
 		}
@@ -747,13 +747,6 @@ and (max-width: 740px){
   	//Work Section
 	.container_work {
 		.work_title {
-			h1 {
-				font-size: 2em;
-			    width: 100%;
-			    letter-spacing: 8px;
-			    line-height: 40px;
-			    text-align: center
-			}
 
 			.dash {
 				display: block;

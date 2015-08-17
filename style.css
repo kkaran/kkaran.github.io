@@ -437,13 +437,13 @@ progress::-webkit-progress-bar {
       height: 122px;
       margin-top: 250px; }
       .container_home .home_name h1 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         margin-bottom: 12px;
         padding-left: 6px; }
       .container_home .home_name h1 span:nth-of-type(1) {
         margin-top: -3px; }
       .container_home .home_name .home_title {
-        font-size: 1.2em;
+        font-size: 1em;
         margin-top: 10px; }
     .container_home .home_skewed_rect {
       width: 100%;
@@ -484,12 +484,6 @@ progress::-webkit-progress-bar {
   .container_home .home_name {
     margin-top: 200px; }
 
-  .container_work .work_title h1 {
-    font-size: 2em;
-    width: 100%;
-    letter-spacing: 8px;
-    line-height: 40px;
-    text-align: center; }
   .container_work .work_title .dash {
     display: block;
     margin: 0 auto;
