@@ -1,17 +1,4 @@
 
-$(document).ready(function() {
-// Nav bar icon animation --- //
-
-	$( ".nav_icon" ).click(function() {
-	    //alert($( this ).css( "transform" ));
-	    if (  $( this ).css( "transform" ) == 'none' ){
-	        $(this).css("transform","rotate(90deg)");
-	    } else {
-	        $(this).css("transform","" );
-	    }
-	});
-});
-
 
 //Progress Bar Js --- //  
 	$(document).ready(function() {
@@ -54,3 +41,8 @@ $(document).ready(function() {
 		}
 		$('#header_hello h2').text(msg);
 		}
+
+
+document.ready = function(event){
+    event.preventDefault();
+}
