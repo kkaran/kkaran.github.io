@@ -53,8 +53,9 @@ body {
   	/* Default cursor styles */
   	cursor: default;
   	//cursor:crosshair;
+  	overflow-x: hidden;
 
-}
+	}
 }
 
 h1, h3, p {
@@ -627,6 +628,17 @@ progress::-webkit-progress-bar {
 			}
 		}
 	}
+
+	//Work Section
+	.container_work {
+		.work_title {
+			h1,.dash  {
+				float: left;
+			}
+		}
+	}
+
+
  }
 
 
@@ -734,6 +746,25 @@ progress::-webkit-progress-bar {
   			margin-top: 200px;
   		}
   	}
+
+  	//Work Section
+	.container_work {
+		.work_title {
+			h1 {
+				font-size: 2em;
+			    width: 100%;
+			    letter-spacing: 8px;
+			    line-height: 40px;
+			    text-align: center
+			}
+
+			.dash {
+				display: block;
+			    margin: 0 auto;
+			    width: 100%;
+			}
+		}
+	}
 
 }
 

@@ -37,7 +37,8 @@ html body {
   user-select: none;
   /* Likely future */
   /* Default cursor styles */
-  cursor: default; }
+  cursor: default;
+  overflow-x: hidden; }
 
 h1, h3, p {
   max-width: 600px;
@@ -437,7 +438,10 @@ progress::-webkit-progress-bar {
           margin: 0 5px; }
     .container_skewed_about .about_experience .selfie {
       margin-top: -40px;
-      margin-left: 0; } }
+      margin-left: 0; }
+
+  .container_work .work_title h1, .container_work .work_title .dash {
+    float: left; } }
 @media only screen and (max-width: 600px) {
   .container_home .home_name {
     width: 440px; }
@@ -488,6 +492,17 @@ progress::-webkit-progress-bar {
       background-position-x: -80px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container_home .home_name {
-    margin-top: 200px; } }
+    margin-top: 200px; }
+
+  .container_work .work_title h1 {
+    font-size: 2em;
+    width: 100%;
+    letter-spacing: 8px;
+    line-height: 40px;
+    text-align: center; }
+  .container_work .work_title .dash {
+    display: block;
+    margin: 0 auto;
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
