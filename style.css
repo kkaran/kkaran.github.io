@@ -278,7 +278,8 @@ progress::-webkit-progress-bar {
     position: relative;
     top: -150px;
     height: 100px;
-    padding: 4em 4em 0 4em; }
+    padding: 4em 4em 0 4em;
+    margin: 0 auto; }
     .container_work .work_title h1 {
       text-transform: uppercase;
       font-size: 3em;
@@ -290,6 +291,8 @@ progress::-webkit-progress-bar {
     .container_work .work_title h1, .container_work .work_title .dash {
       float: right;
       clear: both; }
+    .container_work .work_title .dash {
+      margin-right: 9px; }
 
 .flex-container {
   padding: 0;
@@ -353,6 +356,46 @@ progress::-webkit-progress-bar {
 
 .box.ten {
   background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_ml.png"); }
+
+/* ============================================
+----------- Contact Social  --------------------
+============================================== */
+.container_social {
+  height: 150px;
+  width: 100%;
+  background-color: #333333;
+  display: block;
+  margin-top: 150px; }
+  .container_social ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+    display: block; }
+    .container_social ul li {
+      display: inline-block;
+      padding: 0 10px;
+      margin-top: 50px; }
+      .container_social ul li a {
+        color: #f8f8f8;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 5px;
+        padding: 10px;
+        box-sizing: border-box; }
+      .container_social ul li a:hover {
+        border: 4px solid #f8f8f8;
+        box-sizing: border-box; }
+  .container_social a.email:after {
+    content: "\f003"; }
+  .container_social a.dribbble:after {
+    content: "\f17d"; }
+  .container_social a.instagram:after {
+    content: "\f16d"; }
+  .container_social a.github:after {
+    content: "\f113"; }
+  .container_social a.linkedin:after {
+    content: "\f0e1"; }
 
 /* ============================================
 ----------- Media Queries  --------------------
@@ -470,23 +513,18 @@ progress::-webkit-progress-bar {
       background-position-x: -80px; }
 
   .container_work .work_title {
-    padding-top: 0em; }
+    padding-top: 0em;
+    width: 80%; }
     .container_work .work_title h1 {
       font-size: 1.6em;
       letter-spacing: 8px;
-      text-align: center;
-      width: 100%; }
-    .container_work .work_title .dash {
-      float: none;
-      display: block;
-      margin: 0 auto; } }
+      width: 100%;
+      margin-bottom: 10px; }
+
+  .flex-container {
+    margin-top: -200px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container_home .home_name {
-    margin-top: 200px; }
-
-  .container_work .work_title .dash {
-    display: block;
-    margin: 0 auto;
-    width: 100%; } }
+    margin-top: 200px; } }
 
 /*# sourceMappingURL=style.css.map */

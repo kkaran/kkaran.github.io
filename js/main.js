@@ -42,7 +42,3 @@
 		$('#header_hello h2').text(msg);
 		}
 
-
-document.ready = function(event){
-    event.preventDefault();
-}
