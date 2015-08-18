@@ -386,6 +386,16 @@ progress::-webkit-progress-bar {
         border: 4px solid #333333; }
       .container_social ul li a:hover {
         opacity: 0.5; }
+  .container_social .eml i:before {
+    content: "\f003"; }
+  .container_social .drbl i:before {
+    content: "\f17d"; }
+  .container_social .instgrm i:before {
+    content: "\f16d"; }
+  .container_social .gthb i:before {
+    content: "\f113"; }
+  .container_social .lnkdn i:before {
+    content: "\f0e1"; }
   .container_social footer {
     color: #f8f8f8;
     text-transform: uppercase;

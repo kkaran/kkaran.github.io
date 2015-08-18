@@ -533,6 +533,12 @@ progress::-webkit-progress-bar {
     	}
     }
 
+  .eml i:before{ content: "\f003"}
+  .drbl i:before { content: "\f17d"}
+  .instgrm i:before { content: "\f16d"}
+  .gthb i:before{ content: "\f113"}
+  .lnkdn i:before{ content: "\f0e1"}
+
  footer {
  	color: $off-white;
  	text-transform: uppercase;
