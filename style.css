@@ -388,6 +388,11 @@ progress::-webkit-progress-bar {
       .container_social ul li a:hover {
         border: 4px solid #f8f8f8;
         box-sizing: border-box; }
+      .container_social ul li a:after {
+        font-family: 'FontAwesome';
+        font-size: 15px;
+        color: #f8f8f8;
+        opacity: 0.8; }
   .container_social footer {
     color: #f8f8f8;
     text-transform: uppercase;
