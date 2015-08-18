@@ -423,7 +423,8 @@ progress::-webkit-progress-bar {
   		background-repeat: no-repeat;
 
 	   	.flex-item {
-		  background: transparent;
+		  //background: transparent;
+		  background-color: tomato;
 		  padding: 6px;
 		  width: 300px;
 		  height: 300px;
@@ -438,6 +439,8 @@ progress::-webkit-progress-bar {
 		  
 		  background-clip: content-box;
 		  box-sizing: border-box;
+
+		  text-shadow: 2px 2px rgba(50,68,100,.5);
 		  
 		 // -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
 		 // clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
@@ -500,6 +503,8 @@ progress::-webkit-progress-bar {
     display: block;
     margin-top: 150px;
 
+
+
     ul {
     	list-style: none;
     	text-align: center;
@@ -509,7 +514,7 @@ progress::-webkit-progress-bar {
 
     	li {
     		display: inline-block;
-    		padding: 0 10px;
+    		padding: 0 6px;
     		margin-top: 50px;
 
     		a {
@@ -520,34 +525,46 @@ progress::-webkit-progress-bar {
     			letter-spacing: 5px;
     			padding: 10px;
     			box-sizing: border-box;
+    			border: 4px solid $grey;
+
     		}
     		
 
     		a:hover {
     			border: 4px solid $off-white;
     			box-sizing: border-box;
-    			
     		}
     	}
     }
 
+ footer {
+ 	color: $off-white;
+ 	text-transform: uppercase;
+ 	text-align: center;
+ 	letter-spacing: 5px;
+ 	font-size: 0.6em;
+ 	width: 100%;
+ 	opacity: 0.8;
+ 	margin-top: 50px;
+ }
 
-a.email:after {
-	content: "\f003";
-}
 
-a.dribbble:after {
-	content: "\f17d";
-}
-a.instagram:after {
-	content: "\f16d";
-}
-a.github:after {
-	content: "\f113";
-}
-a.linkedin:after {
-	content: "\f0e1";
-}
+// a.email:after {
+// 	content: "\f003";
+// }
+
+// a.dribbble:after {
+// 	content: "\f17d";
+// }
+// a.instagram:after {
+// 	content: "\f16d";
+// }
+// a.github:after {
+// 	content: "\f113";
+// }
+// a.linkedin:after {
+// 	content: "\f0e1";
+// }
 
 
 
