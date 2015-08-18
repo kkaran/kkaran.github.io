@@ -57,6 +57,7 @@ body {
   	/* Default cursor styles */
   	cursor: default;
   	//cursor:crosshair;
+
 }
 
 
@@ -151,7 +152,7 @@ progress::-webkit-progress-bar {
     margin: 0 auto;
     height: 800px;
     width: 100%;
-   
+
 	.home_name {
 	  	border: 6px solid $off-white;
 	    color: $off-white;
@@ -298,7 +299,7 @@ progress::-webkit-progress-bar {
 				list-style-type: none;
 				display: inline-block;
 				margin: 0;
-				border: 6px solid;
+				border: 6px solid $grey;
 				padding: 6px;
 			}
 
@@ -429,8 +430,8 @@ progress::-webkit-progress-bar {
 	  		margin: 0 auto;
 
 		   	.flex-item {
-			  background: transparent;
-			 // background-color: tomato;
+			  //background: transparent;
+			  background-color: tomato;
 			  padding: 6px;
 			  width: 300px;
 			  height: 300px;
@@ -549,9 +550,9 @@ progress::-webkit-progress-bar {
  	text-transform: uppercase;
  	text-align: center;
  	letter-spacing: 5px;
- 	font-size: 0.6em;
+ 	font-size: 0.4em;
  	width: 100%;
- 	opacity: 0.8;
+ 	opacity: 0.5;
  	margin-top: 30px;
  }
 

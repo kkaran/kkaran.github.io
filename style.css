@@ -226,7 +226,7 @@ progress::-webkit-progress-bar {
           list-style-type: none;
           display: inline-block;
           margin: 0;
-          border: 6px solid;
+          border: 6px solid #333333;
           padding: 6px; }
         .container_skewed_about .about_experience .about_text ul li:nth-of-type(2) {
           margin: 0 10px; }
@@ -319,7 +319,7 @@ progress::-webkit-progress-bar {
       background-repeat: no-repeat;
       margin: 0 auto; }
       .container_thumbs .flex-container .box .flex-item {
-        background: transparent;
+        background-color: tomato;
         padding: 6px;
         width: 300px;
         height: 300px;
@@ -406,9 +406,9 @@ progress::-webkit-progress-bar {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    font-size: 0.6em;
+    font-size: 0.4em;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.5;
     margin-top: 30px; }
 
 /* ============================================
