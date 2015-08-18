@@ -362,7 +362,7 @@ progress::-webkit-progress-bar {
 ----------- Contact Social  --------------------
 ============================================== */
 .container_social {
-  height: 150px;
+  height: 115px;
   width: 100%;
   background-color: #333333;
   display: block;
@@ -375,24 +375,17 @@ progress::-webkit-progress-bar {
     .container_social ul li {
       display: inline-block;
       padding: 0 6px;
-      margin-top: 50px; }
+      margin-top: 30px; }
       .container_social ul li a {
         color: #f8f8f8;
         font-size: 0.6em;
         text-transform: uppercase;
         text-decoration: none;
-        letter-spacing: 5px;
         padding: 10px;
         box-sizing: border-box;
         border: 4px solid #333333; }
       .container_social ul li a:hover {
-        border: 4px solid #f8f8f8;
-        box-sizing: border-box; }
-      .container_social ul li a:after {
-        font-family: 'FontAwesome';
-        font-size: 15px;
-        color: #f8f8f8;
-        opacity: 0.8; }
+        opacity: 0.5; }
   .container_social footer {
     color: #f8f8f8;
     text-transform: uppercase;
@@ -401,7 +394,7 @@ progress::-webkit-progress-bar {
     font-size: 0.6em;
     width: 100%;
     opacity: 0.8;
-    margin-top: 50px; }
+    margin-top: 30px; }
 
 /* ============================================
 ----------- Media Queries  --------------------

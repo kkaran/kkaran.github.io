@@ -497,7 +497,7 @@ progress::-webkit-progress-bar {
 ============================================== */
 
 .container_social {
-	height: 150px;
+	height: 115px;
 	width: 100%;
 	background-color: $grey;
     display: block;
@@ -515,31 +515,20 @@ progress::-webkit-progress-bar {
     	li {
     		display: inline-block;
     		padding: 0 6px;
-    		margin-top: 50px;
+    		margin-top: 30px;
 
     		a {
     			color: $off-white;
     			font-size: 0.6em;
     			text-transform: uppercase;
     			text-decoration: none;
-    			letter-spacing: 5px;
     			padding: 10px;
     			box-sizing: border-box;
     			border: 4px solid $grey;
 
     		}
-    		
-
     		a:hover {
-    			border: 4px solid $off-white;
-    			box-sizing: border-box;
-    		}
-
-    		a:after {
-    			font-family: 'FontAwesome';
-    			font-size: 15px;
-    			color: $off-white;
-    			opacity: 0.8;
+    			opacity: 0.5;
     		}
     	}
     }
@@ -552,28 +541,8 @@ progress::-webkit-progress-bar {
  	font-size: 0.6em;
  	width: 100%;
  	opacity: 0.8;
- 	margin-top: 50px;
+ 	margin-top: 30px;
  }
-
-
-// a.email:after {
-// 	content: "\f003";
-// }
-
-// a.dribbble:after {
-// 	content: "\f17d";
-// }
-// a.instagram:after {
-// 	content: "\f16d";
-// }
-// a.github:after {
-// 	content: "\f113";
-// }
-// a.linkedin:after {
-// 	content: "\f0e1";
-// }
-
-
 
 }
 
