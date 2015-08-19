@@ -430,14 +430,14 @@ progress::-webkit-progress-bar {
 	  		margin: 0 auto;
 
 		   	.flex-item {
-			  //background: transparent;
-			  background-color: tomato;
+			  background: transparent;
+			  //background-color: tomato;
 			  padding: 6px;
 			  width: 300px;
 			  height: 300px;
 			  margin-top: 10px;
 			  list-style: none;
-			  line-height: 250px;
+			  line-height: 300px;
 
 			  color: white;
 			  font-weight: bold;
@@ -446,7 +446,7 @@ progress::-webkit-progress-bar {
 			  
 			  background-clip: content-box;
 
-			  text-shadow: 2px 2px rgba(50,68,100,.5);
+			  text-shadow: 7px 7px 25px rgba(50,68,100,.25);
 			  
 			 // -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
 			 // clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
@@ -457,23 +457,23 @@ progress::-webkit-progress-bar {
 }
 
 .box.one {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_fuzel.png');
+	background-image: url('images/thumbs/qta_iphone.png');
 }
 
 .box.two {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_tiles.png');
+	background-image: url('images/thumbs/qta_macbook.png');
 }
 
 .box.three {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_116_new.png');
+	background-image: url('images/thumbs/migo_poster.png');
 }
 
 .box.four {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_lw.png');
+	background-image: url('images/thumbs/lnkdn_macbook.png');
 }
 
 .box.five {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tlh.png');
+	background-image: url('https://octodex.github.com/images/original.png');
 }
 
 .box.six {
@@ -493,7 +493,7 @@ progress::-webkit-progress-bar {
 }
 
 .box.ten {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_ml.png');
+	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_tiles.png');
 }
 
 
