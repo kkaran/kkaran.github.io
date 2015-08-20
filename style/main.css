@@ -29,7 +29,6 @@ body {
   color: #333333;
   font-family: 'Lato', Helvetica;
   -webkit-font-smoothing: subpixel-antialiased;
-  /* Disables excess horizontal scroll when the menu is open */
   /* Disables selection of text */
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -95,8 +94,25 @@ progress::-webkit-progress-bar {
   background-color: #adadad; }
 
 /* ============================================
---------- Navigation slide out  ---------------
+--------- TEMP WIP ---------------
 ============================================== */
+.WIP {
+  display: block;
+  position: fixed;
+  width: 100%;
+  min-height: 15px;
+  max-height: 75px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  background: #333333;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 9999;
+  box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
+
 /* ============================================
 ----------- Entire site content ---------------
 ============================================== */
