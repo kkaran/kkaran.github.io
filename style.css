@@ -325,13 +325,17 @@ progress::-webkit-progress-bar {
         height: 300px;
         margin-top: 10px;
         list-style: none;
-        line-height: 300px;
-        color: white;
-        font-weight: bold;
-        font-size: 3em;
-        text-align: center;
-        background-clip: content-box;
-        text-shadow: 7px 7px 25px rgba(50, 68, 100, 0.25); }
+        background-clip: content-box; }
+        .container_thumbs .flex-container .box .flex-item a {
+          color: white;
+          font-weight: bold;
+          font-size: 3em;
+          text-align: center;
+          text-decoration: none;
+          background-clip: content-box;
+          text-shadow: 7px 7px 25px rgba(50, 68, 100, 0.25);
+          display: block;
+          line-height: 300px; }
 
 .box.one {
   background-image: url("images/thumbs/qta_iphone.png"); }
@@ -346,10 +350,10 @@ progress::-webkit-progress-bar {
   background-image: url("images/thumbs/lnkdn_macbook.png"); }
 
 .box.five {
-  background-image: url("https://octodex.github.com/images/original.png"); }
+  background-image: url("images/thumbs/octocat.png"); }
 
 .box.six {
-  background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tstop.png"); }
+  background-image: url("images/thumbs/sublime_text.png"); }
 
 .box.seven {
   background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tpp.png"); }
@@ -522,9 +526,9 @@ progress::-webkit-progress-bar {
         display: block;
         margin: 0; }
     .container_skewed_about .about_experience .selfie {
-      margin-top: 20px;
-      background-size: 450px;
-      background-position-x: -80px; }
+      margin-top: 10px;
+      background-size: 380px;
+      background-position-x: -50px; }
 
   .container_work .work_title {
     padding-top: 0em;
