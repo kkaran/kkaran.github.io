@@ -1,5 +1,11 @@
 
 
+//Mouse Fade Out --- //
+$(window).scroll(function(){
+    $(".mouse").css("opacity", 1 - $(window).scrollTop() / 100);
+  });
+
+
 //Progress Bar Js --- //  
 	$(document).ready(function() {
 		$('progress').attr ({
