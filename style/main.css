@@ -234,7 +234,7 @@ progress::-webkit-progress-bar {
       display: block;
       width: 100%;
       height: 500px;
-      background-image: url("images/mesh_transparent.png");
+      background-image: url("../images/mesh_transparent.png");
       background-size: contain;
       background-repeat: no-repeat;
       overflow: hidden;
@@ -338,22 +338,22 @@ progress::-webkit-progress-bar {
           line-height: 300px; }
 
 .box.one {
-  background-image: url("images/thumbs/qta_iphone.png"); }
+  background-image: url("../images/thumbs/qta_iphone.png"); }
 
 .box.two {
-  background-image: url("images/thumbs/qta_macbook.png"); }
+  background-image: url("../images/thumbs/qta_macbook.png"); }
 
 .box.three {
-  background-image: url("images/thumbs/migo_poster.png"); }
+  background-image: url("../images/thumbs/migo_poster.png"); }
 
 .box.four {
-  background-image: url("images/thumbs/lnkdn_macbook.png"); }
+  background-image: url("../images/thumbs/lnkdn_macbook.png"); }
 
 .box.five {
-  background-image: url("images/thumbs/octocat.png"); }
+  background-image: url("../images/thumbs/octocat.png"); }
 
 .box.six {
-  background-image: url("images/thumbs/sublime_text.png"); }
+  background-image: url("../images/thumbs/sublime_text.png"); }
 
 .box.seven {
   background-image: url("http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tpp.png"); }
@@ -409,11 +409,18 @@ progress::-webkit-progress-bar {
     color: #f8f8f8;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-size: 0.4em;
     width: 100%;
     opacity: 0.5;
     margin-top: 30px; }
+    .container_social footer span {
+      margin-top: -10px;
+      display: block;
+      position: absolute;
+      right: 20; }
+    .container_social footer span i:hover {
+      color: #F9275D; }
 
 /* ============================================
 ----------- Media Queries  --------------------
@@ -473,7 +480,10 @@ progress::-webkit-progress-bar {
       margin-left: 0; }
 
   .container_work .work_title h1, .container_work .work_title .dash {
-    float: left; } }
+    float: left; }
+
+  .container_social footer span {
+    display: none; } }
 @media only screen and (max-width: 740px) {
   .container_work .work_title {
     padding-top: 7em; } }
@@ -545,4 +555,4 @@ progress::-webkit-progress-bar {
   .container_home .home_name {
     margin-top: 200px; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
