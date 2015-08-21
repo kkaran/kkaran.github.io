@@ -1,6 +1,6 @@
 /*-- Colors -- */
 /* -- Styles --*/
-.skew_neg_17deg, .container_home .home_skewed_rect, .container_skewed_about {
+.skew_neg_17deg, .container_logo .logo_skewed_rect, .container_home .home_skewed_rect, .container_skewed_about {
   transform: translate3d(0px, -231.39159px, 0px) skewY(-17deg);
   -webkit-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
   -moz-transform: translate3d(0px, -231.39158px, 0px) skewY(-17deg);
@@ -122,6 +122,44 @@ progress::-webkit-progress-bar {
   height: 6px;
   background-color: #333333;
   margin-bottom: 10px; }
+
+/* ============================================
+----------- Logo (Small) ---------------
+============================================== */
+.container_logo {
+  margin: 0 auto;
+  height: 100px;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 25px; }
+  .container_logo .logo_name {
+    border: 3px solid #f8f8f8;
+    color: #f8f8f8;
+    cursor: default;
+    height: 36px;
+    width: 120px;
+    position: relative;
+    cursor: pointer;
+    -moz-transition: all .2s ease;
+    box-sizing: border-box;
+    box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
+    .container_logo .logo_name h1 {
+      font-size: 0.4em;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 6px;
+      margin-top: 10px; }
+  .container_logo .logo_skewed_rect {
+    background-color: #333333;
+    width: 130px;
+    height: 47px;
+    display: block;
+    position: relative;
+    z-index: -1;
+    margin-left: -6px;
+    margin-top: 190px;
+    -webkit-backface-visibility: hidden; }
 
 /* ============================================
 ---------------- Container Home ---------------
@@ -496,7 +534,7 @@ progress::-webkit-progress-bar {
       color: #F9275D; }
 
 /* ============================================
------------ Media Queries  --------------------
+----------- Media Queries -- HOME -------------
 ============================================== */
 @media only screen and (max-width: 1200px) {
   .container_skewed_about {
@@ -630,5 +668,130 @@ progress::-webkit-progress-bar {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container_home .home_name {
     margin-top: 200px; } }
+/* ============================================
+---------------- Projects Styling--------------
+============================================== */
+.container_project {
+  margin: 0 auto;
+  max-width: 75%;
+  display: block;
+  position: relative; }
+  .container_project .projects_flex_container {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around; }
+    .container_project .projects_flex_container .projects_flex_item {
+      background: trasparent;
+      min-width: 200px;
+      min-height: 100px;
+      margin-top: 10px;
+      font-size: 1em;
+      text-align: left; }
+    .container_project .projects_flex_container .projects_title {
+      width: 31%;
+      font-size: 1.5em;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 4px;
+      margin-top: 0;
+      word-wrap: break-word;
+      overflow-wrap: break-word; }
+      .container_project .projects_flex_container .projects_title .dash {
+        margin-top: 20px; }
+    .container_project .projects_flex_container .projects_copy {
+      width: 60%;
+      padding-left: 10px;
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 1px;
+      margin: 0; }
+  .container_project .project_tags {
+    display: block;
+    width: 100%; }
+    .container_project .project_tags ul {
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      text-align: center; }
+      .container_project .project_tags ul li {
+        color: #adadad;
+        list-style-type: none;
+        display: inline-block;
+        margin: 10px 10px;
+        border: 2px solid #adadad;
+        opacity: 0.2;
+        padding: 5px 10px; }
+  .container_project .projects_content {
+    margin-top: 20px; }
+    .container_project .projects_content .empty {
+      display: block;
+      max-width: 100%;
+      border: 0.5px dashed #adadad;
+      width: 100%;
+      height: 1000px;
+      opacity: 0.5; }
+
+.project_tags ul li.tag_active {
+  opacity: 1;
+  color: #333333;
+  border: 2px solid #333333; }
+
+/* ============================================
+-------- Media Queries -- Projects ------------
+============================================== */
+@media only screen and (max-width: 965px) {
+  .container_project {
+    max-width: 85%; } }
+@media only screen and (max-width: 625px) {
+  .container_project {
+    max-width: 93%;
+    box-sizing: border-box; }
+    .container_project .projects_flex_container .projects_title {
+      width: 100%;
+      min-height: 70px;
+      box-sizing: border-box; }
+    .container_project .projects_flex_container .projects_copy {
+      width: 100%;
+      padding-left: 0; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container_logo {
+    margin: 0 auto; } }
+@media only screen and (max-width: 480px) {
+  .container_logo {
+    margin: auto;
+    margin-top: 35px; }
+    .container_logo .logo_name {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 20px; }
+    .container_logo .logo_skewed_rect {
+      display: block;
+      position: relative;
+      z-index: -1;
+      margin: 0 auto;
+      margin-top: 190px;
+      -webkit-backface-visibility: hidden; }
+
+  .container_project {
+    text-align: center; }
+    .container_project .projects_flex_container .projects_title {
+      display: block;
+      text-align: center; }
+      .container_project .projects_flex_container .projects_title .dash {
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
