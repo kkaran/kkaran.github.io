@@ -63,6 +63,14 @@ ul, li {
 	margin:0;
 }
 
+a {
+	color: $grey;
+	text-decoration: none;
+}
+
+a:hover {color: $grey;}
+a:visited {color: $grey}
+
 
 .clearfix:after {
     content:".";
