@@ -1,3 +1,6 @@
+/* ============================================
+--------------- Reusable styles----------------
+============================================== */
 /*-- Colors -- */
 /* -- Styles --*/
 .skew_neg_17deg, .container_logo .logo_skewed_rect, .container_home .home_skewed_rect, .container_skewed_about {
@@ -678,13 +681,15 @@ progress::-webkit-progress-bar {
       font-size: 0.8em;
       text-align: center; }
       .container_project .project_tags ul li {
-        color: #adadad;
+        color: #333333;
         list-style-type: none;
         display: inline-block;
         margin: 10px 10px;
-        border: 2px solid #adadad;
-        opacity: 0.2;
-        padding: 5px 10px; }
+        padding: 5px 10px;
+        opacity: 0.5;
+        word-spacing: 5px; }
+        .container_project .project_tags ul li span.octicon {
+          padding-right: 2px; }
   .container_project .projects_content {
     margin-top: 20px; }
     .container_project .projects_content .empty {
@@ -694,11 +699,6 @@ progress::-webkit-progress-bar {
       width: 100%;
       height: 1000px;
       opacity: 0.5; }
-
-.project_tags ul li.tag_active {
-  opacity: 1;
-  color: #333333;
-  border: 2px solid #333333; }
 
 /* ============================================
 -------- Media Queries -- Projects ------------

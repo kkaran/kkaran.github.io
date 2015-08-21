@@ -1,3 +1,8 @@
+/* ============================================
+--------------- Reusable styles----------------
+============================================== */
+
+
 /*-- Colors -- */
 $grey : #333333;
 $light-grey: #adadad;
@@ -986,13 +991,17 @@ progress::-webkit-progress-bar {
 
 
 			li {
-				color: $light-grey;
+				color: $grey;
 				list-style-type: none;
 				display: inline-block;
 				margin: 10px 10px;
-				border: 2px solid $light-grey;
-				opacity: 0.2;
 				padding: 5px 10px;
+				opacity: 0.5;
+				word-spacing: 5px;
+				
+				span.octicon {
+					padding-right: 2px;
+				}
 			}
 		}
 	}
@@ -1010,11 +1019,7 @@ progress::-webkit-progress-bar {
 	}
 }
 
-.project_tags ul li.tag_active {
-	opacity: 1;
-	color: $grey;
-	border: 2px solid $grey;
-}
+
 
 
 /* ============================================
