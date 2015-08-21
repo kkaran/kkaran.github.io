@@ -233,7 +233,6 @@ progress::-webkit-progress-bar {
 		.mouse {
 			width: 50px;
 			margin: 0 auto;
-			margin-top: 30px;
 		}
 	
 
@@ -738,6 +737,9 @@ progress::-webkit-progress-bar {
  }
 
  @media only screen and (max-width: 800px){
+
+ 	//Home Section
+ 	.mouse {display: none;}
 
  	// About Me Section
  	.container_skewed_about {
