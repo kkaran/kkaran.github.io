@@ -157,12 +157,13 @@ progress::-webkit-progress-bar {
     box-sizing: border-box;
     box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
     .container_logo .logo_name h1 {
-      font-size: 0.4em;
+      font-size: 8px;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 4px;
       margin-bottom: 6px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-left: 2px; }
   .container_logo .logo_skewed_rect {
     background-color: #333333;
     width: 130px;
@@ -477,7 +478,7 @@ progress::-webkit-progress-bar {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 0.4em;
+    font-size: 8px;
     width: 100%;
     opacity: 0.5;
     margin-top: 30px; }
@@ -680,7 +681,7 @@ progress::-webkit-progress-bar {
       text-transform: uppercase;
       font-size: 0.8em;
       text-align: center;
-      margin-top: 30px; }
+      margin-top: 20px; }
       .container_project .project_tags ul li {
         color: #333333;
         list-style-type: none;
@@ -704,6 +705,22 @@ progress::-webkit-progress-bar {
 /* ============================================
 -------- Media Queries -- Projects ------------
 ============================================== */
+@media only screen and (max-width: 1024px) {
+  .container_project .projects_flex_container .projects_title {
+    width: 100%;
+    min-height: 70px;
+    box-sizing: border-box;
+    text-align: center; }
+  .container_project .projects_flex_container .dash {
+    display: block;
+    margin: 0 auto; }
+  .container_project .projects_flex_container .projects_copy {
+    width: 100%;
+    text-align: center; }
+  .container_project .project_tags ul li {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 10px; } }
 @media only screen and (max-width: 965px) {
   .container_project {
     max-width: 85%; } }
@@ -751,6 +768,8 @@ progress::-webkit-progress-bar {
         display: block;
         margin-top: 20px;
         margin-bottom: 20px; }
+    .container_project .projects_flex_container .projects_copy {
+      text-align: left; }
     .container_project .project_tags ul li {
       text-align: left;
       line-height: 20px;

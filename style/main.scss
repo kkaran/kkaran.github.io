@@ -198,12 +198,13 @@ progress::-webkit-progress-bar {
 	    box-shadow: $shadow;
 	   
 	   h1 {
-		font-size: 0.4em;
-	    text-align: center;
-	    text-transform: uppercase;
-	    letter-spacing: 4px;
-	    margin-bottom: 6px;
-	    margin-top: 10px;
+		font-size: 8px;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		margin-bottom: 6px;
+		margin-top: 10px;
+		margin-left: 2px;
 		} 
 	}
 		.logo_skewed_rect {
@@ -621,7 +622,7 @@ progress::-webkit-progress-bar {
  	text-transform: uppercase;
  	text-align: center;
  	letter-spacing: 3px;
- 	font-size: 0.4em;
+ 	font-size: 8px;
  	width: 100%;
  	opacity: 0.5;
  	margin-top: 30px;
@@ -988,7 +989,7 @@ progress::-webkit-progress-bar {
 			text-transform: uppercase;
 			font-size: 0.8em;
 			text-align: center;
-			margin-top: 30px;
+			margin-top: 20px;
 
 
 			li {
@@ -1026,6 +1027,44 @@ progress::-webkit-progress-bar {
 /* ============================================
 -------- Media Queries -- Projects ------------
 ============================================== */
+
+@media only screen and (max-width: 1024px) {
+
+	.container_project {
+		
+		.projects_flex_container {
+		
+		  .projects_title {
+			  width: 100%;
+			  min-height: 70px;
+			  box-sizing: border-box;
+			  text-align: center;
+			}
+		  .dash {
+		  	display: block;
+		  	margin: 0 auto;
+		  }
+
+		  .projects_copy { 
+		  	width:100%;
+		  	text-align: center;
+		  }
+		
+		}
+
+		.project_tags {
+			ul {
+				li {
+					width: 100%;
+					box-sizing:border-box;
+					margin: 10px 10px;
+				}
+			}
+		}
+	
+	}
+
+}
 
 @media only screen and (max-width: 965px) {
 
@@ -1116,6 +1155,10 @@ progress::-webkit-progress-bar {
 				    margin-bottom: 20px;
 			  }
 			}
+			.projects_copy {
+				text-align: left;
+			}
+
 		}
 		.project_tags {
 			ul {
