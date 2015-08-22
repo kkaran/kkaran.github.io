@@ -988,13 +988,14 @@ progress::-webkit-progress-bar {
 			text-transform: uppercase;
 			font-size: 0.8em;
 			text-align: center;
+			margin-top: 30px;
 
 
 			li {
 				color: $grey;
 				list-style-type: none;
 				display: inline-block;
-				margin: 10px 10px;
+				margin: 0 10px 10px 10px;
 				padding: 5px 10px;
 				opacity: 0.5;
 				word-spacing: 5px;
@@ -1052,6 +1053,16 @@ progress::-webkit-progress-bar {
 		  }
 		
 		}
+
+		.project_tags {
+			ul {
+				li {
+					width: 100%;
+					box-sizing:border-box;
+					margin: 10px 10px;
+				}
+			}
+		}
 	
 	}
 
@@ -1104,6 +1115,16 @@ progress::-webkit-progress-bar {
 				    margin-top: 20px;
 				    margin-bottom: 20px;
 			  }
+			}
+		}
+		.project_tags {
+			ul {
+				li {
+					text-align: left;
+					line-height: 20px;
+					padding-left: 0;
+					margin-left: 0;
+				}
 			}
 		}
 	}
