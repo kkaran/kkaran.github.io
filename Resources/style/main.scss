@@ -1044,7 +1044,6 @@ progress::-webkit-progress-bar {
 			display: block;
 			margin: 0 auto;
 			margin-top: 1em;
-			//box-shadow: $shadow_short;
 			max-width: 100%;
 		}
 	}
@@ -1079,7 +1078,7 @@ progress::-webkit-progress-bar {
 
 /* ------------- LinkedIn-------------- */
 
-.projects_linkedin {
+.projects_content.projects_linkedin {
 
 	img {
 		max-width: 72%;
