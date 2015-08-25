@@ -751,7 +751,25 @@ progress::-webkit-progress-bar {
 @media only screen and (max-width: 640px) {
   .projects_linkedin a img {
     max-width: 100%; } }
-/* ------------- Github -------------- */
+/* ------------- QTA_Web -------------- */
+.projects_content.projects_qta_web {
+  margin: 0 auto;
+  display: block;
+  max-width: 803px;
+  box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
+  .projects_content.projects_qta_web .qta_web_tour {
+    width: 100%;
+    max-width: 800px;
+    height: 425px;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0 auto; }
+    .projects_content.projects_qta_web .qta_web_tour img {
+      max-width: 800px;
+      width: 100%;
+      margin-top: -2px; }
+
 /* ============================================
 -------- Media Queries -- Projects ------------
 ============================================== */

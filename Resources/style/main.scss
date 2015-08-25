@@ -1101,9 +1101,31 @@ progress::-webkit-progress-bar {
 	}
 }
 
-/* ------------- Github -------------- */
+/* ------------- QTA_Web -------------- */
 
+.projects_content.projects_qta_web {
+	margin: 0 auto;
+	display: block;
+	max-width: 803px;
+	box-shadow: $shadow;
+	
+	.qta_web_tour {
+		width: 100%;
+		max-width: 800px;
+		height: 425px;
+		display: block;
+		overflow-x:hidden;
+		overflow-y: scroll;
+		margin: 0 auto;
 
+		img {
+			max-width: 800px;
+			width: 100%;
+			margin-top: -2px;
+		}
+	}
+
+}
 
 
 /* ============================================
