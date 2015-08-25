@@ -12,6 +12,7 @@ $background: #e9eaea;
 
 /* -- Styles --*/
 $shadow : 15px 55px 80px -25px rgba(50,68,100,.25);
+$shadow_short: 0px 25px 70px -25px rgba(50,68,100,.25);
 
 .skew_neg_17deg {
 	transform: translate3d(0px, -231.39159px, 0px) skewY(-17deg);
@@ -170,6 +171,17 @@ progress::-webkit-progress-bar {
 	height: 6px;
 	background-color: $grey;
 	margin-bottom: 10px;
+}
+
+.dash_mini {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: $grey;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	opacity: 1;
 }
 
 
@@ -944,6 +956,7 @@ progress::-webkit-progress-bar {
 	  	flex-flow: row wrap;
 		-webkit-flex-flow: row wrap;
 	  	justify-content: space-around;
+	  	max-width: 950px;
 	  	
 	  	.projects_flex_item {
 		  background: trasparent;
@@ -983,6 +996,7 @@ progress::-webkit-progress-bar {
 	.project_tags {
 		display: block;
 		width: 100%;
+		padding-top: 20px;
 
 		ul {
 			list-style: none;
@@ -990,6 +1004,8 @@ progress::-webkit-progress-bar {
 			font-size: 0.8em;
 			text-align: center;
 			margin-top: 20px;
+			margin: 0 auto;
+			max-width: 950px;
 
 
 			li {
@@ -1010,46 +1026,29 @@ progress::-webkit-progress-bar {
 	.projects_content {
 		margin-top: 20px;
 
+		h3 {
+			color: $grey;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 0.8em;
+			margin-bottom: 0;
+    		margin-top: 30px;
+    		z-index: 9999;
+		}
+
+		img:hover {
+			box-shadow: $shadow_short;
+		}
+
 		img {
 			display: block;
 			margin: 0 auto;
-		}
-	}
-}
-
-
-
-/* ===========================================================
----------------- Projects Specfic ----------------------------
-============================================================= */
-
-/* ------------- LinkedIn-------------- */
-
-.projects_linkedin {
-
-	img {
-		padding: 1em 0 1em 0;
-		max-width: 72%;
-		box-shadow: $shadow;
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	.projects_linkedin {
-		img {
-			max-width: 90%;
-		}
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	.projects_linkedin {
-		img {
+			margin-top: 1em;
+			//box-shadow: $shadow_short;
 			max-width: 100%;
 		}
 	}
 }
-
 
 
 .back_to_home {
@@ -1057,7 +1056,7 @@ progress::-webkit-progress-bar {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
 
     span:nth-of-type(1) {
     	font-size: 14px;
@@ -1073,6 +1072,41 @@ progress::-webkit-progress-bar {
 
 
 
+
+/* ===========================================================
+---------------- Projects Specfic ----------------------------
+============================================================= */
+
+/* ------------- LinkedIn-------------- */
+
+.projects_linkedin {
+
+	img {
+		max-width: 72%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.projects_linkedin {
+		img {
+			max-width: 90%;
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.projects_linkedin {
+		a img {
+			max-width: 100%;
+		}
+	}
+}
+
+/* ------------- Github -------------- */
+
+
+
+
 /* ============================================
 -------- Media Queries -- Projects ------------
 ============================================== */
@@ -1082,7 +1116,7 @@ progress::-webkit-progress-bar {
 	.container_project {
 		
 		.projects_flex_container {
-		
+
 		  .projects_title {
 			  width: 100%;
 			  min-height: 70px;
@@ -1143,6 +1177,7 @@ progress::-webkit-progress-bar {
 		}
 
 		.project_tags {
+			padding-top: 0;
 			ul {
 				li {
 					width: 100%;
