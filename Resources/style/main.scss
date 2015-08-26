@@ -504,7 +504,6 @@ progress::-webkit-progress-bar {
 	  	flex-flow: row wrap;
 		-webkit-flex-flow: row wrap;
 	  	justify-content: space-around;
-	  	cursor: pointer;
 	  	margin-top: -150px;
 	  	background-repeat: no-repeat;
 
@@ -606,6 +605,7 @@ progress::-webkit-progress-bar {
     		display: inline-block;
     		padding: 0 6px;
     		margin-top: 30px;
+    		color: $off-white;
 
     		a {
     			color: $off-white;
@@ -1098,11 +1098,12 @@ progress::-webkit-progress-bar {
 
 	img {
 		max-width: 72%;
+		width: 800px;
 	}
 }
 
 @media only screen and (max-width: 1200px) {
-	.projects_linkedin {
+	.projects_content.projects_linkedin {
 		img {
 			max-width: 90%;
 		}
@@ -1110,12 +1111,44 @@ progress::-webkit-progress-bar {
 }
 
 @media only screen and (max-width: 640px) {
-	.projects_linkedin {
+	.projects_content.projects_linkedin {
 		a img {
 			max-width: 100%;
 		}
 	}
 }
+
+/* ------------- Github -------------- */
+.projects_octocat h3 {
+	text-align:center;
+}
+
+/* ------------- Migo -------------- */
+.projects_content.projects_migo {
+	img {
+		max-width: 72%;
+		width: 800px;
+		margin-top: 0;
+
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.projects_content.projects_migo {
+		img {
+			max-width: 90%;
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.projects_content.projects_migo {
+		a img {
+			max-width: 100%;
+		}
+	}
+}
+
 
 /* ------------- QTA_Web -------------- */
 
