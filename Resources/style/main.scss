@@ -1036,10 +1036,7 @@ progress::-webkit-progress-bar {
     		z-index: 9999;
 		}
 
-		img:hover {
-			box-shadow: $shadow_short;
-		}
-
+		
 		img {
 			display: block;
 			margin: 0 auto;
@@ -1107,23 +1104,12 @@ progress::-webkit-progress-bar {
 	margin: 0 auto;
 	display: block;
 	max-width: 803px;
-	box-shadow: $shadow;
 	
-	.qta_web_tour {
-		width: 100%;
-		max-width: 800px;
-		height: 425px;
-		display: block;
-		overflow-x:hidden;
-		overflow-y: scroll;
-		margin: 0 auto;
-
 		img {
 			max-width: 800px;
 			width: 100%;
-			margin-top: -2px;
 		}
-	}
+	
 
 }
 

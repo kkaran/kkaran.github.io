@@ -716,8 +716,6 @@ progress::-webkit-progress-bar {
       margin-bottom: 0;
       margin-top: 30px;
       z-index: 9999; }
-    .container_project .projects_content img:hover {
-      box-shadow: 0px 25px 70px -25px rgba(50, 68, 100, 0.25); }
     .container_project .projects_content img {
       display: block;
       margin: 0 auto;
@@ -755,20 +753,10 @@ progress::-webkit-progress-bar {
 .projects_content.projects_qta_web {
   margin: 0 auto;
   display: block;
-  max-width: 803px;
-  box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
-  .projects_content.projects_qta_web .qta_web_tour {
-    width: 100%;
+  max-width: 803px; }
+  .projects_content.projects_qta_web img {
     max-width: 800px;
-    height: 425px;
-    display: block;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    margin: 0 auto; }
-    .projects_content.projects_qta_web .qta_web_tour img {
-      max-width: 800px;
-      width: 100%;
-      margin-top: -2px; }
+    width: 100%; }
 
 /* ============================================
 -------- Media Queries -- Projects ------------
