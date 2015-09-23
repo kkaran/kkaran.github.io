@@ -256,13 +256,12 @@ progress::-webkit-progress-bar {
   clear: both;
   -webkit-backface-visibility: hidden;
   display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  justify-content: space-around; }
   .container_skewed_about .about_experience {
     display: block;
     position: relative;
@@ -318,11 +317,11 @@ progress::-webkit-progress-bar {
       background-repeat: no-repeat;
       overflow: hidden;
       margin-top: -350px;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1);
-      -webkit-filter: FlipH;
-              filter: FlipH;
+      transform: scaleX(-1);
+      filter: FlipH;
       -ms-filter: "FlipH"; }
       .container_skewed_about .about_experience .selfie img {
         display: block;
@@ -340,17 +339,18 @@ progress::-webkit-progress-bar {
   width: 100%;
   height: 200px;
   display: block;
+  -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
   display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  justify-content: space-around; }
   .container_work .work_title {
     width: 100%;
     position: relative;
@@ -381,16 +381,15 @@ progress::-webkit-progress-bar {
     padding: 0;
     margin: 0 auto;
     list-style: none;
+    max-width: 1200px;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    justify-content: space-around;
     margin-top: -150px;
     background-repeat: no-repeat; }
     .container_thumbs .flex-container .box {
@@ -651,15 +650,13 @@ progress::-webkit-progress-bar {
     list-style: none;
     margin-bottom: 20px;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    justify-content: space-around;
     max-width: 950px; }
     .container_project .projects_flex_container .projects_flex_item {
       background: trasparent;
