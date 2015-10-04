@@ -1147,10 +1147,28 @@ progress::-webkit-progress-bar {
 	}
 }
 
-/* ------------- QTA_Web -------------- */
+/* ------------- QTA_ios -------------- */
 
 .app_store_badge {
 	padding-top: 25px;
+	max-width: 150px !important;
+}
+
+.projects_content.projects_ios {
+	margin: 0 auto;
+	display: block;
+	max-width: 803px;
+	
+		img {
+			max-width: 800px;
+			width: 100%;
+			margin-top: 0;
+		}
+
+		img:nth-of-type(1) {
+			padding-top: 20px;
+		}
+	
 }
 
 
