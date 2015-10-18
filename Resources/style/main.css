@@ -163,7 +163,6 @@ progress::-webkit-progress-bar {
     width: 120px;
     position: relative;
     cursor: pointer;
-    -moz-transition: all .2s ease;
     box-sizing: border-box;
     box-shadow: 15px 55px 80px -25px rgba(50, 68, 100, 0.25); }
     .container_logo .logo_name h1 {
@@ -736,12 +735,46 @@ progress::-webkit-progress-bar {
       margin-top: 1em;
       max-width: 100%; }
 
+.projects_nav {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  margin-top: 400px;
+  top: 0;
+  display: none; }
+  .projects_nav ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #adadad;
+    border-radius: 1px; }
+    .projects_nav ul li a {
+      color: #f8f8f8;
+      display: block;
+      height: 100%;
+      width: 100%; }
+      .projects_nav ul li a .fa-angle-left {
+        margin-top: 9px;
+        margin-right: 9px; }
+      .projects_nav ul li a .fa-angle-right {
+        margin-top: 9px;
+        margin-left: 9px; }
+  .projects_nav ul li:nth-of-type(1) {
+    float: left; }
+  .projects_nav ul li:nth-of-type(2) {
+    float: right; }
+
+/* Add to first and last project */
+.projects_nav ul li.disabled {
+  opacity: 0; }
+
 .back_to_home {
   display: block;
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  margin-top: 100px; }
+  margin-top: 50px; }
   .back_to_home span:nth-of-type(1) {
     font-size: 14px;
     text-transform: uppercase;
@@ -852,7 +885,11 @@ progress::-webkit-progress-bar {
       .container_project .project_tags ul li {
         width: 100%;
         box-sizing: border-box;
-        margin: 10px 10px; } }
+        margin: 10px 10px; }
+
+  .projects_nav {
+    position: relative;
+    margin-top: 50px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .container_logo {
     margin: 0 auto; } }

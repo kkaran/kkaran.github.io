@@ -5,6 +5,15 @@ $(window).scroll(function(){
     $(".mouse").css("opacity", 1 - $(window).scrollTop() / 100);
   });
 
+//Project Nav Fade In --- //
+$(window).scroll(function() {
+  if ($(this).scrollTop()> 150) {
+    $('.projects_nav').fadeIn();
+   } else {
+    $('.projects_nav').fadeOut();
+   }
+});
+
 
 //Progress Bar Js --- //  
 	$(document).ready(function() {
