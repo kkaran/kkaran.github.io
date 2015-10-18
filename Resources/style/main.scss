@@ -1070,7 +1070,7 @@ progress::-webkit-progress-bar {
     margin-top: 400px;
     top: 0;
     display: none;
-    
+
     ul {
     	li {
     		display: inline-block;
@@ -1112,7 +1112,13 @@ progress::-webkit-progress-bar {
 .projects_nav {
 	ul {
 		li.disabled {
-			opacity: 0;
+			background: transparent;
+			border: 1px solid $light-grey;
+			opacity: 0.15;
+
+			a {
+				color: $light-grey;
+			}
 		}
 	}
 }
