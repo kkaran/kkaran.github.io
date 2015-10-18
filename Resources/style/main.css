@@ -769,7 +769,7 @@ progress::-webkit-progress-bar {
 .projects_nav ul li.disabled {
   background: transparent;
   border: 1px solid #adadad;
-  opacity: 0.15; }
+  opacity: 0.5; }
   .projects_nav ul li.disabled a {
     color: #adadad; }
 
