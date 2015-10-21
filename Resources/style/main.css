@@ -536,6 +536,9 @@ progress::-webkit-progress-bar {
       .container_skewed_about .about_experience .selfie {
         margin-top: -500px;
         margin-left: 180px; } }
+@media only screen and (max-width: 875px) {
+  .container_social footer span {
+    display: none; } }
 @media only screen and (max-width: 830px) {
   .container_skewed_about {
     height: 600px; }
@@ -562,10 +565,7 @@ progress::-webkit-progress-bar {
       margin-left: 0; }
 
   .container_work .work_title h1, .container_work .work_title .dash {
-    float: left; }
-
-  .container_social footer span {
-    display: none; } }
+    float: left; } }
 @media only screen and (max-width: 740px) {
   .container_work .work_title {
     padding-top: 7em; } }
