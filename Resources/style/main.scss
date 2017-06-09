@@ -379,8 +379,10 @@ progress::-webkit-progress-bar {
 				list-style-type: none;
 				display: inline-block;
 				margin: 0;
-				border: 6px solid $grey;
-				padding: 6px;
+				background: $grey;
+				color: white;
+				//border: 6px solid $grey;
+				padding: 10px;
 			}
 
 			li:nth-of-type(2) {
@@ -537,45 +539,50 @@ progress::-webkit-progress-bar {
 }
 
 .box.one {
-	background-image: url('../img/thumbs/qta_iphone.png');
+	background-image: url('../img/thumbs/nike.png');
 }
 
 .box.two {
-	background-image: url('../img/thumbs/qta_macbook.png');
+	background-image: url('../img/thumbs/echo.png');
 }
 
 .box.three {
-	background-image: url('../img/thumbs/migo_poster.png');
+	background-image: url('../img/thumbs/samxt.png');
 }
 
 .box.four {
-	background-image: url('../img/thumbs/lnkdn_macbook.png');
+	background-image: url('../img/thumbs/qta_iphone.png');
 }
 
 .box.five {
-	background-image: url('../img/thumbs/octocat.png');
+	background-image: url('../img/thumbs/qta_macbook.png');
 }
 
 .box.six {
-	background-image: url('../img/thumbs/sublime_text.png');
+	background-image: url('../img/thumbs/migo_poster.png');
 }
 
 .box.seven {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_tpp.png');
+	background-image: url('../img/thumbs/lnkdn_macbook.png');
 }
 
 .box.eight {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_rp.png');
+	background-image: url('../img/thumbs/octocat.png');
 }
 
+
 .box.nine {
-	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/04/thumb_odin.png');
+	background-image: url('../img/thumbs/sublime_text.png');
 }
 
 .box.ten {
 	background-image: url('http://giangnguyendesign.com/wp-content/uploads/2014/12/thumb_tiles.png');
 }
 
+.box li a.inactive_thumb {  
+	pointer-events: none;
+   cursor: default;
+}
 
 
 /* ============================================
@@ -585,9 +592,8 @@ progress::-webkit-progress-bar {
 .container_social {
 	height: 115px;
 	width: 100%;
-	background-color: $grey;
     display: block;
-    margin-top: 150px;
+    //margin-top: 150px;
 
 
 
@@ -602,16 +608,16 @@ progress::-webkit-progress-bar {
     		display: inline-block;
     		padding: 0 6px;
     		margin-top: 30px;
-    		color: $off-white;
+    		color: $grey;
 
     		a {
-    			color: $off-white;
+    			color: $grey;
     			font-size: 0.6em;
     			text-transform: uppercase;
     			text-decoration: none;
     			padding: 10px;
     			box-sizing: border-box;
-    			border: 4px solid $grey;
+ 
 
     		}
     		a:hover {
@@ -627,7 +633,7 @@ progress::-webkit-progress-bar {
   .lnkdn i:before{ content: "\f0e1"}
 
  footer {
- 	color: $off-white;
+ 	color: $grey;
  	text-transform: uppercase;
  	text-align: center;
  	letter-spacing: 3px;
@@ -649,6 +655,35 @@ progress::-webkit-progress-bar {
  }
 
 }
+
+.end_gradient {
+	margin: 0 auto;
+	width: 100px;
+	display: block;
+	height: 6px;
+	background-color: $grey;
+    margin-top: 60px;
+    border-radius:2px;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+	
+}
+
+.end_gradient:after{
+ content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 40px rgba(0,0,0,0.8);
+    box-shadow:0 0 40px rgba(0,0,0,0.8);
+    bottom:0px;
+    left:10%;
+    right:10%;
+    width:80%;
+    height:50%;
+    -moz-border-radius:100%;
+    border-radius:100%;}
+
 
 
 /* ============================================
@@ -1120,6 +1155,8 @@ progress::-webkit-progress-bar {
 			background: transparent;
 			border: 1px solid $light-grey;
 			opacity: 0.5;
+			pointer-events: none;
+   			cursor: default;
 
 			a {
 				color: $light-grey;
@@ -1264,6 +1301,22 @@ progress::-webkit-progress-bar {
 	    }
 }
 
+/* ------------- QTA_Web -------------- */
+
+.samxt_button {
+	text-align: center;
+    width: 160px;
+    border: 1px solid #FF550D;
+    //background: #FF550D;
+    display: block;
+    margin: 0 auto;
+    color: #FF550D;
+    padding: 18px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+a.samxt_button:visited {color: #FF550D;}
 
 /* ============================================
 -------- Media Queries -- Projects ------------
