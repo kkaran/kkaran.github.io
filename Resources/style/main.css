@@ -29,7 +29,7 @@ body {
     padding-bottom: 16px;
     margin: 0 auto;
     margin-top: 50px;
-    width: 100px;
+    width: 110px;
     font-family: lato;
     font-weight: 600;
     letter-spacing: 1px; }
@@ -41,7 +41,7 @@ body {
     margin-top: 100px; }
   .vows-container p {
     font-family: lato;
-    font-weight: 300;
+    font-weight: 400;
     color: #adadad;
     max-width: 500px;
     line-height: 24px;
@@ -49,6 +49,15 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-top: 20px; }
+  .vows-container .vows-dash {
+    width: 100px;
+    height: 4px;
+    background-color: #333333;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px; }
   .vows-container dl.custom-counter {
     counter-reset: counter;
     max-width: 660px;
