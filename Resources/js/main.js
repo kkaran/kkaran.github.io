@@ -1,59 +1,41 @@
+// set up text to print, each item in array is new line
+var aText = new Array(
+"<h3> Hello,</h3>", 
+"<span class='name'>My name is Karan Patel.</span>",
+"<span class='two'>I'm a Strategist, currently working at <a class='link' href='www.google.com'>Instrument</a> in Portland, Or.</span>",
+"<p class='three'>I've had the opportunity to work for brands such a <span> Google, Nike, Snapchat, Steelcase, PATH and a few others.</p>",
+);
+var iSpeed = 15; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
 
 
-//Mouse Fade Out --- //
-$(window).scroll(function(){
-    $(".mouse").css("opacity", 1 - $(window).scrollTop() / 100);
-  });
-
-//Project Nav Fade In --- //
-$(window).scroll(function() {
-  if ($(this).scrollTop()> 150) {
-    $('.projects_nav').fadeIn();
-   } else {
-    $('.projects_nav').fadeOut();
-   }
-});
-
-
-//Progress Bar Js --- //  
-	$(document).ready(function() {
-		$('progress').attr ({
-			max: $(document).height() - $(window).height()
-		});
-	});
-
-	$(document).scroll (function() {
-		$('progress').attr({
-	        value: $(window).scrollTop()
-	      });
-	});
-
-	$(document).resize (function() {
-		$('progress').attr({
-	        max: $(document).height() - $(window).height(),
-	        value: $(window).scrollTop()
-	      });
-	});
-
-// Time of Day Js --- 
-	$(document).ready(function() {
-		sayHello();
-		setInterval('sayHello()', 10000);
-		});
-
-	function sayHello() {
-		var now = new Date();
-		var month = now.getMonth();
-		var date = now.getDate();
-		var hours = now.getHours();
-		var msg;
-		if (hours < 12) {
-		   	msg = "good morning.";
-		} else if (hours < 18) {
-		   	msg = "good afternoon.";
-		} else {
-		  	msg = "good evening.";
-		}
-		$('#header_hello h2').text(msg);
-		}
+typewriter();
 
