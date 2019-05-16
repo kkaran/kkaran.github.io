@@ -35,10 +35,6 @@ body {
   	-ms-user-select: none;      /* IE 10+ */
   	user-select: none;          /* Likely future */ 
 
-  	/* Default cursor styles */
-  	cursor: default;
-  	//cursor:crosshair;
-
 }
 
 
@@ -50,11 +46,11 @@ ul, li {
 a {
 	text-decoration: none;
 	font-family: 'Space Mono', monospace;
-	color:$grey ;
+	color:white ;
 }
 
-a:hover {color: $grey;}
-a:visited {color: $grey}
+a:hover {color: $light-grey;}
+a:visited {color: $light-grey}
 
 
 .clearfix:after {
@@ -87,22 +83,28 @@ a:visited {color: $grey}
   	font-weight: bold;
   	padding: 50px;
   	max-width: 445px;
+    background: #231F20;
+    color: white;
+    box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.47);
+    margin: 0 auto;
+    margin-top: 50px;
 
   	.redacted {
-  		color: black;
-  		background: black;
+      color: $light-grey;  		
+      text-decoration: line-through;
   		-webkit-user-select: none;  /* Chrome all / Safari all */
   		-moz-user-select: none;     /* Firefox all */
-		-ms-user-select: none;      /* IE 10+ */
- 		user-select: none;          /* Likely future */ 
+  		-ms-user-select: none;      /* IE 10+ */
+ 	  	user-select: none;          /* Likely future */ 
 
- 		:hover {
- 			background: black;
- 		}
+
+   		:hover {
+ 	  		background: #231F20;
+ 		  }
   	}
 
   	a {
-  		border-bottom: 1px solid $grey;
+  		border-bottom: 1px solid white;
   	}
 
   	.clients {
@@ -115,7 +117,23 @@ a:visited {color: $grey}
   		.contact {
   		font-size: 10px;
   	}
+
+      .contact_row {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      padding: 10px 0 10px 0;
+      margin-top: 10px;
+      display: block;
+    
+        a { border-bottom: 0px solid;}
+      }
+
   	}
+
+      .email{
+      margin-top: 0 !important;
+      border-top: 0px solid !important;
+      }
 
   	.footer {
   		font-size: 10px;
@@ -130,10 +148,10 @@ h3 {
 
 .link {
 	margin-bottom: 10px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid white;
 
 	:hover {
-		border-bottom: 1px solid #333333;
+		border-bottom: 1px solid white;
 	}
 }
 
@@ -141,7 +159,7 @@ h3 {
 /* Dropdown Button */
 .dropbtn {
  	margin-bottom: 10px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid white;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -183,6 +201,7 @@ h3 {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
+
 
 
 
