@@ -1,0 +1,213 @@
+/* ============================================
+--------------- Reusable styles----------------
+============================================== */
+/*-- Colors -- */
+/* ============================================
+--------------- Base Style  -------------------
+============================================== */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+body {
+  overflow-x: hidden;
+  background-color: #F2F2F0;
+  color: #0b0b0b;
+  margin: 5em;
+  font-family: '-apple-system', 'system-ui', 'Roboto',
+  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* Disables selection of text */
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
+
+
+ul, li {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #0b0b0b;
+}
+
+a:hover {
+  color: #999999;
+}
+
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Hide from IE Mac \*/
+.clearfix {
+  display: block; }
+
+/* End hide from IE Mac */
+
+
+
+/* ============================================ */
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: block;
+
+
+
+}
+
+.title {
+  display: block;
+  min-height: 240px;
+}
+
+.name {
+  font-size: 5.25vw;
+  font-weight: 700;
+  display: block;
+}
+
+.full_stack:hover {
+text-decoration: underline;
+}
+
+
+
+
+
+.about {
+  font-size: 2.25vw;
+  font-weight: 700;
+  max-width: 80%;
+}
+
+.full_stack {cursor: crosshair;}
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 0%;
+  left: 105%;
+  margin-bottom: 0px;
+  padding: 10px;
+  width: 95px;
+  text-align: left;
+  font-weight: 500;
+  color: #0b0b0b;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 25px;
+  cursor: crosshair;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* ============================================
+--------------- Project  -------------------
+============================================== */
+
+.work {
+  margin-top: 250px;
+
+
+}
+
+.work_title {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.project {
+  max-width: 500px;
+  display: block;
+  margin-top: 40px;
+}
+.project_title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  max-width: 475px;
+  background-color: #0b0b0b; 
+}
+
+.project_description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+
+
+/* ============================================
+--------------- Footer -------------------
+============================================== */
+
+.contact {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  float: left;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 5em;
+  padding-bottom: 1em;
+  height: 40px;
+}
+
+.contact a {
+  font-weight: 700;
+  padding-left: 20px;
+  color: #0b0b0b;
+
+}
+
+
