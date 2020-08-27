@@ -1,219 +1,369 @@
+@use 'mobile'; 
+
 /* ============================================
 --------------- Reusable styles----------------
 ============================================== */
 
 /*-- Colors -- */
 $grey : #333333;
+$text-grey: #78797A;
 $light-grey: #adadad;
 $off-white: #f8f8f8;
-$background: #000000;
+$background: #231F20;
 
+
+
+
+/* ============================================
+--------------- Fonts   -------------------
+============================================== */
+/* GT-SECTRA FONT FAMILY */
+
+
+/* BOLD WEIGHT */
+
+@font-face {
+    font-family: 'GTSectraFine';
+    src: url('../style/fonts/GTSectraFine-Bold.woff2') format('woff2'),
+        url('../style/fonts/GTSectraFine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTSectraFine';
+    src: url('../style/fonts/GTSectraFineBold-Italic.woff2') format('woff2'),
+        url('../style/fonts/GTSectraFineBold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* MEDIUM WEIGHT */
+
+@font-face {
+    font-family: 'GTSectraFine';
+    src: url('../style/fonts/GTSectraFine-Medium.woff2') format('woff2'),
+        url('../style/fonts/GTSectraFine-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* REGULAR WEIGHT */
+
+@font-face {
+    font-family: 'GTSectraFine';
+    src: url('../style/fonts/GTSectraFine-Regular.woff2') format('woff2'),
+        url('../style/fonts/GTSectraFine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GTSectraFine';
+    src: url('../style/fonts/GTSectraFine-RegularItalic.woff2') format('woff2'),
+        url('../style/fonts/GTSectraFine-RegularItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* FINE WEIGHT */
+
+@font-face {
+    font-family: 'GTSectraFine-Book';
+    src: url('../style/fonts/GTSectraFine-BookItalic.woff2') format('woff2'),
+        url('../style/fonts/GTSectraFine-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GTSectraFine-Book';
+    src: url('../style/fonts/GTSectraFine-Book.woff2') format('woff2'),
+        url('../style/fonts/GTSectraFine-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*
+/* BOOK/LIGHT 
+
+@font-face {
+    font-family: 'GTSectra-book';
+    src: url('../style/fonts/GTSectra-Book.woff2') format('woff2'),
+        url('../style/fonts/GTSectra-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTSectra-book';
+    src: url('../style/fonts/GTSectra-BookItalic.woff2') format('woff2'),
+        url('../style/fonts/GTSectra-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* REGULAR WEIGHT 
+
+@font-face {
+    font-family: 'GTSectra';
+    src: url('../style/fonts/GTSectra-RegularItalic.woff2') format('woff2'),
+        url('../style/fonts/GTSectra-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GTSectra';
+    src: url('../style/fonts/GTSectra-Regular.woff2') format('woff2'),
+        url('../style/fonts/GTSectra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* MEDIUM WEIGHT 
+
+@font-face {
+    font-family: 'GTSectra';
+    src: url('../style/fonts/GTSectra-Medium.woff2') format('woff2'),
+        url('../fstyle/onts/GTSectra-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* BOLD WEIGHT 
+
+@font-face {
+    font-family: 'GTSectra';
+    src: url('../style/fonts/GTSectra-BoldItalic.woff2') format('woff2'),
+        url('../style/fonts/GTSectra-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GTSectra';
+    src: url('../style/fonts/GTSectra-Bold.woff2') format('woff2'),
+        url('../style/fonts/GTSectra-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+ */
 
 /* ============================================
 --------------- Base Style  -------------------
 ============================================== */
+
 
 body, 
 html {
 	padding:0;
 	margin:0;
-	overflow-x: hidden;
-	
+	overflow-x: hidden;	
 }
-
 
 body {
 	overflow-x:hidden;
-	background-color: $off-white;
-    color: $grey;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-
-    /* Disables selection of text */
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-  	-moz-user-select: none;     /* Firefox all */
-  	-ms-user-select: none;      /* IE 10+ */
-  	user-select: none;          /* Likely future */ 
-
+  color: $grey;
+  font-family: 'GTSectraFine';
+  font-weight: normal;
+  font-style: normal;
 }
 
+a {	
+  color: $grey;
+  text-decoration: none;
 
-ul, li {
-	padding:0;
-	margin:0;
 }
-
-a {
-	text-decoration: none;
-	font-family: 'Space Mono', monospace;
-	color:white ;
-}
-
-a:hover {color: $light-grey;}
-a:visited {color: $light-grey}
-
-
-.clearfix:after {
-    content:".";
-    display:block;
-    height:0;
-    clear:both;
-    visibility:hidden;
-}
-
-.clearfix {display:inline-block;}
-
-/* Hide from IE Mac \*/
-    .clearfix {display:block;}
-/* End hide from IE Mac */
 
 
 /* ============================================
---------------- Base Style  -------------------
+--------------- GRID BASE STYLING  ------------
 ============================================== */
 
-.page_container {
-
-	text-align: left;
-	margin-left: 100px;
-	font-family: 'Space Mono', monospace;
-  	font-size:20px; 
-  	margin: 10px 50px; 
-  	letter-spacing: 0px; 
-  	font-weight: bold;
-  	padding: 50px;
-  	max-width: 445px;
-    background: #231F20;
-    color: white;
-    box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.47);
-    margin: 0 auto;
-    margin-top: 50px;
-
-  	.redacted {
-      color: $light-grey;  		
-      text-decoration: line-through;
-  		-webkit-user-select: none;  /* Chrome all / Safari all */
-  		-moz-user-select: none;     /* Firefox all */
-  		-ms-user-select: none;      /* IE 10+ */
- 	  	user-select: none;          /* Likely future */ 
-
-
-   		:hover {
- 	  		background: #231F20;
- 		  }
-  	}
-
-  	a {
-  		border-bottom: 1px solid white;
-  	}
-
-  	.clients {
-  		margin-bottom: 0px;
-  	}
-
-  	.contact_p {
-  		margin-top: 100px;
-
-  		.contact {
-  		font-size: 10px;
-  	}
-
-      .contact_row {
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-      padding: 10px 0 10px 0;
-      margin-top: 10px;
-      display: block;
-    
-        a { border-bottom: 0px solid;}
-      }
-
-  	}
-
-      .email{
-      margin-top: 0 !important;
-      border-top: 0px solid !important;
-      }
-
-  	.footer {
-  		font-size: 10px;
-  	}
-
-}
-
-h3 {
-	font-size: 200px;
-	margin-left: -100px;
-}
-
-.link {
-	margin-bottom: 10px;
-	border-bottom: 1px solid white;
-
-	:hover {
-		border-bottom: 1px solid white;
-	}
-}
-
-
-/* Dropdown Button */
-.dropbtn {
- 	margin-bottom: 10px;
-	border-bottom: 1px solid white;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.container {
+  margin: 121px auto 22px auto;
+  box-sizing: border-box;
   position: relative;
+  max-width: 1100px;
+  min-height: 88px;
+  padding: 0 50px;
+  margin-bottom: 22px;
+  font-size: 1rem;
+}
+
+.grid {
+  width: 75%;
   display: inline-block;
+  text-align: justify;
+  vertical-align: top;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.grid_left {
+  min-width: 400px;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 12px;
+.grid_right {
+     padding-left: 75px;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: $light-grey;}
-
-.dropdown-content a.redacted:hover {
-	background-color: black;
-	color: $light-grey;
-	user-select: none;
-	cursor: none;
+@media only screen and (max-width: 1020px) {
+  .grid {
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+  }
+  .grid_right {
+    padding-left: 40px;
+  }
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+@media only screen and (max-width: 900px) {
+  .grid {
+    width: 100%;
+  }
 
+  .grid_right {
+    padding-left: 0px;
+  }
 
-
-
-@media only screen and (max-width: 480px) {
-	/*.page_container {
-		padding-left: 0px;
-	} */
 }
 
-@media only screen and (max-width: 380px) {
-	.page_container {
-		padding-left: 10px;
-		padding-right: 20px;
-	}
+
+/* ============================================
+--------------- BIO  --------------------------
+============================================== */
+
+.header {
+  font-size: 2.6em;
+  font-weight: bold;
+  line-height: 50px;
+  font-family: 'helvetica';
+  font-style: normal;
+  position: fixed;
+
 }
+
+.bio_container {
+  min-height: 800px;
+  margin-bottom: 100px;
+
+  .bio_img {
+    max-width: 400px;
+    display: block;
+    float: right;
+    position: fixed;
+    z-index: -1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bio {
+
+    font-family: 'GTSectraFine';
+    font-style: normal;
+    padding: 30px 0 0 0;
+
+
+
+    .bio_name {
+      font-size: 2.6em;
+      font-weight: bold;
+      line-height: 50px;
+
+      span {
+        font-family: 'GTSectraFine-Book';
+        font-weight: 300;
+      }
+    }
+
+
+    .kenya {
+      border-bottom: 2px dotted $grey;
+    }
+
+    .kenya_png{
+      display: none;
+      position: fixed;
+      width: 450px;
+      z-index: 1;
+      right: 200;
+      top: 200;
+
+    }
+
+    .kenya:hover{
+      cursor: crosshair;
+    }
+
+    .kenya:hover .kenya_png {
+      display: block;
+      position: fixed;
+    }
+
+    .bio_copy {
+      font-family: 'GTSectraFine-Book';
+      font-weight: 300;
+      text-align: left;
+      font-size: 1.6em;
+      line-height: 1.5em;
+
+    }
+
+    a{
+        border-bottom: 2px solid $grey;
+      }
+  
+
+    .contact {
+      text-decoration: none;
+      display: block;
+      margin-top: 40px;
+
+      a {
+        margin-right: 10px;
+        border-bottom: 2px solid $grey;
+
+        :visited {
+          color: red;
+        }
+      }
+    }
+
+    .bye {
+      padding-top: 30px;
+    }
+
+    .bye_label {
+      font-style: italic;
+    }
+
+    .bye_name {
+      font-family: 'GTSectraFine';
+      font-weight: bold;
+    }
+  }
+}
+
+
+/* ============================================
+--------------- BIO  --------------------------
+============================================== */
+
+@media only screen and (max-width: 500px) {
+
+.bio_container {
+  .bio_img { min-width: auto;}
+}
+
+}
+
+
+
+
