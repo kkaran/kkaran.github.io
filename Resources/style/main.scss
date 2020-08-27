@@ -197,7 +197,7 @@ a {
 .grid {
   width: 75%;
   display: inline-block;
-  text-align: justify;
+  /* text-align: justify; */
   vertical-align: top;
 }
 
@@ -213,7 +213,7 @@ a {
   .grid {
     width: 100%;
     display: inline-block;
-    text-align: justify;
+    //text-align: justify;
     vertical-align: top;
   }
   .grid_right {
@@ -277,10 +277,11 @@ a {
       font-weight: bold;
       line-height: 50px;
 
-      span {
-        font-family: 'GTSectraFine-Book';
-        font-weight: 300;
-      }
+
+    
+    #title {  font-family: 'GTSectraFine-Book';
+        font-weight: 300;}
+
     }
 
 
@@ -356,11 +357,24 @@ a {
 --------------- BIO  --------------------------
 ============================================== */
 
+
+@media only screen and (min-width: 500px) {
+
+    #name::after {
+      content: "\a";
+      white-space: pre;
+    }
+}
+
 @media only screen and (max-width: 500px) {
 
 .bio_container {
   .bio_img { min-width: auto;}
 }
+
+.kenya {
+      border-bottom: none !important;
+    }
 
 }
 
